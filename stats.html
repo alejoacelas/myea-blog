@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stats — My EA Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/analytics.js"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="/">home</a>
+    <a href="/chat-in-spanish">chat in spanish</a>
+    <a href="/live-with-me">live with me</a>
+    <a href="/stats" class="active">stats</a>
+  </nav>
+
+  <header>
+    <h1>Stats</h1>
+    <p class="subtitle">How many times each post has been opened</p>
+  </header>
+
+  <h2 class="section-heading">Post clicks</h2>
+  <table class="stats-table" id="post-stats"><tbody><tr><td>Loading…</td></tr></tbody></table>
+
+  <h2 class="section-heading">Page views</h2>
+  <table class="stats-table" id="page-stats"><tbody><tr><td>Loading…</td></tr></tbody></table>
+
+  <script>
+    async function load() {
+      const [counts, indexHtml] = await Promise.all([
+        fetch('/api/counts').then(r => r.json()),
+        fetch('/').then(r => r.text()),
+      ]);
+
+      const doc = new DOMParser().parseFromString(indexHtml, 'text/html');
+      const titles = {};
+      doc.querySelectorAll('a.post-link').forEach(a => {
+        const m = (a.getAttribute('href') || '').match(/\/document\/d\/([^/]+)/);
+        const t = a.querySelector('.post-title');
+        if (m && t) titles[m[1]] = t.textContent.trim();
+      });
+
+      const postRows = Object.keys(titles)
+        .map(id => [titles[id], counts.post[id] || 0])
+        .sort((a, b) => b[1] - a[1]);
+      render('post-stats', postRows);
+
+      const pageRows = Object.entries(counts.page || {}).sort((a, b) => b[1] - a[1]);
+      render('page-stats', pageRows);
+    }
+
+    function render(tableId, rows) {
+      const tbody = document.getElementById(tableId).querySelector('tbody');
+      tbody.innerHTML = '';
+      if (!rows.length) {
+        tbody.innerHTML = '<tr><td>Nothing yet</td></tr>';
+        return;
+      }
+      for (const [label, count] of rows) {
+        const tr = document.createElement('tr');
+        const name = document.createElement('td');
+        name.textContent = label;
+        const num = document.createElement('td');
+        num.className = 'stats-count';
+        num.textContent = count;
+        tr.append(name, num);
+        tbody.appendChild(tr);
+      }
+    }
+
+    load().catch(() => {
+      document.getElementById('post-stats').querySelector('tbody').innerHTML =
+        '<tr><td>Could not load stats</td></tr>';
+    });
+  </script>
+</body>
+</html>

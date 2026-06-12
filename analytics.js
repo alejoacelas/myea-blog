@@ -1,9 +1,19 @@
-// Vercel Web Analytics bootstrap — queues calls until /_vercel/insights/script.js loads.
-window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+// Self-hosted hit counter: beacons to /api/hit, public totals at /stats.
 
-function textFromLink(link, selector) {
-  var el = selector ? link.querySelector(selector) : link;
-  return el && el.textContent ? el.textContent.trim().replace(/\s+/g, ' ') : '';
+function sendHit(kind, id) {
+  try {
+    var payload = JSON.stringify({ kind: kind, id: id });
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon('/api/hit', new Blob([payload], { type: 'application/json' }));
+    } else {
+      fetch('/api/hit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: payload,
+        keepalive: true
+      });
+    }
+  } catch (_) {}
 }
 
 function googleDocId(href) {
@@ -11,34 +21,13 @@ function googleDocId(href) {
   return match ? match[1] : '';
 }
 
-// Track outbound link clicks. Leaves <a href> values untouched.
+// Page view
+sendHit('page', location.pathname.replace(/[^A-Za-z0-9-]/g, '') || 'home');
+
+// Post link clicks (the Google Doc links on the index)
 document.addEventListener('click', function (e) {
-  var link = e.target.closest && e.target.closest('a');
+  var link = e.target.closest && e.target.closest('a.post-link');
   if (!link) return;
-  var href = link.getAttribute('href') || '';
-  if (!/^(https?:|mailto:)/i.test(href)) return;
-
-  var hostname = '';
-  try { hostname = new URL(href, location.href).hostname; } catch (_) {}
-  var isOutbound = href.toLowerCase().indexOf('mailto:') === 0 || (hostname && hostname !== location.hostname);
-  if (!isOutbound) return;
-
-  if (link.classList.contains('post-link')) {
-    window.va('event', {
-      name: 'blog_post_click',
-      data: {
-        post: textFromLink(link, '.post-title') || href,
-        doc_id: googleDocId(href)
-      }
-    });
-    return;
-  }
-
-  window.va('event', {
-    name: 'outbound_click',
-    data: {
-      link: textFromLink(link) || href,
-      href: href
-    }
-  });
+  var docId = googleDocId(link.getAttribute('href') || '');
+  if (docId) sendHit('post', docId);
 });
