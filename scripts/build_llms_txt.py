@@ -21,7 +21,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+SITE_DIR = Path(__file__).resolve().parent.parent / "public"
 SITE = "https://myea.blog"
 
 POST_RE = re.compile(
@@ -47,7 +47,7 @@ def fetch_doc(doc_id: str) -> str:
 
 
 def main() -> None:
-    html = (ROOT / "index.html").read_text()
+    html = (SITE_DIR / "index.html").read_text()
     posts = POST_RE.findall(html)
     if not posts:
         sys.exit("No posts found in index.html — check POST_RE")
@@ -80,7 +80,7 @@ def main() -> None:
     )
 
     full = header + "\n---\n\n" + "\n\n---\n\n".join(bodies) + "\n"
-    (ROOT / "llms-full.txt").write_text(full)
+    (SITE_DIR / "llms-full.txt").write_text(full)
 
     index_lines = [f"- [{title}]({url})" for url, _, title in posts]
     index = (
@@ -91,7 +91,7 @@ def main() -> None:
         + "\n".join(index_lines)
         + "\n"
     )
-    (ROOT / "llms.txt").write_text(index)
+    (SITE_DIR / "llms.txt").write_text(index)
 
     print(f"Wrote llms-full.txt ({len(full):,} chars) and llms.txt")
 
