@@ -4,7 +4,7 @@
 
 ## Full text
 
-- [All posts in one file](https://myea.blog/llms-full.txt)
+- [All posts in one file](https://myea.blog/all.txt)
 
 ## Posts
 

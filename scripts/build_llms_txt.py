@@ -2,10 +2,10 @@
 # requires-python = ">=3.11"
 # dependencies = []
 # ///
-"""Build llms.txt and llms-full.txt from the posts listed in index.html.
+"""Build llms.txt and all.txt from the posts listed in index.html.
 
 Reads every Google Doc linked from index.html (via the `gdoc` CLI) and
-concatenates the full text into llms-full.txt, newest first, matching the
+concatenates the full text into all.txt, newest first, matching the
 order on the page. Also writes llms.txt, the conventional short index.
 
 Run from the repo root after adding a post to index.html:
@@ -24,6 +24,7 @@ from pathlib import Path
 
 SITE_DIR = Path(__file__).resolve().parent.parent / "public"
 SITE = "https://myea.blog"
+ALL_POSTS_FILENAME = "all.txt"
 MAX_WORKERS = 8
 
 POST_RE = re.compile(
@@ -97,20 +98,20 @@ def main() -> None:
     )
 
     full = header + "\n---\n\n" + "\n\n---\n\n".join(ordered_bodies) + "\n"
-    (SITE_DIR / "llms-full.txt").write_text(full)
+    (SITE_DIR / ALL_POSTS_FILENAME).write_text(full)
 
     index_lines = [f"- [{title}]({url})" for url, _, title in posts]
     index = (
         header
         + "\n## Full text\n\n"
-        + f"- [All posts in one file]({SITE}/llms-full.txt)\n"
+        + f"- [All posts in one file]({SITE}/{ALL_POSTS_FILENAME})\n"
         + "\n## Posts\n\n"
         + "\n".join(index_lines)
         + "\n"
     )
     (SITE_DIR / "llms.txt").write_text(index)
 
-    print(f"Wrote llms-full.txt ({len(full):,} chars) and llms.txt")
+    print(f"Wrote {ALL_POSTS_FILENAME} ({len(full):,} chars) and llms.txt")
 
 
 if __name__ == "__main__":

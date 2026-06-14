@@ -3,6 +3,8 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
+    { "source": "/llms-full.txt", "destination": "/all.txt", "permanent": true },
+    { "source": "/all", "destination": "/all.txt", "permanent": true },
     { "source": "/live-with-me-responses.md", "destination": "/live-with-me", "permanent": true }
   ]
 }
