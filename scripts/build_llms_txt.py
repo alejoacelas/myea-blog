@@ -19,10 +19,12 @@ before the text can be published — see CLAUDE.md).
 import re
 import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 SITE_DIR = Path(__file__).resolve().parent.parent / "public"
 SITE = "https://myea.blog"
+MAX_WORKERS = 8
 
 POST_RE = re.compile(
     r'href="(https://docs\.google\.com/document/d/([\w-]+)/edit)"[^>]*>\s*'
@@ -54,23 +56,38 @@ def main() -> None:
 
     print(f"Found {len(posts)} posts in index.html")
 
-    bodies = []
-    jojo_hits = []
-    for url, doc_id, title in posts:
-        print(f"  fetching: {title}")
+    bodies: list[str | None] = [None] * len(posts)
+    jojo_hits: list[tuple[int, str]] = []
+
+    def fetch_post(index: int, url: str, doc_id: str, title: str) -> tuple[int, str, str | None]:
         text = fetch_doc(doc_id)
-        if re.search(r"jojo", text, re.I):
-            jojo_hits.append(title)
+        jojo_hit = title if re.search(r"jojo", text, re.I) else None
         # Drop a leading H1 if it duplicates the post title; we add our own.
         text = re.sub(r"\A#\s+.*?\n+", "", text)
-        bodies.append(f"# {title}\n\nSource: {url}\n\n{text}")
+        return index, f"# {title}\n\nSource: {url}\n\n{text}", jojo_hit
+
+    with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(posts))) as executor:
+        futures = []
+        for index, (url, doc_id, title) in enumerate(posts):
+            print(f"  fetching: {title}")
+            futures.append(executor.submit(fetch_post, index, url, doc_id, title))
+        for future in as_completed(futures):
+            index, body, jojo_hit = future.result()
+            bodies[index] = body
+            if jojo_hit:
+                jojo_hits.append((index, jojo_hit))
 
     if jojo_hits:
+        jojo_hits.sort()
         sys.exit(
             "ABORTING — 'Jojo' found in the body of: "
-            + ", ".join(jojo_hits)
+            + ", ".join(title for _, title in jojo_hits)
             + ". Rewrite to 'Robin' in the Doc, then re-run."
         )
+
+    if any(body is None for body in bodies):
+        sys.exit("ABORTING — one or more posts failed to fetch.")
+    ordered_bodies = [body for body in bodies if body is not None]
 
     header = (
         "# My EA Blog\n\n"
@@ -79,7 +96,7 @@ def main() -> None:
         "All posts are drafts.\n"
     )
 
-    full = header + "\n---\n\n" + "\n\n---\n\n".join(bodies) + "\n"
+    full = header + "\n---\n\n" + "\n\n---\n\n".join(ordered_bodies) + "\n"
     (SITE_DIR / "llms-full.txt").write_text(full)
 
     index_lines = [f"- [{title}]({url})" for url, _, title in posts]

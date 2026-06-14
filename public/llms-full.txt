@@ -4,6 +4,52 @@
 
 ---
 
+# Chatting Claude about my avoidant attachment
+
+Source: https://docs.google.com/document/d/1CxG7i5P2fNVLFcHsOUOVY_jw5JNZhleWlDQ85w4OSV8/edit
+
+*A lightly trimmed transcript of a conversation with Claude, right after watching [Heidi Priebe's video](https://www.youtube.com/watch?v=GTQohPaGnSY) on "intellectual bypassing" in avoidant attachment.*
+
+---
+
+**Me:** This was a day we had a friend visiting. I had a crush on Robin that I kind of didn't want to acknowledge I still had  — it would have made things harder for both of us, and I didn't want to impose. Robin had a crush on the friend who was visiting, and I was actually rooting for them, helping them figure things out.
+
+At some point Robin stubbed her toe, and I felt this quick, immediate joy. I blurted out “whoa, that was weird, I felt joy when you stubbed your toe” She asked why. And what came out was “oh, I think I resent you.”
+
+For context, a couple of days before, I'd heard that a friend had killed himself. It had been an incredibly demanding day — I'd spent it glued to my screen, messaging and calling his friends, being this strong, helpful presence that carried them through the grief.
+
+So it was late, and I wanted some comfort. The thing I wanted was to lay my head on Robin's lap and have her stroke my hair for a bit. But I felt shy about asking, and I knew that even if I asked, she'd reject it.
+
+The thing is, I wouldn't have voiced any of this if Robin hadn't asked. I wouldn't have even recognized it inside myself if she hadn't.
+
+**Claude:** You felt the joy and said *that was weird* out loud before you'd tidied it into a reason — the opposite of putting a lid on it. The "you" in "I resent you" might be less Robin than the arrangement you'd built, the one with no room for you to be the person who needed her. Did naming the resentment become its own way of not asking?
+
+Oh, I did ask for the hair stroking. And Robin said okay — but is this maternal? Because I'd phrased it as a maternal thing. Or is it romantic? I think she wanted to diffuse the romantic reading, because she wasn't willing to entertain it. (She refused to stroke my hair, without hesitation.)
+
+And I think that's part of the problem: there are a lot of things I want that I just can't ask for. I find a girl attractive — should I go tell her, hey, I'm attracted to you, I'm lonely, can I have some of your warmth? I feel lonely occasionally, and there's not much I can do about it.
+
+I've been getting a little better at voicing my needs. I can do it with a few people — I did it recently with Maya, who I love. I just said, here's the thing I want from you, you don't have to give it to me, it's just a thought crossing my head, but this is what I want. But for most people, I think you can make the request and they just won't do it. And it might burn them a little — if someone feels ineffectual, some momentum in the relationship gets burned.
+
+So generally I just don't ask for stuff. Or I do, but only when it's a really small ask — I send lots of cold emails. Even those were hard to get started, and I still feel awful sending them to people outside the EA community, because I don't feel close enough to take that affordance.
+
+So there's a real structural thing here: you can't just ask people for things, because they might not give them, and they might get tired of the repeated asking. There's a calibration that has to happen. But I don't know if that calibration is intellectual, or if it's something more emotional — alternative paths I'm not exploring because they just don't feel emotionally available. I don't know.
+
+Your structural case is mostly emotion in a suit. You already have the skill — you used it with Maya, with the exact frame that makes an ask cost nothing: *here's what I want, you don't have to give it.* The fear looks borrowed from a different lane: the candor people have actually begged you to dial down.
+
+Oh, actually, this is interesting. So the candor is something that I learned to do. I used to restrict myself much, much more — I wasn't honest with people when I had feedback to give them, and I didn't voice my feelings, I didn't voice most things. And candor is kind of like my overcorrection. Candor is: I was scared for so long and didn't voice it, because I didn't want to impose on you, I didn't want to make you feel bad. And when I tried being a little bit candid, I realized that I had been leaving so much on the table, and so I was just like, okay, need to go as far as I can in this direction. And now I'm noticing that going as far as I can also has its costs. But I fear — when people push back against my candor, I feel scared that I might not be able to ask for what I want or say how I feel. Because it's so easy to turn on this machinery that tells me that I'm causing harm in people. So I want to defend my candor. I want to argue for it such that it has a place, and such that I can voice my feelings.
+
+Then the freeing move isn't winning the argument that candor is good — it's seeing the binary, where conceding *any* cost means total surrender back to silence. Unbundle the self-voicing (*I feel X, I want X*) from the doctrine (go as far as you can, unsolicited, until they beg you to stop). A hit to the doctrine doesn't revoke your right to say you feel lonely. The candor you can't kill is the one that doesn't need to be right.
+
+Yeah, I kind of want to say fuck you a bit. Like, you're sidestepping the problem. So — in any particular situation. Like, maybe also good context: I have, I think, what might be called like really low [cognitive empathy](https://en.wikipedia.org/wiki/Empathy#Distinctions_between_empathy_and_related_concepts:~:text=%5B9%5D-,Cognitive%20empathy,-is%20the%20ability). So it's really hard for me sometimes to understand how other people are feeling. And so the advice that you're giving just feels like, oh, just bear with it, or just figure it out, man, learn to read people's feelings. And a lot of my blog posts about finding rules is my attempt to just figure out some sort of principles that I can adhere to that don't require me to just become better at reading people's emotions overnight. I want to become better despite this limitation that I have. So yeah. I don't — fuck you kind of.
+
+Fair hit. I'd smuggled the reading task back in — and reading other people is the one faculty you've said you lack. But feeling your *own* interior isn't that faculty, and that's all voicing needs. So here's a rule built for the instrument you have, not the one you don't.
+
+You can't perceive inferred harm, so the machinery's verdict — "I hurt them" — runs on data you don't have and can't check, which is exactly why it's bottomless and terrifying. Starve it: the only harm that enters your decisions is harm someone tells you about, in words. If they didn't say it, it doesn't count. (This would be poison for a callous person. You are the precise opposite problem.)
+
+And the Maya frame is *the* tool here, because it outsources the read — you hand them the wheel and ask them to say out loud the thing you can't see. One last check you can run without reading anyone: sort your own sentence. *I feel X / I want X* — voice it freely. *Here's your fatal flaw* — that one waits to be invited.
+
+---
+
 # Will kindness prevail
 
 Source: https://docs.google.com/document/d/1u_6K9peomRqYbgk95KOhGotsVJMcpyg3WLStxbghvME/edit
@@ -130,7 +176,7 @@ Source: https://docs.google.com/document/d/1TEWFjjB9BCk572FpIKHqnMmrn1go70-qCl7x
 
 Drafted: May 21, 2026
 
-The world we should be aiming for
+*The world we should be aiming for*
 
 Radical honesty is dumb. Starting conversations at the workplace with "ever since I've met you I've fantasized with you becoming my dutiful devoted wife" is bad business practice, and you should avoid it.
 
@@ -991,7 +1037,7 @@ So: trust the voice that's already on the page, add two or three concrete beats 
 
 ---
 
-# Heretical fiction
+# My heretical fiction ideas
 
 Source: https://docs.google.com/document/d/1OCIiej4JOMdQ4zUBw4UyJM-R0hYf1vyOUj1SyiO2Pj0/edit
 
