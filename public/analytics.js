@@ -28,6 +28,6 @@ sendHit('page', location.pathname.replace(/[^A-Za-z0-9-]/g, '') || 'home');
 document.addEventListener('click', function (e) {
   var link = e.target.closest && e.target.closest('a.post-link');
   if (!link) return;
-  var docId = googleDocId(link.getAttribute('href') || '');
+  var docId = link.getAttribute('data-doc') || googleDocId(link.getAttribute('href') || '');
   if (docId) sendHit('post', docId);
 });

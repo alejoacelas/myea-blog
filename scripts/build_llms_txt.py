@@ -27,8 +27,10 @@ SITE = "https://myea.blog"
 ALL_POSTS_FILENAME = "all.txt"
 MAX_WORKERS = 8
 
+# Posts link to clean /<slug> URLs (which redirect to the Doc); the Doc id
+# lives in data-doc. Captures: (slug path, doc id, title).
 POST_RE = re.compile(
-    r'href="(https://docs\.google\.com/document/d/([\w-]+)/edit)"[^>]*>\s*'
+    r'href="(/[\w-]+)" data-doc="([\w-]+)"[^>]*>\s*'
     r'<span class="post-title">(.*?)</span>',
     re.S,
 )
@@ -69,7 +71,8 @@ def main() -> None:
 
     with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(posts))) as executor:
         futures = []
-        for index, (url, doc_id, title) in enumerate(posts):
+        for index, (slug_path, doc_id, title) in enumerate(posts):
+            url = f"{SITE}{slug_path}"
             print(f"  fetching: {title}")
             futures.append(executor.submit(fetch_post, index, url, doc_id, title))
         for future in as_completed(futures):
@@ -100,7 +103,7 @@ def main() -> None:
     full = header + "\n---\n\n" + "\n\n---\n\n".join(ordered_bodies) + "\n"
     (SITE_DIR / ALL_POSTS_FILENAME).write_text(full)
 
-    index_lines = [f"- [{title}]({url})" for url, _, title in posts]
+    index_lines = [f"- [{title}]({SITE}{slug_path})" for slug_path, _, title in posts]
     index = (
         header
         + "\n## Full text\n\n"

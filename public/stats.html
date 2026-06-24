@@ -40,9 +40,10 @@
       const doc = new DOMParser().parseFromString(indexHtml, 'text/html');
       const titles = {};
       doc.querySelectorAll('a.post-link').forEach(a => {
-        const m = (a.getAttribute('href') || '').match(/\/document\/d\/([^/]+)/);
+        const href = a.getAttribute('href') || '';
+        const id = a.getAttribute('data-doc') || (href.match(/\/document\/d\/([^/]+)/) || [])[1];
         const t = a.querySelector('.post-title');
-        if (m && t) titles[m[1]] = t.textContent.trim();
+        if (id && t) titles[id] = t.textContent.trim();
       });
 
       const postRows = Object.keys(titles)
