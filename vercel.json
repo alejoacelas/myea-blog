@@ -25,26 +25,51 @@
     },
     {
       "source": "/virtue",
+      "destination": "/let-die",
+      "permanent": true
+    },
+    {
+      "source": "/let-die",
       "destination": "https://docs.google.com/document/d/1_qwmW_gpbH8Q75t_jpVBE6yRNuZrqySE2GAslR6PzI0/edit",
       "permanent": false
     },
     {
       "source": "/regret",
+      "destination": "/stop-dread",
+      "permanent": true
+    },
+    {
+      "source": "/stop-dread",
       "destination": "https://docs.google.com/document/d/1c5vks8uCtWAHO_nySsSMq3MDadJadnv18IDvCfahB44/edit",
       "permanent": false
     },
     {
       "source": "/eag-playbook",
+      "destination": "/success-playbook",
+      "permanent": true
+    },
+    {
+      "source": "/success-playbook",
       "destination": "https://docs.google.com/document/d/1OpBX3J8voc9QhEheCRP-zlHG6yebEyGs55GZiO0xZUs/edit",
       "permanent": false
     },
     {
       "source": "/ai-diffusion",
+      "destination": "/identity-barrier",
+      "permanent": true
+    },
+    {
+      "source": "/identity-barrier",
       "destination": "https://docs.google.com/document/d/1JvMURFX-era_0ZrTcoka_J2pYW6ZUXRxP0IY8S9FswU/edit",
       "permanent": false
     },
     {
       "source": "/compound-on-your-own",
+      "destination": "/cant-own",
+      "permanent": true
+    },
+    {
+      "source": "/cant-own",
       "destination": "https://docs.google.com/document/d/1uYsS3xzL9hcQYFmFkzFgrJsRT2MRAm2dKRiEJMKnK-0/edit",
       "permanent": false
     },
@@ -65,6 +90,11 @@
     },
     {
       "source": "/art-engages",
+      "destination": "/engaging-thing",
+      "permanent": true
+    },
+    {
+      "source": "/engaging-thing",
       "destination": "https://docs.google.com/document/d/1__lKFJ8EBgxoVvw5OS-vxTPBN9QS8055xKsSpakQY6k/edit",
       "permanent": false
     },

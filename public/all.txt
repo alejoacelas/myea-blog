@@ -22,7 +22,7 @@ Source: Faith in Humanity, Ryan Preston-Roedder, Philosophy and Phenomenological
 
 # Should we let everyone die to stand by virtue?
 
-Source: https://myea.blog/virtue
+Source: https://myea.blog/let-die
 
 * Is Zach Snyder's Man of Steel right about morality?
 * I'd like the PauseAI guys to sacrifice some effectiveness at their mission to stand by integrity and principles
@@ -38,7 +38,7 @@ Source: https://myea.blog/virtue
 
 # Stop feeling dread. Start feeling regret
 
-Source: https://myea.blog/regret
+Source: https://myea.blog/stop-dread
 
 * Dread is undirected. It prevents action without a clear understanding of consequences
 * Regret is after-the-fact, and it's often much more targeted. You can picture what you did wrong, and even how you could have avoided it
@@ -71,7 +71,7 @@ Look for quests, not jobs
 
 # The EAG Playbook for Career Success
 
-Source: https://myea.blog/eag-playbook
+Source: https://myea.blog/success-playbook
 
 \[keep uppercase in title pls\!\]
 
@@ -85,7 +85,7 @@ Source: https://myea.blog/eag-playbook
 
 # Identity as a barrier to AI diffusion
 
-Source: https://myea.blog/ai-diffusion
+Source: https://myea.blog/identity-barrier
 
 On Slack I wrote:
 
@@ -147,7 +147,7 @@ Turns out emotions may be important
 
 # You can't compound on your own
 
-Source: https://myea.blog/compound-on-your-own
+Source: https://myea.blog/cant-own
 
 Coda to Sam Altman's [How To Be Successful](https://blog.samaltman.com/how-to-be-successful)
 
@@ -215,7 +215,7 @@ My deep-seated optimism
 
 # Art is the thing that engages you
 
-Source: https://myea.blog/art-engages
+Source: https://myea.blog/engaging-thing
 
 * It may not engage you superficially (long boring books), but it must engage you at some level
 * Force/compell you to think or feel, often doing some shaping as well
