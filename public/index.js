@@ -31,6 +31,9 @@
 
   function showSearch() {
     if (!searchPanel || !searchInput) return;
+    if (tools) {
+      tools.dataset.searchOpen = "true";
+    }
     searchPanel.hidden = false;
     window.requestAnimationFrame(function () {
       searchPanel.classList.add("is-open");
@@ -42,6 +45,9 @@
 
   function hideSearch() {
     if (!searchPanel || !searchInput) return;
+    if (tools) {
+      delete tools.dataset.searchOpen;
+    }
     searchInput.value = "";
     filterPosts("");
     searchPanel.classList.remove("is-open");

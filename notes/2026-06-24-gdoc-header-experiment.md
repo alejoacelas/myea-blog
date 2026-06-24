@@ -1,6 +1,6 @@
 # Programmatically adding a page header to a Google Doc — experiment report
 
-Date: 2026-06-24. Goal: find the best way to add a running **page header** (the header region that repeats at the top of each page) to a blog-post Google Doc, with text like `Find this post at https://myea.blog/<slug>` and a working hyperlink. Done hands-on against a throwaway test Doc (created and moved to Drive trash at the end).
+Date: 2026-06-24. Goal: find the best way to add a running **page header** (the header region that repeats at the top of each page) to a blog-post Google Doc, with text like `Find this post at myea.blog/<slug>` hyperlinked to `https://myea.blog/<slug>`. Done hands-on against a throwaway test Doc (created and moved to Drive trash at the end).
 
 ## TL;DR / Recommendation
 
@@ -19,11 +19,11 @@ Three-step flow, two `batchUpdate` calls:
 
 1. `createHeader` with `type: "DEFAULT"` → returns `replies[0].createHeader.headerId` (e.g. `kix.d6aysmczvxob`).
 2. `insertText` at `{segmentId: <headerId>, index: 0}` — header text starts at **index 0** (not 1 like the body; the first text run's `startIndex` reads back as absent/0).
-3. `updateTextStyle` over `{segmentId: <headerId>, startIndex: len(prefix), endIndex: len(prefix)+len(url)}` with `textStyle.link.url` and `fields: "link"`.
+3. `updateTextStyle` over `{segmentId: <headerId>, startIndex: len(prefix), endIndex: len(prefix)+len(display_url)}` with `textStyle.link.url = full_url` and `fields: "link"`.
 
 ### Index gotcha (cost me one iteration)
 
-Header segment text is **0-indexed**. With prefix `"Find this post at "` (18 chars) and inserting at index 0, the URL link range is `[18, 18+len(url))`. My first attempt used `[19, ...]` (assuming a body-style index-1 start) and the link began one char late ("ttps://..." instead of "https://..."). Read-back via `documents.get` is how I caught it. The script below has the correct math.
+Header segment text is **0-indexed**. With prefix `"Find this post at "` (18 chars) and inserting at index 0, the displayed URL link range is `[18, 18+len(display_url))`. My first attempt used `[19, ...]` (assuming a body-style index-1 start) and the link began one char late. Read-back via `documents.get` is how I caught it. The script below has the correct math.
 
 ### Read-back confirmation (final, correct run)
 
@@ -31,7 +31,7 @@ Header segment text is **0-indexed**. With prefix `"Find this post at "` (18 cha
 
 ```
 text='Find this post at '            link=None
-text='https://myea.blog/test-slug'   link={'url': 'https://myea.blog/test-slug'}
+text='myea.blog/test-slug'           link={'url': 'https://myea.blog/test-slug'}
 ```
 
 Link cleanly covers the whole URL; prefix unlinked. This is a genuine header region, not body text.
@@ -48,7 +48,7 @@ Saved during the experiment as a PEP-723 `uv run` script. It mints a fresh acces
 """Add a DEFAULT page header to a Google Doc with a hyperlinked URL.
 Usage: uv run add_header.py <DOC_ID> <URL> [--text-prefix "Find this post at "] [--account EMAIL]
 """
-import argparse, json, subprocess, os, tempfile, urllib.request, urllib.parse, pathlib
+import argparse, json, subprocess, os, tempfile, urllib.request, urllib.parse, pathlib, re
 
 GOG_CRED = pathlib.Path(os.path.expanduser("~/Library/Application Support/gogcli/credentials.json"))
 
@@ -69,6 +69,9 @@ def batch_update(doc_id, token, requests):
                                  headers={"Authorization":f"Bearer {token}","Content-Type":"application/json"})
     return json.load(urllib.request.urlopen(req))
 
+def display_url(url):
+    return re.sub(r"^https?://", "", url)
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("doc_id"); ap.add_argument("url")
@@ -77,7 +80,8 @@ def main():
     a = ap.parse_args()
     token = get_access_token(a.account)
     header_id = batch_update(a.doc_id, token, [{"createHeader":{"type":"DEFAULT"}}])["replies"][0]["createHeader"]["headerId"]
-    text = f"{a.text_prefix}{a.url}"; ls = len(a.text_prefix); le = ls + len(a.url)
+    visible_url = display_url(a.url)
+    text = f"{a.text_prefix}{visible_url}"; ls = len(a.text_prefix); le = ls + len(visible_url)
     batch_update(a.doc_id, token, [
         {"insertText":{"location":{"segmentId":header_id,"index":0},"text":text}},
         {"updateTextStyle":{"range":{"segmentId":header_id,"startIndex":ls,"endIndex":le},
@@ -88,7 +92,7 @@ if __name__ == "__main__":
     main()
 ```
 
-Run: `uv run add_header.py <DOC_ID> https://myea.blog/<slug>`
+Run: `uv run add_header.py <DOC_ID> https://myea.blog/<slug>` and write `myea.blog/<slug>` as the visible text.
 
 ### Equivalent raw-curl version (if you'd rather not use the script)
 
@@ -103,8 +107,8 @@ curl -s -X POST "https://docs.googleapis.com/v1/documents/${DOC}:batchUpdate" \
 curl -s -X POST "https://docs.googleapis.com/v1/documents/${DOC}:batchUpdate" \
   -H "Authorization: Bearer ${AT}" -H "Content-Type: application/json" \
   -d '{"requests":[
-        {"insertText":{"location":{"segmentId":"HID","index":0},"text":"Find this post at https://myea.blog/SLUG"}},
-        {"updateTextStyle":{"range":{"segmentId":"HID","startIndex":18,"endIndex":40},
+        {"insertText":{"location":{"segmentId":"HID","index":0},"text":"Find this post at myea.blog/SLUG"}},
+        {"updateTextStyle":{"range":{"segmentId":"HID","startIndex":18,"endIndex":32},
                             "textStyle":{"link":{"url":"https://myea.blog/SLUG"}},"fields":"link"}}]}'
 ```
 

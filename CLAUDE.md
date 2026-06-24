@@ -22,9 +22,10 @@ Single-page index of writing drafts, cross-posts, and bullet-point notes. Each e
 - Use only these annotations: `draft`, `bullet points`, and `cross-post`. Use `bullet points` for list-shaped notes, `cross-post` for writing primarily published elsewhere, and `draft` otherwise. Do not invent variants.
 - Render annotations inline in square brackets: `[draft]`, `[bullet points]`, and `[cross-post]`.
 - Homepage post links use clean local slugs such as `/faith`, plus `data-doc="<google-doc-id>"`. Add a matching temporary Vercel redirect from the slug to the Google Doc so click analytics can keep using the stable Doc id.
-- When checking an existing Google Doc before redeploying, inspect its real page header if possible. If it contains `Find this post at https://myea.blog/<slug>`, treat that as the canonical slug. If the header slug differs from `public/index.html`, update the homepage link and `vercel.json`, and add a redirect from the old slug to the new slug so old links keep working.
+- When checking an existing Google Doc before redeploying, inspect its real page header if possible. If it contains `Find this post at myea.blog/<slug>`, treat that as the canonical slug. If the header slug differs from `public/index.html`, update the homepage link and `vercel.json`, and add a redirect from the old slug to the new slug so old links keep working.
 - Sort every post by Google Drive `modifiedTime`, newest first. Before publishing or deploying, fetch `modifiedTime` for every linked Doc, update each `<li data-modified-time="...">`, and reorder `public/index.html`.
 - Inserted entries (`bullet points` and `cross-post`) must never be the first/topmost post, and at most two inserted entries may sit between any two `draft` entries. After sorting by `modifiedTime`, move inserted entries as needed to satisfy those layout rules, even if that slightly breaks strict time order. Do not publish an inserted entry unless it can sit between real posts.
+- Scripts that read or write many Google Docs should use bounded concurrency. `scripts/build_llms_txt.py` and `scripts/add_doc_headers.py` default to 8 workers and accept `--workers N`.
 - Preserve old URLs. If a served route or slug changes, add a permanent redirect in `vercel.json`.
 
 ## Safety Checks
@@ -40,4 +41,5 @@ Single-page index of writing drafts, cross-posts, and bullet-point notes. Each e
 4. Run the Jojo / Robin guard and link-access check.
 5. Add accepted posts to `public/index.html`, reorder the full list by `modifiedTime` descending, then apply the inserted-note layout rules.
 6. Run `uv run scripts/build_llms_txt.py`.
-7. Verify locally, deploy with `vercel deploy --prod`, then commit the changes.
+7. Verify locally, deploy with `vercel deploy --prod`, then run `uv run scripts/add_doc_headers.py` so each Doc header points at `myea.blog/<slug>`.
+8. Commit the changes.

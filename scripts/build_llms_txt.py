@@ -16,6 +16,7 @@ Aborts if any post body mentions "Jojo" (must be rewritten to "Robin"
 before the text can be published — see CLAUDE.md).
 """
 
+import argparse
 import re
 import subprocess
 import sys
@@ -25,7 +26,7 @@ from pathlib import Path
 SITE_DIR = Path(__file__).resolve().parent.parent / "public"
 SITE = "https://myea.blog"
 ALL_POSTS_FILENAME = "all.txt"
-MAX_WORKERS = 8
+DEFAULT_WORKERS = 8
 
 POST_RE = re.compile(
     r'<a class="post-link" href="([^"]+)"(?: data-doc="([\w-]+)")?[^>]*>\s*'
@@ -55,6 +56,10 @@ def fetch_doc(doc_id: str) -> str:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help="parallel Doc fetches")
+    args = parser.parse_args()
+
     html = (SITE_DIR / "index.html").read_text()
     raw_posts = POST_RE.findall(html)
     if not raw_posts:
@@ -85,7 +90,9 @@ def main() -> None:
         text = re.sub(r"\A#\s+.*?\n+", "", text)
         return index, f"# {title}\n\nSource: {url}\n\n{text}", jojo_hit
 
-    with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(posts))) as executor:
+    workers = max(1, min(args.workers, len(posts)))
+    print(f"Fetching with {workers} worker(s)")
+    with ThreadPoolExecutor(max_workers=workers) as executor:
         futures = []
         for index, (url, doc_id, title) in enumerate(posts):
             print(f"  fetching: {title}")
