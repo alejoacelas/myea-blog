@@ -1,4 +1,10 @@
 (function () {
+  var noteStyles = new Set(["tucked", "gutter", "stacked", "proof", "whisper"]);
+  var params = new URLSearchParams(window.location.search);
+  var requestedNotes = params.get("notes") || "tucked";
+  var notes = noteStyles.has(requestedNotes) ? requestedNotes : "tucked";
+  document.body.dataset.notes = notes;
+
   var tools = document.querySelector("[data-tools]");
   var trigger = document.querySelector(".tool-trigger");
   var searchButton = document.querySelector('[data-tool="search"]');
