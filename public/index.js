@@ -1,8 +1,10 @@
 (function () {
   var noteStyles = new Set(["tucked", "gutter", "stacked", "proof", "whisper"]);
+  var noteAliases = { wispr: "whisper" };
   var params = new URLSearchParams(window.location.search);
-  var requestedNotes = params.get("notes") || "tucked";
-  var notes = noteStyles.has(requestedNotes) ? requestedNotes : "tucked";
+  var requestedNotes = (params.get("notes") || "whisper").toLowerCase();
+  var notes = noteAliases[requestedNotes] || requestedNotes;
+  notes = noteStyles.has(notes) ? notes : "whisper";
   document.body.dataset.notes = notes;
 
   var tools = document.querySelector("[data-tools]");
@@ -47,6 +49,11 @@
   function filterPosts(query) {
     var needle = query.trim().toLowerCase();
     var visible = 0;
+    if (needle) {
+      document.body.dataset.searching = "true";
+    } else {
+      delete document.body.dataset.searching;
+    }
 
     posts.forEach(function (post) {
       var title = post.querySelector(".post-title");

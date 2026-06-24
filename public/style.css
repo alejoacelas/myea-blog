@@ -11,18 +11,19 @@
   --page-width: 640px;
   --note-left: 2rem;
   --note-width: 26rem;
-  --note-gap: 0.34rem;
-  --note-run-gap: -0.5rem;
-  --note-before-draft-gap: 1.25rem;
-  --note-after-draft-gap: -0.7rem;
   --note-pad: 0.12rem 0 0.12rem 0.78rem;
   --note-font-size: 0.76rem;
   --note-line-height: 1.3;
   --note-dash-width: 0.34rem;
   --note-dash-left: 0.02rem;
   --note-dash-top: 0.55rem;
-  --note-underline-left: 0.56rem;
   --note-underline-opacity: 0.1;
+  --note-float-y: -1.06rem;
+  --note-float-y-2: -0.58rem;
+  --note-float-y-3: -0.14rem;
+  --note-top-y: -2.15rem;
+  --note-top-y-2: -1.58rem;
+  --note-top-y-3: -1.02rem;
   --note-tag-display: none;
 }
 
@@ -124,32 +125,50 @@ h1 {
 }
 
 .post-list li[data-kind="bullet points"] {
-  margin: var(--note-after-draft-gap) 0 var(--note-gap) var(--note-left);
+  --note-x: 0rem;
+  --note-y: var(--note-float-y);
+  --note-tilt: -0.35deg;
+  --note-underline-tilt: -0.45deg;
+  position: relative;
+  z-index: 2;
+  height: 0;
+  margin: 0 0 0 var(--note-left);
   max-width: var(--note-width);
+  overflow: visible;
 }
 
 .post-list li[data-kind="bullet points"] + li[data-kind="bullet points"] {
-  margin-top: var(--note-run-gap);
+  --note-y: var(--note-float-y-2);
 }
 
-.post-list li[data-kind="bullet points"] + li[data-kind="draft"] {
-  margin-top: var(--note-before-draft-gap);
+.post-list li[data-kind="bullet points"] + li[data-kind="bullet points"] + li[data-kind="bullet points"] {
+  --note-y: var(--note-float-y-3);
 }
 
-.post-list li[data-kind="draft"] + li[data-kind="bullet points"] {
-  margin-top: var(--note-after-draft-gap);
+.post-list li:first-child[data-kind="bullet points"] {
+  --note-y: var(--note-top-y);
+}
+
+.post-list li:first-child[data-kind="bullet points"] + li[data-kind="bullet points"] {
+  --note-y: var(--note-top-y-2);
+}
+
+.post-list li:first-child[data-kind="bullet points"] + li[data-kind="bullet points"] + li[data-kind="bullet points"] {
+  --note-y: var(--note-top-y-3);
 }
 
 .post-list li[data-kind="bullet points"] .post-link {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: baseline;
-  column-gap: 0.48rem;
+  position: absolute;
+  top: var(--note-y);
+  left: var(--note-x);
+  display: inline-block;
+  width: max-content;
+  max-width: min(var(--note-width), calc(100vw - 3rem));
   padding: var(--note-pad);
   border-left: 0;
   color: #55554e;
   transform-origin: 0.8rem center;
+  transform: rotate(var(--note-tilt));
 }
 
 .post-list li[data-kind="bullet points"] .post-link::before {
@@ -163,14 +182,7 @@ h1 {
 }
 
 .post-list li[data-kind="bullet points"] .post-link::after {
-  content: "";
-  position: absolute;
-  left: var(--note-underline-left);
-  right: 0.15rem;
-  bottom: 0.06rem;
-  border-top: 1px solid rgba(80, 80, 72, var(--note-underline-opacity));
-  transform: rotate(-0.5deg);
-  transform-origin: left center;
+  content: none;
 }
 
 .post-list li[data-kind="bullet points"] .post-link:hover {
@@ -180,10 +192,23 @@ h1 {
 .post-list li[data-kind="bullet points"] .post-title {
   position: relative;
   z-index: 1;
+  display: inline-block;
+  max-width: 100%;
   font-size: var(--note-font-size);
   font-weight: 400;
   line-height: var(--note-line-height);
   letter-spacing: 0;
+}
+
+.post-list li[data-kind="bullet points"] .post-title::after {
+  content: "";
+  position: absolute;
+  left: 0.02em;
+  right: 0.02em;
+  bottom: -0.08em;
+  border-top: 1px solid rgba(80, 80, 72, var(--note-underline-opacity));
+  transform: rotate(var(--note-underline-tilt));
+  transform-origin: left center;
 }
 
 .post-list li[data-kind="bullet points"] .post-tag {
@@ -197,16 +222,33 @@ h1 {
   display: var(--note-tag-display);
 }
 
-.post-list li[data-kind="bullet points"]:nth-of-type(3n + 1) .post-link::after {
-  transform: rotate(-0.8deg);
+.post-list li[data-kind="bullet points"]:nth-of-type(3n + 1) {
+  --note-x: -0.32rem;
+  --note-tilt: -0.55deg;
+  --note-underline-tilt: -0.8deg;
 }
 
-.post-list li[data-kind="bullet points"]:nth-of-type(3n + 2) .post-link::after {
-  transform: rotate(0.35deg);
+.post-list li[data-kind="bullet points"]:nth-of-type(3n + 2) {
+  --note-x: 0.34rem;
+  --note-tilt: 0.22deg;
+  --note-underline-tilt: 0.35deg;
 }
 
-.post-list li[data-kind="bullet points"]:nth-of-type(4n) .post-link::after {
-  transform: rotate(0.6deg);
+.post-list li[data-kind="bullet points"]:nth-of-type(4n) {
+  --note-x: -0.08rem;
+  --note-tilt: 0.38deg;
+  --note-underline-tilt: 0.6deg;
+}
+
+body[data-searching="true"] .post-list li[data-kind="bullet points"] {
+  height: auto;
+  margin: 0 0 0.9rem var(--note-left);
+}
+
+body[data-searching="true"] .post-list li[data-kind="bullet points"] .post-link {
+  position: relative;
+  top: auto;
+  left: auto;
 }
 
 body[data-notes="gutter"] {
@@ -268,18 +310,20 @@ body[data-notes="proof"] .post-list li[data-kind="bullet points"] .post-link {
 }
 
 body[data-notes="whisper"] {
-  --note-left: 3.4rem;
-  --note-width: 20rem;
-  --note-gap: 0.12rem;
-  --note-run-gap: -0.16rem;
-  --note-before-draft-gap: 0.9rem;
-  --note-after-draft-gap: -0.95rem;
-  --note-pad: 0.04rem 0 0.04rem 0.62rem;
-  --note-font-size: 0.68rem;
-  --note-dash-width: 0.24rem;
-  --note-dash-top: 0.43rem;
-  --note-underline-left: 0.45rem;
-  --note-underline-opacity: 0.07;
+  --note-left: 3.18rem;
+  --note-width: 21rem;
+  --note-pad: 0.02rem 0 0.02rem 0.55rem;
+  --note-font-size: 0.6rem;
+  --note-line-height: 1.16;
+  --note-dash-width: 0.22rem;
+  --note-dash-top: 0.39rem;
+  --note-underline-opacity: 0.11;
+  --note-float-y: -1.28rem;
+  --note-float-y-2: -0.68rem;
+  --note-float-y-3: -0.12rem;
+  --note-top-y: -2.32rem;
+  --note-top-y-2: -1.52rem;
+  --note-top-y-3: -0.64rem;
   --note-tag-display: none;
 }
 
@@ -571,13 +615,20 @@ body[data-notes="whisper"] .post-list li[data-kind="bullet points"] {
   }
 
   .post-list li[data-kind="bullet points"] {
+    --note-left: 1.15rem;
+    --note-width: calc(100vw - 2.7rem);
+    --note-float-y: -1.18rem;
+    --note-float-y-2: -0.62rem;
+    --note-float-y-3: -0.08rem;
+    --note-top-y: -2.42rem;
+    --note-top-y-2: -1.55rem;
+    --note-top-y-3: -0.62rem;
     margin-left: 0.9rem;
     max-width: none;
   }
 
   .post-list li[data-kind="bullet points"] .post-link {
-    grid-template-columns: minmax(0, 1fr);
-    row-gap: 0.14rem;
+    max-width: var(--note-width);
   }
 
   .post-list li[data-kind="bullet points"] .post-tag {
