@@ -6,7 +6,7 @@
 
 # Chatting Claude about my avoidant attachment
 
-Source: https://docs.google.com/document/d/1CxG7i5P2fNVLFcHsOUOVY_jw5JNZhleWlDQ85w4OSV8/edit
+Source: https://myea.blog/avoidant
 
 *A lightly trimmed transcript of a conversation with Claude, right after watching [Heidi Priebe's video](https://www.youtube.com/watch?v=GTQohPaGnSY) on "intellectual bypassing" in avoidant attachment.*
 
@@ -52,7 +52,9 @@ And the Maya frame is *the* tool here, because it outsources the read — you ha
 
 # Will kindness prevail
 
-Source: https://docs.google.com/document/d/1u_6K9peomRqYbgk95KOhGotsVJMcpyg3WLStxbghvME/edit
+Source: https://myea.blog/will-prevail
+
+# Will kindness prevail?
 
 Carrie is perhaps the only good horror movie I've watched. Most horror movies draw their energy from things that I'm actually not scared about. I'm not scared about witches or demons, I know those don't exist. I'm not scared about mass murderers, those are unlikely to kill me personally. There might be some good horror movies out there about frequent car accidents or dying of cancer at an old age, but I haven't found them yet.
 
@@ -82,11 +84,23 @@ So I need not worry too much about the precise maneuvering of making the hingies
 
 I'm not saying we won't die — we might die. But as we near our final, passing breath, I will have been kind to those who tried.
 
+# previous notes
+
+My deep-seated optimism
+
+* We all have the same heart. Or enough of us share some common core of values and caring, such that you can trust others to cooperate with you  
+* Everything else is just some information problem of sorts. There's this shared value, reshaping the world, and if it only knew how it would proceed  
+* Even if my strength fades, I can still resort to rooting for this common heart, and that will make the world better. I can be kind to my siblings, and say ‘merci’ in my of course truly impeccable French accent as I head out of the bakery  
+* Even if much of what needs to be done for the future is antagonistic (us vs them), enough of it will not, such that it's still worth it for me to focus on pushing shared values  
+  * Knowledge is a great shared value
+
+(when thinking about altruism, or defeating existential risk) I tend to see all humans as a having a shared goal (same utility function, for the economists in the crowd). If that's the case at some level, then all the remaining problems seem to be some form of information asymmetry (I have inside info on my own skills and potentials, but can't easily broadcast it, and wouldn't even know who I should be broadcasting it for), or another standard econ concept that prevents perfectly altruistic dictators from reaching the social optimum.
+
 ---
 
 # Quick wins in AI uplift
 
-Source: https://docs.google.com/document/d/1Eq1ovv9Jhr6EfTCGL70qDQWPES24vI4B-zcWd1GlrAY/edit
+Source: https://myea.blog/quick-wins
 
 # Quick Wins in AI Uplift
 
@@ -172,7 +186,9 @@ Publish a Slack bot to do a daily/weekly AI tips and tools round up from Twitter
 
 # Be so candid they ask you to stop
 
-Source: https://docs.google.com/document/d/1TEWFjjB9BCk572FpIKHqnMmrn1go70-qCl7xhsDnWtg/edit
+Source: https://myea.blog/so-candid
+
+# Be so candid they ask you to stop
 
 Drafted: May 21, 2026
 
@@ -209,11 +225,18 @@ So, if any of this sounds appealing, I suggest you pick a domain of your life an
 
 Really, [it won't kill you](https://docs.google.com/document/d/1-vq5xBLjcYeoeFNImBe6iCNtTwj2m97mZ6TYzKkXUhQ/edit).
 
+# emotions important?
+
+Turns out emotions may be important
+
+* Anti-thesis to my defense of extreme candidness: people's reactions and feelings are important. Moving to communicating more is great, but one of the main drivers of great human endeavours is the feelings people have about them. Narrative plays a big role here and precision and thickness of the information flow may be less important, at least in some domains  
+* Extreme candidness serves as a crutch for me. I fear so much how people will react to what I say, that it overloads my brain to try phrasing things in the way they'll be most receptive, so I end up not saying the thing
+
 ---
 
 # Lay yourself bare on the web
 
-Source: https://docs.google.com/document/d/1Xv5j2ACzJgPqXSNnQh4BnaeJmtfqzgfgVGxNxKk1ovE/edit
+Source: https://myea.blog/lay-bare
 
 The arguments for writing more and posting it publicly are good and numerous, so I won't rehash them much here. Personally, my main aims in blogging are:
 
@@ -231,7 +254,7 @@ If my app ever gets popular, you'd better have practiced writing earnestly onlin
 
 # On using pride as fuel
 
-Source: https://docs.google.com/document/d/1m4rpVPWMERIsFDamI5HTHIY-3MMyGR_CVEp1G5HEEXY/edit
+Source: https://myea.blog/pride
 
 **On using pride as fuel**
 
@@ -247,7 +270,7 @@ I don't quite endorse being fueled by pride, but at hard times like this, I'll t
 
 # Research reports for everything
 
-Source: https://docs.google.com/document/d/10UkwQ8KXCQ_p66f8WM9SDIehyAZMoBr026mIadK14Pc/edit
+Source: https://myea.blog/research-reports
 
 Sometimes I want to spend 1-10 hours making sure I really understand a certain question. In theory the *deep research* functionality of most chatbots is the affordance you'd reach for. But I find it's often hard to trace back the sources and the details of how each claim was arrived at.
 
@@ -341,7 +364,7 @@ You can see the full prompt-by-prompt session that produced all of this, plus th
 
 # Maybe your weirdness is a mental health condition
 
-Source: https://docs.google.com/document/d/131vMBBpWQQjxkzr9bHXbqZwfBwKBaA-oSu-Gm1l88lQ/edit
+Source: https://myea.blog/weird-health
 
 **Maybe your weirdness is a mental health condition**
 
@@ -369,7 +392,7 @@ Turns out that bipolar II is basically what I just described: it's marked by shi
 
 # The giving tree
 
-Source: https://docs.google.com/document/d/1AGnij3eQ7Dgn1caTaU4pjJcsLpdc-QEyfTLYEfmpIOA/edit
+Source: https://myea.blog/giving-tree
 
 There was this tale from my childhood that I remember feeling strongly moved by. I just searched it up — it's called [*The Giving Tree*](https://www.lynnjohnston.com/wp-content/uploads/2016/04/TheGivingTreePoem.pdf). I recommend reading it now, before you continue. It's barely a page long and it's really good.
 
@@ -383,7 +406,7 @@ Not sure if this is the best way to go about utilitarianism, but right at this m
 
 # Your colourful heart
 
-Source: https://docs.google.com/document/d/1u3kUiIlwdJ4m5TCndFIH4dAHQUs7MgNlil_YlRSkrkE/edit
+Source: https://myea.blog/colourful-heart
 
 This morning I cried with strong emotion, thinking of the draft of this blog post. Now I'm feeling a bit tired and the emotion feels a bit more muted, and I'm not sure if I like this impermanence.
 
@@ -403,7 +426,7 @@ Thinking back to unconditional love, I know I've tried to change you. And I don'
 
 # What I'm looking for in my next manager
 
-Source: https://docs.google.com/document/d/1CS1dFsD0hnTKsRcWBSXEpC9GfDZw144-MvPX4wBGHb0/edit
+Source: https://myea.blog/my-manager
 
 [Alejo Acelas](mailto:alejoacelas@gmail.com). [alejocelas@gmail.com](mailto:alejocelas@gmail.com). Whatsapp: \+57 316 680 37 46
 
@@ -435,7 +458,7 @@ Here's my blog if you want more context on me: [myea.blog](http://myea.blog)
 
 # There is rarely ever a good reason to do things later
 
-Source: https://docs.google.com/document/d/1WabYjxXmObvPbnyFJCZ0v1Vt-jQ_fadyI3BmETfmWBE/edit
+Source: https://myea.blog/do-it-now
 
 Doing now is great. People love it when you do things quickly. You love it when people love it that you do things quickly. You don't have to reload the context — you're already in it, so you deliver.
 
@@ -477,7 +500,7 @@ There's no limit for what you can do if you do things now (false, but I still ha
 
 # Keep the number of people you like
 
-Source: https://docs.google.com/document/d/1nJWJctXdlkEovVwGwchAlR7thFgMVjFqDHW6GhwiSCQ/edit
+Source: https://myea.blog/keep-the-number
 
 **Keep the number of people you like**
 
@@ -491,7 +514,7 @@ So if there's anyone who thrills you, ask them for their number.
 
 # Compounding yourself
 
-Source: https://docs.google.com/document/d/10u3mcuDnoi9-HeXGRWA5P8dMDUVPrWiTW7Bf5vuuAIA/edit
+Source: https://myea.blog/compounding
 
 What does personal compounding look like? In great careers you get better every year — your output, your impact, the things that you multiply every year in some form. And I think there's an external aspect to this, where you're matched to better opportunities and better collaborators, and assigned more resources to manage as you do better and show your colors. But I think there's also an internal aspect to this — there's something inside you that is valuable, and the world judged it worth piling resources on. And I want to understand what this is.
 
@@ -535,7 +558,7 @@ So yeah, I'm just incredibly bullish on you if you're willing to just keep tryin
 
 # My pattern of disregarding people's immediate preferences
 
-Source: https://docs.google.com/document/d/1XQHsPdSYJoKV9lw0ezFYvMWZC661oBkrEuKRCtoVej8/edit
+Source: https://myea.blog/my-bad
 
 Today I was helping Robin time-block making a summary of their research output of the week. They had been feeling shame about being slow at research and not being able to package their outputs for feedback and iteration. So I proposed that they should try taking half an hour to dictate their free-form thoughts, then ask Claude to do some very light polishing on them, and then share directly with their supervisor, or with more people in their field with context on the questions they were discussing.
 
@@ -594,7 +617,7 @@ If you want to be alerted in case Robin considers giving up on me, you can leave
 
 # You literally cannot die
 
-Source: https://docs.google.com/document/d/1-vq5xBLjcYeoeFNImBe6iCNtTwj2m97mZ6TYzKkXUhQ/edit
+Source: https://myea.blog/inmortal
 
 I mean, you will possibly very literally die, but not from the things you worry most about on your day to day. I think that means that you should identify the things that could kill you—mostly metaphorically kill you—and avoid those like the plague, but otherwise do everything. Let me explain.
 
@@ -630,7 +653,7 @@ So, if you want a single lesson, stay clear of the things that kill you, and do 
 
 # Act on all your great ideas
 
-Source: https://docs.google.com/document/d/1qK5zkgl28F7mO7hZXTzZaPycga8Mb8rAbVekIMFtoRk/edit
+Source: https://myea.blog/all-great
 
 People have been saying that, given how good AI is at executing well-scoped tasks, the new bottleneck is taste. That now your responsibility is to come up with and bet on the best ideas, such that AI can work on them.
 
@@ -664,7 +687,7 @@ And it is through this process of exploration that the taste part of the taste/e
 
 # EV application - Emergent Ventures
 
-Source: https://docs.google.com/document/d/15zlcB9z8Sp4pd0jz_DvlIP0t5PnsbChB74z98KksjQc/edit
+Source: https://myea.blog/ev-app
 
 **Tweet version**  
 EA is not taking AI seriously, for no good reason. We should be hurling ourselves to find how AI can promote the outcomes we want (at orgs, in new projects, individuals).
@@ -742,7 +765,7 @@ One of my most valuable assets is having a shared Slack with Peter Hartree, who 
 
 # What youth knows about love
 
-Source: https://docs.google.com/document/d/1YhNhcigNIODpUROFsYpQYMe4V_Ddd5RZIWbZxwsxHzU/edit
+Source: https://myea.blog/youth-loves
 
 Shakira was 16 when she composed *Antología*, which after more than 20 years and many other hits is still possibly in the top 10 of her most listened-to songs. It's surprising how well that song captures the feeling of a longing, grateful heartbreak.
 
@@ -756,7 +779,7 @@ This is yet another reason to never shut up talking about love and romance. You 
 
 # Metaphors for caring
 
-Source: https://docs.google.com/document/d/1mvr54bAgQf5pDHSq6ASIqrSmbG_8S00IACMDNQEsxpo/edit
+Source: https://myea.blog/smart-dolphin
 
 [Alejo Acelas](mailto:alejoacelas@gmail.com)
 
@@ -782,7 +805,7 @@ So I'm not sure how to represent this. I want to care long for my friends, and I
 
 # What I want from you
 
-Source: https://docs.google.com/document/d/1YkEn0v5-SoVRf3ws42Hzyzd9pKGKnIOK9OkWVMXq6W0/edit
+Source: https://myea.blog/what-i-want
 
 I woke up this morning with a feeling of intense devotion towards you. I was thinking last night that it would be lovely to thread my fingers through your hair as you go to sleep, but I'm not sure whether you'd like it.
 
@@ -804,7 +827,7 @@ I find it interesting that the general class of this problem feels really simila
 
 # True ambition has barely been tried
 
-Source: https://docs.google.com/document/d/1chD3B4uqrmBIvEi42A3mrAiVuETNcOstYMtVDcDCxy8/edit
+Source: https://myea.blog/god-of-flesh
 
 # **True ambition has barely been tried**
 
@@ -859,7 +882,7 @@ Alejandro
 
 # Please forgive the errors in my ways
 
-Source: https://docs.google.com/document/d/1_IOFvpchwDP2l27QOuSaGbeX0Vx1FJ-DbbRewa88nGM/edit
+Source: https://myea.blog/please-forgive
 
 ## Please Forgive the Errors in My Ways
 
@@ -893,7 +916,7 @@ So I ask, please forgive the errors in my ways, while I keep doing what I think 
 
 # And I bought yet another flight
 
-Source: https://docs.google.com/document/d/1LHWZ1DXFpdZqk-4kS-Usy7n1vhK8SOYsythOxW2cgqQ/edit
+Source: https://myea.blog/hunting
 
 *A pro-tanto reason to not hire me as your ops person*
 
@@ -959,7 +982,7 @@ The next flight is scheduled for boarding soon.
 
 # Sad kindness
 
-Source: https://docs.google.com/document/d/1buWVCvkzImqXQ_rUlC6BaycBpohDCS-XpVW_CfJHU3o/edit
+Source: https://myea.blog/sad-kindness
 
 I've noticed this pattern in some of my close friends, and in the people I feel most magnetically drawn to. I can't quite describe what this trait is. I'd name it something like a sad kindness that radiates out of them. No, a kind sadness, actually. When you talk to them, there's something so receptive in their disposition, like they just take you in and return something warm and tender. But you can also see that either now or in the past there was something quiet and sad and timid and slightly tragic that they carry around in their demeanors, some trace of a flailing will.
 
@@ -1039,7 +1062,7 @@ So: trust the voice that's already on the page, add two or three concrete beats 
 
 # My heretical fiction ideas
 
-Source: https://docs.google.com/document/d/1OCIiej4JOMdQ4zUBw4UyJM-R0hYf1vyOUj1SyiO2Pj0/edit
+Source: https://myea.blog/heretical-fiction
 
 **1\. Sam Bankman-Fried, but you root for him.**
 
@@ -1076,7 +1099,7 @@ So — what a good argument for fiction and the classics.
 
 # Play hard (with AI) so you can work hard (with AI)
 
-Source: https://docs.google.com/document/d/144QhhqR_R3K2MwFiQz7_oJpT1pYnKy8-SWNHNRsmNDg/edit
+Source: https://myea.blog/play-with-ai
 
 **Play Hard (with AI) So You Can Work Hard (with AI)**
 
@@ -1184,7 +1207,7 @@ I'm working on a post about this. I still don't quite know what the answer looks
 
 # On caring
 
-Source: https://docs.google.com/document/d/1SUPH6K6J67J5pgT_d0H82219RA5brg6lfaoBLtkXSi4/edit
+Source: https://myea.blog/caring
 
 I started thinking about what caring means after a friend told me they're frustrated with what they're doing right now. They don't know if it's the right thing, feel aimless and demotivated, and are wondering whether to try something else. I could feel their mood tank noticeably from this uncertainty. My friend is an EA, of course; many of my friends are, and I couldn't help but feel the intensity of it. I immediately empathized with their sentiments and found it easy to provide some reaffirmation to many of the things they felt, but I also felt this intensity behind it that almost choked my throat and reminded me of that poem "Do Not Go Gentle Into That Good Night." There's something I want to rebel against, really strongly, about that state of affairs—its determination, its resolve, its caring—in a way that was beautifully articulated by Nate Soares here \[link\].
 
@@ -1294,7 +1317,7 @@ This talk about loving forever—I'm just like, "What? No." Probably the only co
 
 # EA groups are hard and great and worth it
 
-Source: https://docs.google.com/document/d/1gdCJ155q89OKF0Jaa7RrAsA7tSbz7XwEcGhD9YgnjiA/edit
+Source: https://myea.blog/worth-it
 
 ---
 
@@ -1336,7 +1359,7 @@ But now it's a different thing. And it's yours to seize it.
 
 # Earning to Claude
 
-Source: https://docs.google.com/document/d/1Hp6VPfQQ4jSwrp84juo9iBOkg4_5WyTgQfJ3IgIuRyY/edit
+Source: https://myea.blog/etc
 
 *Earn more so you make the most of AI in case it gets pricier*
 
@@ -1366,7 +1389,7 @@ So before you take your next opportunity, consider whether you should be asking 
 
 # Solve each problem only once
 
-Source: https://docs.google.com/document/d/1zMw6wFzeLi8G9UpOqI07XCXjS7ByTADxZ0GlEFCKY3w/edit
+Source: https://myea.blog/solve-once
 
 (not sure why I only have a draft using Claude's voice)
 
@@ -1398,7 +1421,7 @@ This reusability is a key thing of the new AI era.
 
 # After-date surveys may be a bad idea
 
-Source: https://docs.google.com/document/d/1saBBagefHqARITLJeI601YAwY4Zel66hzQY77G-jvwE/edit
+Source: https://myea.blog/after-date
 
 *Epilogue to the "You should consider dating me" post I haven't finished yet*
 
