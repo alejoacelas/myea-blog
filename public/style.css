@@ -63,11 +63,12 @@ h1 {
   border-left: 2px solid #ccc;
   text-decoration: none;
   color: inherit;
-  transition: border-color 0.15s ease;
+  transition: border-color 0.15s ease, transform 0.2s ease;
 }
 
 .post-link:hover {
   border-left-color: #111;
+  transform: translateX(4px);
 }
 
 .post-title {
