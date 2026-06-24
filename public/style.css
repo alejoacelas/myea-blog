@@ -63,12 +63,18 @@ h1 {
   border-left: 2px solid #ccc;
   text-decoration: none;
   color: inherit;
-  transition: border-color 0.15s ease, transform 0.2s ease;
+  border-radius: 4px;
+  transition: border-color 0.15s ease, transform 0.2s ease, opacity 0.25s ease, background 0.2s ease;
 }
 
 .post-link:hover {
   border-left-color: #111;
   transform: translateX(4px);
+  background: #f8f5ef;
+}
+
+.post-list:hover .post-link:not(:hover) {
+  opacity: 0.88;
 }
 
 .post-title {
