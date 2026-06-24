@@ -1,10 +1,4 @@
 (function () {
-  var looks = new Set(["margin", "notebook", "index", "chips", "ledger"]);
-  var params = new URLSearchParams(window.location.search);
-  var requestedLook = params.get("look") || "margin";
-  var look = looks.has(requestedLook) ? requestedLook : "margin";
-  document.body.dataset.look = look;
-
   var tools = document.querySelector("[data-tools]");
   var trigger = document.querySelector(".tool-trigger");
   var searchButton = document.querySelector('[data-tool="search"]');
