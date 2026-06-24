@@ -1,6 +1,6 @@
 # myea.blog
 
-Single-page index of writing drafts and bullet-point notes. Each entry links to a Google Doc.
+Single-page index of writing drafts, cross-posts, and bullet-point notes. Each entry links to a Google Doc.
 
 ## Stack
 
@@ -19,8 +19,12 @@ Single-page index of writing drafts and bullet-point notes. Each entry links to 
 
 - Before adding a Doc, confirm Alejo owns it with a Drive query that includes `'me' in owners`.
 - Use the Google Doc's actual title from `gdoc info <doc-id>`, then sentence-case it. Preserve proper nouns and acronyms such as AI, EA, EAG, EV, Robin, Toulouse, and Claude.
-- Use only these annotations: `draft` and `bullet points`. Use `bullet points` for list-shaped notes; use `draft` otherwise. Do not invent variants.
+- Use only these annotations: `draft`, `bullet points`, and `cross-post`. Use `bullet points` for list-shaped notes, `cross-post` for writing primarily published elsewhere, and `draft` otherwise. Do not invent variants.
+- Render annotations inline in square brackets: `[draft]`, `[bullet points]`, and `[cross-post]`.
+- Homepage post links use clean local slugs such as `/faith`, plus `data-doc="<google-doc-id>"`. Add a matching temporary Vercel redirect from the slug to the Google Doc so click analytics can keep using the stable Doc id.
+- When checking an existing Google Doc before redeploying, inspect its real page header if possible. If it contains `Find this post at https://myea.blog/<slug>`, treat that as the canonical slug. If the header slug differs from `public/index.html`, update the homepage link and `vercel.json`, and add a redirect from the old slug to the new slug so old links keep working.
 - Sort every post by Google Drive `modifiedTime`, newest first. Before publishing or deploying, fetch `modifiedTime` for every linked Doc, update each `<li data-modified-time="...">`, and reorder `public/index.html`.
+- Inserted entries (`bullet points` and `cross-post`) must never be the first/topmost post, and at most two inserted entries may sit between any two `draft` entries. After sorting by `modifiedTime`, move inserted entries as needed to satisfy those layout rules, even if that slightly breaks strict time order. Do not publish an inserted entry unless it can sit between real posts.
 - Preserve old URLs. If a served route or slug changes, add a permanent redirect in `vercel.json`.
 
 ## Safety Checks
@@ -32,8 +36,8 @@ Single-page index of writing drafts and bullet-point notes. Each entry links to 
 
 1. Query today's or requested owned Docs with `gog drive search --raw-query "... and 'me' in owners and mimeType = 'application/vnd.google-apps.document'"`.
 2. Filter out obvious non-posts: calls, meetings, transcripts, summaries, invoices, applications, untitled docs, contact lists, and already-linked Docs.
-3. Read survivors with `gdoc cat <id> --no-images` and classify them as `draft` or `bullet points`.
+3. Read survivors with `gdoc cat <id> --no-images` and classify them as `draft`, `bullet points`, or `cross-post`.
 4. Run the Jojo / Robin guard and link-access check.
-5. Add accepted posts to `public/index.html`, then reorder the full list by `modifiedTime` descending.
+5. Add accepted posts to `public/index.html`, reorder the full list by `modifiedTime` descending, then apply the inserted-note layout rules.
 6. Run `uv run scripts/build_llms_txt.py`.
 7. Verify locally, deploy with `vercel deploy --prod`, then commit the changes.

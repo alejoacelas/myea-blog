@@ -28,10 +28,12 @@ ALL_POSTS_FILENAME = "all.txt"
 MAX_WORKERS = 8
 
 POST_RE = re.compile(
-    r'href="(https://docs\.google\.com/document/d/([\w-]+)/edit)"[^>]*>\s*'
+    r'<a class="post-link" href="([^"]+)"(?: data-doc="([\w-]+)")?[^>]*>\s*'
     r'<span class="post-title">(.*?)</span>',
     re.S,
 )
+
+DOC_URL_RE = re.compile(r"/document/d/([\w-]+)")
 
 
 def fetch_doc(doc_id: str) -> str:
@@ -54,9 +56,20 @@ def fetch_doc(doc_id: str) -> str:
 
 def main() -> None:
     html = (SITE_DIR / "index.html").read_text()
-    posts = POST_RE.findall(html)
-    if not posts:
+    raw_posts = POST_RE.findall(html)
+    if not raw_posts:
         sys.exit("No posts found in index.html — check POST_RE")
+
+    posts: list[tuple[str, str, str]] = []
+    for href, data_doc, title in raw_posts:
+        doc_id = data_doc
+        if not doc_id:
+            match = DOC_URL_RE.search(href)
+            doc_id = match.group(1) if match else ""
+        if not doc_id:
+            sys.exit(f"No Google Doc id found for post: {title}")
+        source_url = f"{SITE}{href}" if href.startswith("/") else href
+        posts.append((source_url, doc_id, title))
 
     print(f"Found {len(posts)} posts in index.html")
 
@@ -97,7 +110,7 @@ def main() -> None:
 
     header = (
         "# My EA Blog\n\n"
-        f"> Personal essays, drafts, and bullet-point notes by Alejandro Acelas ({SITE}). "
+        f"> Personal essays, drafts, cross-posts, and bullet-point notes by Alejandro Acelas ({SITE}). "
         "This file contains the full text of every post, newest first.\n"
     )
 

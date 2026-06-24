@@ -1,67 +1,12 @@
 # My EA Blog
 
-> Personal essays, drafts, and bullet-point notes by Alejandro Acelas (https://myea.blog). This file contains the full text of every post, newest first.
-
----
-
-# Should we let everyone die to stand by virtue?
-
-Source: https://docs.google.com/document/d/1_qwmW_gpbH8Q75t_jpVBE6yRNuZrqySE2GAslR6PzI0/edit
-
-* Is Zach Snyder's Man of Steel right about morality?
-* I'd like the PauseAI guys to sacrifice some effectiveness at their mission to stand by integrity and principles
-* I wouldn't like to do the same myself, but I recognize the Kantian argument here
-* Posts about integrity for EAs feel bland. Do they think Clark Kent should have [let Pa’ die?](https://www.youtube.com/watch?v=yodVQ5QAc88) How high should our integrity standard be?
-* Epistemic modesty (or some other epistemic virtues) feel similarly high stakes to the usual respect virtues. I think a lot of EA is failing hard at them now. Too enamored of our own AI narratives
-  * We're prone to self-deceive ourselves away from utility-positive epistemic practices
-  * The downsides of bad epistemics are similarly large to the downsides of disrespecting rights/principles: counterfactual blood in our hands. Oceans of it, in some cases. Galaxies worth of miscarriaged bodies
-* I now have extreme sympathy for Eliezer. He's tried so hard to figure out what virtue looks like on an unexplored domain. Staying law-abinding when the whole arc of human civilization is geared towards its own destruction. He doesn't call for “bombing datacenters”, if everyone who thought bombing datacenters was a good idea did it, the world would be much worse. He calls for something [much more narrow](https://x.com/ESYudkowsky/status/1641953192761266177?referrer=grok-com):
-  * “if a non-signatory country is building a datacenter that might kill everyone on Earth, you should be willing to preemptively destroy that datacenter; the intended reading is that you should do this even if the non-signatory country is a nuclear power and even if they try to threaten nuclear retaliation for the strike”
-
----
-
-# Stop feeling dread. Start feeling regret
-
-Source: https://docs.google.com/document/d/1c5vks8uCtWAHO_nySsSMq3MDadJadnv18IDvCfahB44/edit
-
-* Dread is undirected. It prevents action without a clear understanding of consequences
-* Regret is after-the-fact, and it's often much more targeted. You can picture what you did wrong, and even how you could have avoided it
-* Early on in your life, you should prioritize learning. You can learn from acting on regret, you can't learn from acting on dread
-* Regret rarely ever kills you, though it can impair quite a bit. Last time, when I regretted lacking a coherent strategy to push my AI uplift for EA idea, regret took \~3 months of my life, though I camed out much more determined to not commit that error again.
-
----
-
-# The EAG Playbook for Career Success
-
-Source: https://docs.google.com/document/d/1OpBX3J8voc9QhEheCRP-zlHG6yebEyGs55GZiO0xZUs/edit
-
-\[keep uppercase in title pls\!\]
-
-* Aim: Have a secure-baseline and really high-upside strategy for succeeding in your career
-* Pick an EAG, and go every year
-  * Find mentors, find peers. Obsess over them
-* There's great need in EA for people you trust and delegate tasks to. You can become that, even if you're not better than the average, and even if you're substantially worse (comparative advantage\!)
-* Live in the EAG location for longer if you can
-
----
-
-# Identity as a barrier to AI diffusion
-
-Source: https://docs.google.com/document/d/1JvMURFX-era_0ZrTcoka_J2pYW6ZUXRxP0IY8S9FswU/edit
-
-On Slack I wrote:
-
-One important trait in my mind for predicting who's a power user is "are you willing to let AI reshape your personal identity?"
-
-Power users approach this different ways, but when I've encountered resistance to use AI, is often of the sort: "won't it fragment my attention?", "shouldn't we remain in control of work?", "I like doing the work myself", "isn't it bad to depend on AI for work/handling emotions/taking decisions?" which seem to come from some identity conflict in many cases
-
-My attitude is often more like "I'll shape my cognition to whatever shape is most conducive to getting output from AIs" which does involve a lot of attention fragmentation and reckless delegation to AIs. Wonder how you guys feel that AI has influenced your self-image
+> Personal essays, drafts, cross-posts, and bullet-point notes by Alejandro Acelas (https://myea.blog). This file contains the full text of every post, newest first.
 
 ---
 
 # Faith in humanity
 
-Source: https://docs.google.com/document/d/18snWk0BjtSh8XejxhiWR3IOpE4tZdT79OcIrTs46alk/edit
+Source: https://myea.blog/faith
 
 [Crossposted](https://forum.effectivealtruism.org/posts/q9qBD8LvBLjsTbHaA/faith-in-humanity) from the EA Forum
 
@@ -77,21 +22,36 @@ Source: Faith in Humanity, Ryan Preston-Roedder, Philosophy and Phenomenological
 
 ---
 
-# You can't compound on your own
+# Should we let everyone die to stand by virtue?
 
-Source: https://docs.google.com/document/d/1uYsS3xzL9hcQYFmFkzFgrJsRT2MRAm2dKRiEJMKnK-0/edit
+Source: https://myea.blog/virtue
 
-Coda to Sam Altman's [How To Be Successful](https://blog.samaltman.com/how-to-be-successful)
+* Is Zach Snyder's Man of Steel right about morality?
+* I'd like the PauseAI guys to sacrifice some effectiveness at their mission to stand by integrity and principles
+* I wouldn't like to do the same myself, but I recognize the Kantian argument here
+* Posts about integrity for EAs feel bland. Do they think Clark Kent should have [let Pa’ die?](https://www.youtube.com/watch?v=yodVQ5QAc88) How high should our integrity standard be?
+* Epistemic modesty (or some other epistemic virtues) feel similarly high stakes to the usual respect virtues. I think a lot of EA is failing hard at them now. Too enamored of our own AI narratives
+  * We're prone to self-deceive ourselves away from utility-positive epistemic practices
+  * The downsides of bad epistemics are similarly large to the downsides of disrespecting rights/principles: counterfactual blood in our hands. Oceans of it, in some cases. Galaxies worth of miscarriaged bodies
+* I now have extreme sympathy for Eliezer. He's tried so hard to figure out what virtue looks like on an unexplored domain. Staying law-abinding when the whole arc of human civilization is geared towards its own destruction. He doesn't call for “bombing datacenters”, if everyone who thought bombing datacenters was a good idea did it, the world would be much worse. He calls for something [much more narrow](https://x.com/ESYudkowsky/status/1641953192761266177?referrer=grok-com):
+  * “if a non-signatory country is building a datacenter that might kill everyone on Earth, you should be willing to preemptively destroy that datacenter; the intended reading is that you should do this even if the non-signatory country is a nuclear power and even if they try to threaten nuclear retaliation for the strike”
 
-* Robin can be a great researcher, but they won't be an Amanda Askell if they don't find a similarly big and demanded problem to work on
-* When trying to list skills I was trying to compound on, most of them were about making it more pleasant for others to work with me. That seemed accidental, but I think it might be the case more generally, as most of your productivity increase will come from locating yourself in networks with better affordances to do great things (eg., receiving more money, directing others, advising governments, receiving curated problem ideas, strategic guidance from great leaders, etc.) rather than your individual productivity increasing
-* The same way migrant's productivity increases more than 10-fold when moving to a higher income country, your main productivity boost will come from creating your own personal country, connecting to the infrastructure that's built in there, and creating some infrastructure of your own
+---
+
+# Stop feeling dread. Start feeling regret
+
+Source: https://myea.blog/regret
+
+* Dread is undirected. It prevents action without a clear understanding of consequences
+* Regret is after-the-fact, and it's often much more targeted. You can picture what you did wrong, and even how you could have avoided it
+* Early on in your life, you should prioritize learning. You can learn from acting on regret, you can't learn from acting on dread
+* Regret rarely ever kills you, though it can impair quite a bit. Last time, when I regretted lacking a coherent strategy to push my AI uplift for EA idea, regret took \~3 months of my life, though I camed out much more determined to not commit that error again.
 
 ---
 
 # Have you tried violent passion?
 
-Source: https://docs.google.com/document/d/131EJzO3jnrPSyMJPztgP-jnpe0A8OF1h-_qRrYIKuDc/edit
+Source: https://myea.blog/violent-passion
 
 * A friend told me 80k finds it hard to hire for their advising team. I think the only reasonable explanation for that is that a bunch of you are absolute morons
 * You either don't know what you want, or want really silly things. If you were passionate about something good, you'd realize how exciting advising at 80k is and how flabbergastingly talent-dense the 80k team is.
@@ -111,19 +71,37 @@ Look for quests, not jobs
 
 ---
 
-# Reasonable plans, pursued with conviction
+# The EAG Playbook for Career Success
 
-Source: https://docs.google.com/document/d/1dFgky36dMaqGnbZDSn7MW110x4EOPB8H1hPE1Dc26wo/edit
+Source: https://myea.blog/eag-playbook
 
-* It's great to be on a field that moves fast. I've had ideas that I didn't pursue, and 3 months (and once 3 weeks\!) later someone else implements it and you get to learn if it was a good idea. Also it's great if *you* personally move fast. You'll get to know much more quickly which of your ideas pan out
-* After I've seen some of my 3-month project ideas come up again in the future and be a bit more validated as a worthwhile endeavour, I've gotten more confident that I can actually figure out things that would be worth me investing a year or more working on. Specially if I'm proactive at formulating clearly and getting feedback on the high-level plan
-* The conviction part is important. An important mission pursued with conviction is one of the main factors for attracting talent. The other is being able to recognize the talent's strengths and create a narrative for how they fit in that mission
+\[keep uppercase in title pls\!\]
+
+* Aim: Have a secure-baseline and really high-upside strategy for succeeding in your career
+* Pick an EAG, and go every year
+  * Find mentors, find peers. Obsess over them
+* There's great need in EA for people you trust and delegate tasks to. You can become that, even if you're not better than the average, and even if you're substantially worse (comparative advantage\!)
+* Live in the EAG location for longer if you can
+
+---
+
+# Identity as a barrier to AI diffusion
+
+Source: https://myea.blog/ai-diffusion
+
+On Slack I wrote:
+
+One important trait in my mind for predicting who's a power user is "are you willing to let AI reshape your personal identity?"
+
+Power users approach this different ways, but when I've encountered resistance to use AI, is often of the sort: "won't it fragment my attention?", "shouldn't we remain in control of work?", "I like doing the work myself", "isn't it bad to depend on AI for work/handling emotions/taking decisions?" which seem to come from some identity conflict in many cases
+
+My attitude is often more like "I'll shape my cognition to whatever shape is most conducive to getting output from AIs" which does involve a lot of attention fragmentation and reckless delegation to AIs. Wonder how you guys feel that AI has influenced your self-image
 
 ---
 
 # Be so candid they ask you to stop
 
-Source: https://docs.google.com/document/d/1TEWFjjB9BCk572FpIKHqnMmrn1go70-qCl7xhsDnWtg/edit
+Source: https://myea.blog/so-candid
 
 Drafted: May 21, 2026
 
@@ -169,28 +147,31 @@ Turns out emotions may be important
 
 ---
 
-# Art is the thing that engages you
+# You can't compound on your own
 
-Source: https://docs.google.com/document/d/1__lKFJ8EBgxoVvw5OS-vxTPBN9QS8055xKsSpakQY6k/edit
+Source: https://myea.blog/compound-on-your-own
 
-* It may not engage you superficially (long boring books), but it must engage you at some level
-* Force/compell you to think or feel, often doing some shaping as well
-  * Often? Is there a case where art just compels feeling but it's unopinionated about content? No
-* People and places are great forms of art. They're among the most compelling things we have
-* Most of what we call ‘art’ refers to the non-rival / scalable forms of art. Those that can be shared and appreciated by many people
-* Food can be a more or less artistic form of art. For some it may be just an immediate thrill, but it can also bond you to people around you, to a community or set of ideas
-* Drugs are a pointy kind of art. Many forms of art (those that detract from your enjoyment of other arts) can be very drug-like
-* This definition feels too broad. I wonder how we can narrow it. Maybe:
-  * Art needs to be deliberate (nature?)
-  * Art is reserved for the strongest/most compelling forms
-* The classics can be compelling for a really broad set of people, and they can be compelling in a lasting way
-  * Movies may surpass books here. They're more accessible and in some cases have stronger and more lasting effects on people
+Coda to Sam Altman's [How To Be Successful](https://blog.samaltman.com/how-to-be-successful)
+
+* Robin can be a great researcher, but they won't be an Amanda Askell if they don't find a similarly big and demanded problem to work on
+* When trying to list skills I was trying to compound on, most of them were about making it more pleasant for others to work with me. That seemed accidental, but I think it might be the case more generally, as most of your productivity increase will come from locating yourself in networks with better affordances to do great things (eg., receiving more money, directing others, advising governments, receiving curated problem ideas, strategic guidance from great leaders, etc.) rather than your individual productivity increasing
+* The same way migrant's productivity increases more than 10-fold when moving to a higher income country, your main productivity boost will come from creating your own personal country, connecting to the infrastructure that's built in there, and creating some infrastructure of your own
+
+---
+
+# Reasonable plans, pursued with conviction
+
+Source: https://myea.blog/conviction
+
+* It's great to be on a field that moves fast. I've had ideas that I didn't pursue, and 3 months (and once 3 weeks\!) later someone else implements it and you get to learn if it was a good idea. Also it's great if *you* personally move fast. You'll get to know much more quickly which of your ideas pan out
+* After I've seen some of my 3-month project ideas come up again in the future and be a bit more validated as a worthwhile endeavour, I've gotten more confident that I can actually figure out things that would be worth me investing a year or more working on. Specially if I'm proactive at formulating clearly and getting feedback on the high-level plan
+* The conviction part is important. An important mission pursued with conviction is one of the main factors for attracting talent. The other is being able to recognize the talent's strengths and create a narrative for how they fit in that mission
 
 ---
 
 # Will kindness prevail
 
-Source: https://docs.google.com/document/d/1u_6K9peomRqYbgk95KOhGotsVJMcpyg3WLStxbghvME/edit
+Source: https://myea.blog/will-prevail
 
 Carrie is perhaps the only good horror movie I've watched. Most horror movies draw their energy from things that I'm actually not scared about. I'm not scared about witches or demons, I know those don't exist. I'm not scared about mass murderers, those are unlikely to kill me personally. There might be some good horror movies out there about frequent car accidents or dying of cancer at an old age, but I haven't found them yet.
 
@@ -234,9 +215,28 @@ My deep-seated optimism
 
 ---
 
+# Art is the thing that engages you
+
+Source: https://myea.blog/art-engages
+
+* It may not engage you superficially (long boring books), but it must engage you at some level
+* Force/compell you to think or feel, often doing some shaping as well
+  * Often? Is there a case where art just compels feeling but it's unopinionated about content? No
+* People and places are great forms of art. They're among the most compelling things we have
+* Most of what we call ‘art’ refers to the non-rival / scalable forms of art. Those that can be shared and appreciated by many people
+* Food can be a more or less artistic form of art. For some it may be just an immediate thrill, but it can also bond you to people around you, to a community or set of ideas
+* Drugs are a pointy kind of art. Many forms of art (those that detract from your enjoyment of other arts) can be very drug-like
+* This definition feels too broad. I wonder how we can narrow it. Maybe:
+  * Art needs to be deliberate (nature?)
+  * Art is reserved for the strongest/most compelling forms
+* The classics can be compelling for a really broad set of people, and they can be compelling in a lasting way
+  * Movies may surpass books here. They're more accessible and in some cases have stronger and more lasting effects on people
+
+---
+
 # What I want from you
 
-Source: https://docs.google.com/document/d/1YkEn0v5-SoVRf3ws42Hzyzd9pKGKnIOK9OkWVMXq6W0/edit
+Source: https://myea.blog/what-i-want
 
 I woke up this morning with a feeling of intense devotion towards you. I was thinking last night that it would be lovely to thread my fingers through your hair as you go to sleep, but I'm not sure whether you'd like it.
 
@@ -258,7 +258,7 @@ I find it interesting that the general class of this problem feels really simila
 
 # Your colourful heart
 
-Source: https://docs.google.com/document/d/1u3kUiIlwdJ4m5TCndFIH4dAHQUs7MgNlil_YlRSkrkE/edit
+Source: https://myea.blog/colourful-heart
 
 This morning I cried with strong emotion, thinking of the draft of this blog post. Now I'm feeling a bit tired and the emotion feels a bit more muted, and I'm not sure if I like this impermanence.
 
@@ -278,7 +278,7 @@ Thinking back to unconditional love, I know I've tried to change you. And I don'
 
 # You literally cannot die
 
-Source: https://docs.google.com/document/d/1-vq5xBLjcYeoeFNImBe6iCNtTwj2m97mZ6TYzKkXUhQ/edit
+Source: https://myea.blog/inmortal
 
 I mean, you will possibly very literally die, but not from the things you worry most about on your day to day. I think that means that you should identify the things that could kill you—mostly metaphorically kill you—and avoid those like the plague, but otherwise do everything. Let me explain.
 
@@ -314,7 +314,7 @@ So, if you want a single lesson, stay clear of the things that kill you, and do 
 
 # My heretical fiction ideas
 
-Source: https://docs.google.com/document/d/1OCIiej4JOMdQ4zUBw4UyJM-R0hYf1vyOUj1SyiO2Pj0/edit
+Source: https://myea.blog/heretical-fiction
 
 **1\. Sam Bankman-Fried, but you root for him.**
 
@@ -351,7 +351,7 @@ So — what a good argument for fiction and the classics.
 
 # Chatting Claude about my avoidant attachment
 
-Source: https://docs.google.com/document/d/1CxG7i5P2fNVLFcHsOUOVY_jw5JNZhleWlDQ85w4OSV8/edit
+Source: https://myea.blog/avoidant
 
 *A lightly trimmed transcript of a conversation with Claude, right after watching [Heidi Priebe's video](https://www.youtube.com/watch?v=GTQohPaGnSY) on "intellectual bypassing" in avoidant attachment.*
 
@@ -397,7 +397,7 @@ And the Maya frame is *the* tool here, because it outsources the read — you ha
 
 # Research reports for everything
 
-Source: https://docs.google.com/document/d/10UkwQ8KXCQ_p66f8WM9SDIehyAZMoBr026mIadK14Pc/edit
+Source: https://myea.blog/research-reports
 
 Sometimes I want to spend 1-10 hours making sure I really understand a certain question. In theory the *deep research* functionality of most chatbots is the affordance you'd reach for. But I find it's often hard to trace back the sources and the details of how each claim was arrived at.
 
@@ -491,7 +491,7 @@ You can see the full prompt-by-prompt session that produced all of this, plus th
 
 # There is rarely ever a good reason to do things later
 
-Source: https://docs.google.com/document/d/1WabYjxXmObvPbnyFJCZ0v1Vt-jQ_fadyI3BmETfmWBE/edit
+Source: https://myea.blog/do-it-now
 
 Doing now is great. People love it when you do things quickly. You love it when people love it that you do things quickly. You don't have to reload the context — you're already in it, so you deliver.
 
@@ -533,7 +533,7 @@ There's no limit for what you can do if you do things now (false, but I still ha
 
 # Quick wins in AI uplift
 
-Source: https://docs.google.com/document/d/1Eq1ovv9Jhr6EfTCGL70qDQWPES24vI4B-zcWd1GlrAY/edit
+Source: https://myea.blog/quick-wins
 
 # Quick Wins in AI Uplift
 
@@ -619,7 +619,7 @@ Publish a Slack bot to do a daily/weekly AI tips and tools round up from Twitter
 
 # What I'm looking for in my next manager
 
-Source: https://docs.google.com/document/d/1CS1dFsD0hnTKsRcWBSXEpC9GfDZw144-MvPX4wBGHb0/edit
+Source: https://myea.blog/my-manager
 
 [Alejo Acelas](mailto:alejoacelas@gmail.com). [alejocelas@gmail.com](mailto:alejocelas@gmail.com). Whatsapp: \+57 316 680 37 46
 
@@ -651,7 +651,7 @@ Here's my blog if you want more context on me: [myea.blog](http://myea.blog)
 
 # On using pride as fuel
 
-Source: https://docs.google.com/document/d/1m4rpVPWMERIsFDamI5HTHIY-3MMyGR_CVEp1G5HEEXY/edit
+Source: https://myea.blog/pride
 
 **On using pride as fuel**
 
@@ -667,7 +667,7 @@ I don't quite endorse being fueled by pride, but at hard times like this, I'll t
 
 # The giving tree
 
-Source: https://docs.google.com/document/d/1AGnij3eQ7Dgn1caTaU4pjJcsLpdc-QEyfTLYEfmpIOA/edit
+Source: https://myea.blog/giving-tree
 
 There was this tale from my childhood that I remember feeling strongly moved by. I just searched it up — it's called [*The Giving Tree*](https://www.lynnjohnston.com/wp-content/uploads/2016/04/TheGivingTreePoem.pdf). I recommend reading it now, before you continue. It's barely a page long and it's really good.
 
@@ -681,7 +681,7 @@ Not sure if this is the best way to go about utilitarianism, but right at this m
 
 # Lay yourself bare on the web
 
-Source: https://docs.google.com/document/d/1Xv5j2ACzJgPqXSNnQh4BnaeJmtfqzgfgVGxNxKk1ovE/edit
+Source: https://myea.blog/lay-bare
 
 The arguments for writing more and posting it publicly are good and numerous, so I won't rehash them much here. Personally, my main aims in blogging are:
 
@@ -699,7 +699,7 @@ If my app ever gets popular, you'd better have practiced writing earnestly onlin
 
 # My pattern of disregarding people's immediate preferences
 
-Source: https://docs.google.com/document/d/1XQHsPdSYJoKV9lw0ezFYvMWZC661oBkrEuKRCtoVej8/edit
+Source: https://myea.blog/my-bad
 
 Today I was helping Robin time-block making a summary of their research output of the week. They had been feeling shame about being slow at research and not being able to package their outputs for feedback and iteration. So I proposed that they should try taking half an hour to dictate their free-form thoughts, then ask Claude to do some very light polishing on them, and then share directly with their supervisor, or with more people in their field with context on the questions they were discussing.
 
@@ -758,7 +758,7 @@ If you want to be alerted in case Robin considers giving up on me, you can leave
 
 # Maybe your weirdness is a mental health condition
 
-Source: https://docs.google.com/document/d/131vMBBpWQQjxkzr9bHXbqZwfBwKBaA-oSu-Gm1l88lQ/edit
+Source: https://myea.blog/weird-health
 
 **Maybe your weirdness is a mental health condition**
 
@@ -786,7 +786,7 @@ Turns out that bipolar II is basically what I just described: it's marked by shi
 
 # EV application - Emergent Ventures
 
-Source: https://docs.google.com/document/d/15zlcB9z8Sp4pd0jz_DvlIP0t5PnsbChB74z98KksjQc/edit
+Source: https://myea.blog/ev-app
 
 **Tweet version**
 EA is not taking AI seriously, for no good reason. We should be hurling ourselves to find how AI can promote the outcomes we want (at orgs, in new projects, individuals).
@@ -864,7 +864,7 @@ One of my most valuable assets is having a shared Slack with Peter Hartree, who 
 
 # After-date surveys may be a bad idea
 
-Source: https://docs.google.com/document/d/1saBBagefHqARITLJeI601YAwY4Zel66hzQY77G-jvwE/edit
+Source: https://myea.blog/after-date
 
 *Epilogue to the "You should consider dating me" post I haven't finished yet*
 
@@ -878,7 +878,7 @@ I weakly recommend against them.
 
 # On caring
 
-Source: https://docs.google.com/document/d/1SUPH6K6J67J5pgT_d0H82219RA5brg6lfaoBLtkXSi4/edit
+Source: https://myea.blog/caring
 
 I started thinking about what caring means after a friend told me they're frustrated with what they're doing right now. They don't know if it's the right thing, feel aimless and demotivated, and are wondering whether to try something else. I could feel their mood tank noticeably from this uncertainty. My friend is an EA, of course; many of my friends are, and I couldn't help but feel the intensity of it. I immediately empathized with their sentiments and found it easy to provide some reaffirmation to many of the things they felt, but I also felt this intensity behind it that almost choked my throat and reminded me of that poem "Do Not Go Gentle Into That Good Night." There's something I want to rebel against, really strongly, about that state of affairs—its determination, its resolve, its caring—in a way that was beautifully articulated by Nate Soares here \[link\].
 
@@ -988,7 +988,7 @@ This talk about loving forever—I'm just like, "What? No." Probably the only co
 
 # Keep the number of people you like
 
-Source: https://docs.google.com/document/d/1nJWJctXdlkEovVwGwchAlR7thFgMVjFqDHW6GhwiSCQ/edit
+Source: https://myea.blog/keep-the-number
 
 **Keep the number of people you like**
 
@@ -1002,7 +1002,7 @@ So if there's anyone who thrills you, ask them for their number.
 
 # Solve each problem only once
 
-Source: https://docs.google.com/document/d/1zMw6wFzeLi8G9UpOqI07XCXjS7ByTADxZ0GlEFCKY3w/edit
+Source: https://myea.blog/solve-once
 
 (not sure why I only have a draft using Claude's voice)
 
@@ -1034,7 +1034,7 @@ This reusability is a key thing of the new AI era.
 
 # True ambition has barely been tried
 
-Source: https://docs.google.com/document/d/1chD3B4uqrmBIvEi42A3mrAiVuETNcOstYMtVDcDCxy8/edit
+Source: https://myea.blog/god-of-flesh
 
 *god-of-flesh*
 
@@ -1087,7 +1087,7 @@ Alejandro
 
 # Compounding yourself
 
-Source: https://docs.google.com/document/d/10u3mcuDnoi9-HeXGRWA5P8dMDUVPrWiTW7Bf5vuuAIA/edit
+Source: https://myea.blog/compounding
 
 What does personal compounding look like? In great careers you get better every year — your output, your impact, the things that you multiply every year in some form. And I think there's an external aspect to this, where you're matched to better opportunities and better collaborators, and assigned more resources to manage as you do better and show your colors. But I think there's also an internal aspect to this — there's something inside you that is valuable, and the world judged it worth piling resources on. And I want to understand what this is.
 
@@ -1131,7 +1131,7 @@ So yeah, I'm just incredibly bullish on you if you're willing to just keep tryin
 
 # Act on all your great ideas
 
-Source: https://docs.google.com/document/d/1qK5zkgl28F7mO7hZXTzZaPycga8Mb8rAbVekIMFtoRk/edit
+Source: https://myea.blog/all-great
 
 People have been saying that, given how good AI is at executing well-scoped tasks, the new bottleneck is taste. That now your responsibility is to come up with and bet on the best ideas, such that AI can work on them.
 
@@ -1165,7 +1165,7 @@ And it is through this process of exploration that the taste part of the taste/e
 
 # What youth knows about love
 
-Source: https://docs.google.com/document/d/1YhNhcigNIODpUROFsYpQYMe4V_Ddd5RZIWbZxwsxHzU/edit
+Source: https://myea.blog/youth-loves
 
 Shakira was 16 when she composed *Antología*, which after more than 20 years and many other hits is still possibly in the top 10 of her most listened-to songs. It's surprising how well that song captures the feeling of a longing, grateful heartbreak.
 
@@ -1179,7 +1179,7 @@ This is yet another reason to never shut up talking about love and romance. You 
 
 # Play hard (with AI) so you can work hard (with AI)
 
-Source: https://docs.google.com/document/d/144QhhqR_R3K2MwFiQz7_oJpT1pYnKy8-SWNHNRsmNDg/edit
+Source: https://myea.blog/play-with-ai
 
 **Play Hard (with AI) So You Can Work Hard (with AI)**
 
@@ -1287,7 +1287,7 @@ I'm working on a post about this. I still don't quite know what the answer looks
 
 # Earning to Claude
 
-Source: https://docs.google.com/document/d/1Hp6VPfQQ4jSwrp84juo9iBOkg4_5WyTgQfJ3IgIuRyY/edit
+Source: https://myea.blog/etc
 
 *Earn more so you make the most of AI in case it gets pricier*
 
@@ -1317,7 +1317,7 @@ So before you take your next opportunity, consider whether you should be asking 
 
 # EA groups are hard and great and worth it
 
-Source: https://docs.google.com/document/d/1gdCJ155q89OKF0Jaa7RrAsA7tSbz7XwEcGhD9YgnjiA/edit
+Source: https://myea.blog/worth-it
 
 ---
 
@@ -1359,7 +1359,7 @@ But now it's a different thing. And it's yours to seize it.
 
 # Please forgive the errors in my ways
 
-Source: https://docs.google.com/document/d/1_IOFvpchwDP2l27QOuSaGbeX0Vx1FJ-DbbRewa88nGM/edit
+Source: https://myea.blog/please-forgive
 
 ## Please Forgive the Errors in My Ways
 
@@ -1393,7 +1393,7 @@ So I ask, please forgive the errors in my ways, while I keep doing what I think 
 
 # And I bought yet another flight
 
-Source: https://docs.google.com/document/d/1LHWZ1DXFpdZqk-4kS-Usy7n1vhK8SOYsythOxW2cgqQ/edit
+Source: https://myea.blog/hunting
 
 *A pro-tanto reason to not hire me as your ops person*
 
@@ -1459,7 +1459,7 @@ The next flight is scheduled for boarding soon.
 
 # Metaphors for caring
 
-Source: https://docs.google.com/document/d/1mvr54bAgQf5pDHSq6ASIqrSmbG_8S00IACMDNQEsxpo/edit
+Source: https://myea.blog/smart-dolphin
 
 [Alejo Acelas](mailto:alejoacelas@gmail.com)
 
@@ -1485,7 +1485,7 @@ So I'm not sure how to represent this. I want to care long for my friends, and I
 
 # Sad kindness
 
-Source: https://docs.google.com/document/d/1buWVCvkzImqXQ_rUlC6BaycBpohDCS-XpVW_CfJHU3o/edit
+Source: https://myea.blog/sad-kindness
 
 I've noticed this pattern in some of my close friends, and in the people I feel most magnetically drawn to. I can't quite describe what this trait is. I'd name it something like a sad kindness that radiates out of them. No, a kind sadness, actually. When you talk to them, there's something so receptive in their disposition, like they just take you in and return something warm and tender. But you can also see that either now or in the past there was something quiet and sad and timid and slightly tragic that they carry around in their demeanors, some trace of a flailing will.
 

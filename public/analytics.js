@@ -24,10 +24,11 @@ function googleDocId(href) {
 // Page view
 sendHit('page', location.pathname.replace(/[^A-Za-z0-9-]/g, '') || 'home');
 
-// Post link clicks (the Google Doc links on the index)
+// Post link clicks. Clean /slug links keep the Doc id in data-doc so
+// historical counters remain keyed by the original Google Doc id.
 document.addEventListener('click', function (e) {
   var link = e.target.closest && e.target.closest('a.post-link');
   if (!link) return;
-  var docId = googleDocId(link.getAttribute('href') || '');
+  var docId = link.getAttribute('data-doc') || googleDocId(link.getAttribute('href') || '');
   if (docId) sendHit('post', docId);
 });

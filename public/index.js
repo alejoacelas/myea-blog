@@ -19,6 +19,10 @@
   var posts = Array.prototype.slice.call(document.querySelectorAll("[data-post-list] li"));
   var toastTimer;
 
+  if (tools) {
+    tools.dataset.expanded = "false";
+  }
+
   function setMenuExpanded(expanded) {
     if (!tools || !trigger) return;
     tools.dataset.expanded = expanded ? "true" : "false";
@@ -95,7 +99,17 @@
 
   if (trigger) {
     trigger.addEventListener("click", function () {
-      setMenuExpanded(tools && tools.dataset.expanded !== "true");
+      if (!tools) return;
+      setMenuExpanded(tools.dataset.expanded !== "true");
+    });
+    trigger.addEventListener("mouseenter", function () {
+      setMenuExpanded(false);
+    });
+  }
+
+  if (tools) {
+    tools.addEventListener("mouseleave", function () {
+      setMenuExpanded(false);
     });
   }
 
