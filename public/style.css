@@ -467,7 +467,7 @@ body[data-notes="whisper"] .post-list li:is([data-kind="bullet points"], [data-k
   position: fixed;
   bottom: 1rem;
   right: 3.9rem;
-  z-index: 19;
+  z-index: 22;
   width: min(340px, calc(100vw - 6.2rem));
   opacity: 0;
   transform: translateY(5px);
