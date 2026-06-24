@@ -9,9 +9,46 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <script defer src="/analytics.js"></script>
+  <script defer src="/index.js"></script>
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
+  <div class="quick-tools" data-tools>
+    <button class="tool-trigger" type="button" aria-label="Blog tools" aria-haspopup="true" aria-expanded="false">
+      <span class="tool-trigger-dot"></span>
+      <span class="tool-trigger-dot"></span>
+    </button>
+    <div class="tool-bubbles" aria-label="Blog tools menu">
+      <button class="tool-bubble" type="button" data-tool="search" aria-label="Search posts" title="Search posts">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6"></circle>
+          <path d="m16 16 4 4"></path>
+        </svg>
+      </button>
+      <button class="tool-bubble" type="button" data-tool="copy" aria-label="Copy all posts" title="Copy all posts">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="8" y="8" width="10" height="10" rx="1.5"></rect>
+          <path d="M6 16H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-panel" data-search-panel hidden>
+    <div class="search-shell">
+      <input id="post-search" data-search-input type="search" autocomplete="off" placeholder="Search posts" aria-label="Search posts">
+      <button class="search-close" type="button" data-search-close aria-label="Close search" title="Close search">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m7 7 10 10"></path>
+          <path d="m17 7-10 10"></path>
+        </svg>
+      </button>
+    </div>
+    <p class="search-status" data-search-status aria-live="polite"></p>
+  </div>
+
+  <div class="toast" data-toast aria-live="polite"></div>
+
   <nav class="site-nav">
     <a href="/" class="active">home</a>
     <a href="/chat-in-spanish">chat in spanish</a>
@@ -23,197 +60,251 @@
     <p class="subtitle">Because Ben Todd doesn't write enough about his feelings</p>
   </header>
 
-  <ul class="post-list">
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1CxG7i5P2fNVLFcHsOUOVY_jw5JNZhleWlDQ85w4OSV8/edit" target="_blank">
-        <span class="post-title">Chatting Claude about my avoidant attachment</span>
-        <span class="post-tag">[draft]</span>
+  <ul class="post-list" data-post-list>
+    <li data-kind="bullet points" data-created-time="2026-06-24T07:21:08.757Z" data-modified-time="2026-06-24T07:49:35.998Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1_qwmW_gpbH8Q75t_jpVBE6yRNuZrqySE2GAslR6PzI0/edit" target="_blank" rel="noopener">
+        <span class="post-title">Should we let everyone die to stand by virtue?</span>
+        <span class="post-tag">bullet points</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1u_6K9peomRqYbgk95KOhGotsVJMcpyg3WLStxbghvME/edit" target="_blank">
-        <span class="post-title">Will kindness prevail</span>
-        <span class="post-tag">[draft]</span>
+    <li data-kind="bullet points" data-created-time="2026-06-24T07:22:10.872Z" data-modified-time="2026-06-24T07:40:58.011Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1c5vks8uCtWAHO_nySsSMq3MDadJadnv18IDvCfahB44/edit" target="_blank" rel="noopener">
+        <span class="post-title">Stop feeling dread. Start feeling regret</span>
+        <span class="post-tag">bullet points</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1Eq1ovv9Jhr6EfTCGL70qDQWPES24vI4B-zcWd1GlrAY/edit" target="_blank">
-        <span class="post-title">Quick wins in AI uplift</span>
-        <span class="post-tag">[draft]</span>
+    <li data-kind="bullet points" data-created-time="2026-06-24T07:24:38.549Z" data-modified-time="2026-06-24T07:40:44.311Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1OpBX3J8voc9QhEheCRP-zlHG6yebEyGs55GZiO0xZUs/edit" target="_blank" rel="noopener">
+        <span class="post-title">The EAG Playbook for Career Success</span>
+        <span class="post-tag">bullet points</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1TEWFjjB9BCk572FpIKHqnMmrn1go70-qCl7xhsDnWtg/edit" target="_blank">
+    <li data-kind="draft" data-created-time="2026-06-24T07:29:56.494Z" data-modified-time="2026-06-24T07:36:31.562Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1JvMURFX-era_0ZrTcoka_J2pYW6ZUXRxP0IY8S9FswU/edit" target="_blank" rel="noopener">
+        <span class="post-title">Identity as a barrier to AI diffusion</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-06-24T07:32:41.873Z" data-modified-time="2026-06-24T07:36:06.102Z">
+      <a class="post-link" href="https://docs.google.com/document/d/18snWk0BjtSh8XejxhiWR3IOpE4tZdT79OcIrTs46alk/edit" target="_blank" rel="noopener">
+        <span class="post-title">Faith in humanity</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="bullet points" data-created-time="2026-06-24T07:28:06.144Z" data-modified-time="2026-06-24T07:29:25.657Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1uYsS3xzL9hcQYFmFkzFgrJsRT2MRAm2dKRiEJMKnK-0/edit" target="_blank" rel="noopener">
+        <span class="post-title">You can't compound on your own</span>
+        <span class="post-tag">bullet points</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-06-24T07:13:17.963Z" data-modified-time="2026-06-24T07:27:29.299Z">
+      <a class="post-link" href="https://docs.google.com/document/d/131EJzO3jnrPSyMJPztgP-jnpe0A8OF1h-_qRrYIKuDc/edit" target="_blank" rel="noopener">
+        <span class="post-title">Have you tried violent passion?</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="bullet points" data-created-time="2026-06-24T07:26:59.642Z" data-modified-time="2026-06-24T07:27:04.090Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1dFgky36dMaqGnbZDSn7MW110x4EOPB8H1hPE1Dc26wo/edit" target="_blank" rel="noopener">
+        <span class="post-title">Reasonable plans, pursued with conviction</span>
+        <span class="post-tag">bullet points</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-05-21T05:54:11.973Z" data-modified-time="2026-06-24T07:26:32.633Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1TEWFjjB9BCk572FpIKHqnMmrn1go70-qCl7xhsDnWtg/edit" target="_blank" rel="noopener">
         <span class="post-title">Be so candid they ask you to stop</span>
-        <span class="post-tag">[draft]</span>
+        <span class="post-tag">draft</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1Xv5j2ACzJgPqXSNnQh4BnaeJmtfqzgfgVGxNxKk1ovE/edit" target="_blank">
-        <span class="post-title">Lay yourself bare on the web</span>
-        <span class="post-tag">[draft]</span>
+    <li data-kind="bullet points" data-created-time="2026-06-24T07:13:43.544Z" data-modified-time="2026-06-24T07:20:50.302Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1__lKFJ8EBgxoVvw5OS-vxTPBN9QS8055xKsSpakQY6k/edit" target="_blank" rel="noopener">
+        <span class="post-title">Art is the thing that engages you</span>
+        <span class="post-tag">bullet points</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1m4rpVPWMERIsFDamI5HTHIY-3MMyGR_CVEp1G5HEEXY/edit" target="_blank">
-        <span class="post-title">On using pride as fuel</span>
-        <span class="post-tag">[draft]</span>
+    <li data-kind="draft" data-created-time="2026-05-29T07:02:12.922Z" data-modified-time="2026-06-24T07:18:51.956Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1u_6K9peomRqYbgk95KOhGotsVJMcpyg3WLStxbghvME/edit" target="_blank" rel="noopener">
+        <span class="post-title">Will kindness prevail</span>
+        <span class="post-tag">draft</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/10UkwQ8KXCQ_p66f8WM9SDIehyAZMoBr026mIadK14Pc/edit" target="_blank">
-        <span class="post-title">Research reports for everything</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/131vMBBpWQQjxkzr9bHXbqZwfBwKBaA-oSu-Gm1l88lQ/edit" target="_blank">
-        <span class="post-title">Maybe your weirdness is a mental health condition</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1AGnij3eQ7Dgn1caTaU4pjJcsLpdc-QEyfTLYEfmpIOA/edit" target="_blank">
-        <span class="post-title">The giving tree</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1u3kUiIlwdJ4m5TCndFIH4dAHQUs7MgNlil_YlRSkrkE/edit" target="_blank">
-        <span class="post-title">Your colourful heart</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1CS1dFsD0hnTKsRcWBSXEpC9GfDZw144-MvPX4wBGHb0/edit" target="_blank">
-        <span class="post-title">What I'm looking for in my next manager</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1WabYjxXmObvPbnyFJCZ0v1Vt-jQ_fadyI3BmETfmWBE/edit" target="_blank">
-        <span class="post-title">There is rarely ever a good reason to do things later</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1nJWJctXdlkEovVwGwchAlR7thFgMVjFqDHW6GhwiSCQ/edit" target="_blank">
-        <span class="post-title">Keep the number of people you like</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/10u3mcuDnoi9-HeXGRWA5P8dMDUVPrWiTW7Bf5vuuAIA/edit" target="_blank">
-        <span class="post-title">Compounding yourself</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1XQHsPdSYJoKV9lw0ezFYvMWZC661oBkrEuKRCtoVej8/edit" target="_blank">
-        <span class="post-title">My pattern of disregarding people's immediate preferences</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1-vq5xBLjcYeoeFNImBe6iCNtTwj2m97mZ6TYzKkXUhQ/edit" target="_blank">
-        <span class="post-title">You literally cannot die</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1qK5zkgl28F7mO7hZXTzZaPycga8Mb8rAbVekIMFtoRk/edit" target="_blank">
-        <span class="post-title">Act on all your great ideas</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/15zlcB9z8Sp4pd0jz_DvlIP0t5PnsbChB74z98KksjQc/edit" target="_blank">
-        <span class="post-title">EV application - Emergent Ventures</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1YhNhcigNIODpUROFsYpQYMe4V_Ddd5RZIWbZxwsxHzU/edit" target="_blank">
-        <span class="post-title">What youth knows about love</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1mvr54bAgQf5pDHSq6ASIqrSmbG_8S00IACMDNQEsxpo/edit" target="_blank">
-        <span class="post-title">Metaphors for caring</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1YkEn0v5-SoVRf3ws42Hzyzd9pKGKnIOK9OkWVMXq6W0/edit" target="_blank">
+    <li data-kind="draft" data-created-time="2026-04-26T06:05:06.387Z" data-modified-time="2026-06-23T19:09:27.573Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1YkEn0v5-SoVRf3ws42Hzyzd9pKGKnIOK9OkWVMXq6W0/edit" target="_blank" rel="noopener">
         <span class="post-title">What I want from you</span>
-        <span class="post-tag">[draft]</span>
+        <span class="post-tag">draft</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1chD3B4uqrmBIvEi42A3mrAiVuETNcOstYMtVDcDCxy8/edit" target="_blank">
-        <span class="post-title">True ambition has barely been tried</span>
-        <span class="post-tag">[draft]</span>
+    <li data-kind="draft" data-created-time="2026-05-10T08:31:49.504Z" data-modified-time="2026-06-19T21:40:54.251Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1u3kUiIlwdJ4m5TCndFIH4dAHQUs7MgNlil_YlRSkrkE/edit" target="_blank" rel="noopener">
+        <span class="post-title">Your colourful heart</span>
+        <span class="post-tag">draft</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1_IOFvpchwDP2l27QOuSaGbeX0Vx1FJ-DbbRewa88nGM/edit" target="_blank">
-        <span class="post-title">Please forgive the errors in my ways</span>
-        <span class="post-tag">[draft]</span>
+    <li data-kind="draft" data-created-time="2026-05-03T08:10:12.213Z" data-modified-time="2026-06-18T12:15:54.734Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1-vq5xBLjcYeoeFNImBe6iCNtTwj2m97mZ6TYzKkXUhQ/edit" target="_blank" rel="noopener">
+        <span class="post-title">You literally cannot die</span>
+        <span class="post-tag">draft</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1LHWZ1DXFpdZqk-4kS-Usy7n1vhK8SOYsythOxW2cgqQ/edit" target="_blank">
-        <span class="post-title">And I bought yet another flight</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1buWVCvkzImqXQ_rUlC6BaycBpohDCS-XpVW_CfJHU3o/edit" target="_blank">
-        <span class="post-title">Sad kindness</span>
-        <span class="post-tag">[draft]</span>
-      </a>
-    </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1OCIiej4JOMdQ4zUBw4UyJM-R0hYf1vyOUj1SyiO2Pj0/edit" target="_blank">
+    <li data-kind="draft" data-created-time="2026-04-22T08:24:41.553Z" data-modified-time="2026-06-14T08:56:13.986Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1OCIiej4JOMdQ4zUBw4UyJM-R0hYf1vyOUj1SyiO2Pj0/edit" target="_blank" rel="noopener">
         <span class="post-title">My heretical fiction ideas</span>
-        <span class="post-tag">[draft]</span>
+        <span class="post-tag">draft</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/144QhhqR_R3K2MwFiQz7_oJpT1pYnKy8-SWNHNRsmNDg/edit" target="_blank">
-        <span class="post-title">Play hard (with AI) so you can work hard (with AI)</span>
-        <span class="post-tag">[draft]</span>
+    <li data-kind="draft" data-created-time="2026-06-14T08:47:07.542Z" data-modified-time="2026-06-14T08:53:33.187Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1CxG7i5P2fNVLFcHsOUOVY_jw5JNZhleWlDQ85w4OSV8/edit" target="_blank" rel="noopener">
+        <span class="post-title">Chatting Claude about my avoidant attachment</span>
+        <span class="post-tag">draft</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1SUPH6K6J67J5pgT_d0H82219RA5brg6lfaoBLtkXSi4/edit" target="_blank">
-        <span class="post-title">On caring</span>
-        <span class="post-tag">[draft]</span>
+    <li data-kind="draft" data-created-time="2026-05-15T14:04:42.214Z" data-modified-time="2026-06-12T08:23:50.419Z">
+      <a class="post-link" href="https://docs.google.com/document/d/10UkwQ8KXCQ_p66f8WM9SDIehyAZMoBr026mIadK14Pc/edit" target="_blank" rel="noopener">
+        <span class="post-title">Research reports for everything</span>
+        <span class="post-tag">draft</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1gdCJ155q89OKF0Jaa7RrAsA7tSbz7XwEcGhD9YgnjiA/edit" target="_blank">
-        <span class="post-title">EA groups are hard and great and worth it</span>
-        <span class="post-tag">[draft]</span>
+    <li data-kind="draft" data-created-time="2026-05-09T07:59:24.456Z" data-modified-time="2026-05-31T07:12:59.827Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1WabYjxXmObvPbnyFJCZ0v1Vt-jQ_fadyI3BmETfmWBE/edit" target="_blank" rel="noopener">
+        <span class="post-title">There is rarely ever a good reason to do things later</span>
+        <span class="post-tag">draft</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1Hp6VPfQQ4jSwrp84juo9iBOkg4_5WyTgQfJ3IgIuRyY/edit" target="_blank">
-        <span class="post-title">Earning to Claude</span>
-        <span class="post-tag">[draft]</span>
+    <li data-kind="draft" data-created-time="2026-05-28T16:52:32.986Z" data-modified-time="2026-05-30T06:10:08.671Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1Eq1ovv9Jhr6EfTCGL70qDQWPES24vI4B-zcWd1GlrAY/edit" target="_blank" rel="noopener">
+        <span class="post-title">Quick wins in AI uplift</span>
+        <span class="post-tag">draft</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1zMw6wFzeLi8G9UpOqI07XCXjS7ByTADxZ0GlEFCKY3w/edit" target="_blank">
-        <span class="post-title">Solve each problem only once</span>
-        <span class="post-tag">[draft]</span>
+    <li data-kind="draft" data-created-time="2026-05-09T08:27:10.293Z" data-modified-time="2026-05-30T06:06:56.137Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1CS1dFsD0hnTKsRcWBSXEpC9GfDZw144-MvPX4wBGHb0/edit" target="_blank" rel="noopener">
+        <span class="post-title">What I'm looking for in my next manager</span>
+        <span class="post-tag">draft</span>
       </a>
     </li>
-    <li>
-      <a class="post-link" href="https://docs.google.com/document/d/1saBBagefHqARITLJeI601YAwY4Zel66hzQY77G-jvwE/edit" target="_blank">
+    <li data-kind="draft" data-created-time="2026-05-18T13:18:47.598Z" data-modified-time="2026-05-25T19:20:34.153Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1m4rpVPWMERIsFDamI5HTHIY-3MMyGR_CVEp1G5HEEXY/edit" target="_blank" rel="noopener">
+        <span class="post-title">On using pride as fuel</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-05-10T08:46:47.825Z" data-modified-time="2026-05-24T19:27:25.408Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1AGnij3eQ7Dgn1caTaU4pjJcsLpdc-QEyfTLYEfmpIOA/edit" target="_blank" rel="noopener">
+        <span class="post-title">The giving tree</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-05-21T05:35:26.875Z" data-modified-time="2026-05-22T06:00:36.724Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1Xv5j2ACzJgPqXSNnQh4BnaeJmtfqzgfgVGxNxKk1ovE/edit" target="_blank" rel="noopener">
+        <span class="post-title">Lay yourself bare on the web</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-05-09T08:38:08.083Z" data-modified-time="2026-05-18T22:13:46.968Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1XQHsPdSYJoKV9lw0ezFYvMWZC661oBkrEuKRCtoVej8/edit" target="_blank" rel="noopener">
+        <span class="post-title">My pattern of disregarding people's immediate preferences</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-05-13T07:16:29.629Z" data-modified-time="2026-05-15T07:37:11.478Z">
+      <a class="post-link" href="https://docs.google.com/document/d/131vMBBpWQQjxkzr9bHXbqZwfBwKBaA-oSu-Gm1l88lQ/edit" target="_blank" rel="noopener">
+        <span class="post-title">Maybe your weirdness is a mental health condition</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-05-01T20:34:43.054Z" data-modified-time="2026-05-14T09:34:32.424Z">
+      <a class="post-link" href="https://docs.google.com/document/d/15zlcB9z8Sp4pd0jz_DvlIP0t5PnsbChB74z98KksjQc/edit" target="_blank" rel="noopener">
+        <span class="post-title">EV application - Emergent Ventures</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-03-20T13:17:40.686Z" data-modified-time="2026-05-10T14:39:09.907Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1saBBagefHqARITLJeI601YAwY4Zel66hzQY77G-jvwE/edit" target="_blank" rel="noopener">
         <span class="post-title">After-date surveys may be a bad idea</span>
-        <span class="post-tag">[draft]</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-04-05T20:42:33.203Z" data-modified-time="2026-05-09T08:51:12.413Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1SUPH6K6J67J5pgT_d0H82219RA5brg6lfaoBLtkXSi4/edit" target="_blank" rel="noopener">
+        <span class="post-title">On caring</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-05-09T06:21:10.675Z" data-modified-time="2026-05-09T06:22:16.077Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1nJWJctXdlkEovVwGwchAlR7thFgMVjFqDHW6GhwiSCQ/edit" target="_blank" rel="noopener">
+        <span class="post-title">Keep the number of people you like</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-04-09T14:19:32.399Z" data-modified-time="2026-05-09T05:37:55.678Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1zMw6wFzeLi8G9UpOqI07XCXjS7ByTADxZ0GlEFCKY3w/edit" target="_blank" rel="noopener">
+        <span class="post-title">Solve each problem only once</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-04-22T08:01:22.628Z" data-modified-time="2026-05-09T05:35:45.252Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1chD3B4uqrmBIvEi42A3mrAiVuETNcOstYMtVDcDCxy8/edit" target="_blank" rel="noopener">
+        <span class="post-title">True ambition has barely been tried</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-05-07T08:02:22.984Z" data-modified-time="2026-05-09T05:28:40.040Z">
+      <a class="post-link" href="https://docs.google.com/document/d/10u3mcuDnoi9-HeXGRWA5P8dMDUVPrWiTW7Bf5vuuAIA/edit" target="_blank" rel="noopener">
+        <span class="post-title">Compounding yourself</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-05-03T05:58:44.189Z" data-modified-time="2026-05-09T05:27:57.212Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1qK5zkgl28F7mO7hZXTzZaPycga8Mb8rAbVekIMFtoRk/edit" target="_blank" rel="noopener">
+        <span class="post-title">Act on all your great ideas</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-04-28T22:27:07.583Z" data-modified-time="2026-05-09T05:26:00.392Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1YhNhcigNIODpUROFsYpQYMe4V_Ddd5RZIWbZxwsxHzU/edit" target="_blank" rel="noopener">
+        <span class="post-title">What youth knows about love</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-04-05T11:57:13.699Z" data-modified-time="2026-05-09T05:23:01.560Z">
+      <a class="post-link" href="https://docs.google.com/document/d/144QhhqR_R3K2MwFiQz7_oJpT1pYnKy8-SWNHNRsmNDg/edit" target="_blank" rel="noopener">
+        <span class="post-title">Play hard (with AI) so you can work hard (with AI)</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-04-09T13:29:07.430Z" data-modified-time="2026-05-09T05:20:11.868Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1Hp6VPfQQ4jSwrp84juo9iBOkg4_5WyTgQfJ3IgIuRyY/edit" target="_blank" rel="noopener">
+        <span class="post-title">Earning to Claude</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-04-10T13:16:15.497Z" data-modified-time="2026-05-09T05:10:34.779Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1gdCJ155q89OKF0Jaa7RrAsA7tSbz7XwEcGhD9YgnjiA/edit" target="_blank" rel="noopener">
+        <span class="post-title">EA groups are hard and great and worth it</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-03-28T02:04:03.229Z" data-modified-time="2026-05-08T10:57:51.548Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1_IOFvpchwDP2l27QOuSaGbeX0Vx1FJ-DbbRewa88nGM/edit" target="_blank" rel="noopener">
+        <span class="post-title">Please forgive the errors in my ways</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-04-25T15:41:14.772Z" data-modified-time="2026-05-05T20:37:55.836Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1LHWZ1DXFpdZqk-4kS-Usy7n1vhK8SOYsythOxW2cgqQ/edit" target="_blank" rel="noopener">
+        <span class="post-title">And I bought yet another flight</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-04-27T08:04:18.756Z" data-modified-time="2026-04-27T23:30:58.397Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1mvr54bAgQf5pDHSq6ASIqrSmbG_8S00IACMDNQEsxpo/edit" target="_blank" rel="noopener">
+        <span class="post-title">Metaphors for caring</span>
+        <span class="post-tag">draft</span>
+      </a>
+    </li>
+    <li data-kind="draft" data-created-time="2026-04-20T05:28:38.987Z" data-modified-time="2026-04-22T09:16:04.884Z">
+      <a class="post-link" href="https://docs.google.com/document/d/1buWVCvkzImqXQ_rUlC6BaycBpohDCS-XpVW_CfJHU3o/edit" target="_blank" rel="noopener">
+        <span class="post-title">Sad kindness</span>
+        <span class="post-tag">draft</span>
       </a>
     </li>
   </ul>

@@ -42,10 +42,13 @@ def fetch_doc(doc_id: str) -> str:
         check=True,
     )
     text = result.stdout
+    text = re.sub(r"\AUpdate available:.*\n", "", text)
+    text = re.sub(r"\Aaccount:.*\n", "", text)
     # gdoc leaves base64 image definitions and refs behind; strip them
     # (they bloat the file and their base64 can false-positive name scans).
     text = re.sub(r"^\[image\d+\]:\s*<data:.*$", "", text, flags=re.M)
     text = re.sub(r"!?\[\]\[image\d+\]", "", text)
+    text = "\n".join(line.rstrip() for line in text.splitlines())
     return re.sub(r"\n{3,}", "\n\n", text).strip()
 
 
@@ -63,7 +66,9 @@ def main() -> None:
     def fetch_post(index: int, url: str, doc_id: str, title: str) -> tuple[int, str, str | None]:
         text = fetch_doc(doc_id)
         jojo_hit = title if re.search(r"jojo", text, re.I) else None
-        # Drop a leading H1 if it duplicates the post title; we add our own.
+        # gdoc may emit a tab label before the document title. Drop that and
+        # then drop the document's own H1 because we add the index title.
+        text = re.sub(r"\A#\s+Tab\s+\d+\n+", "", text, flags=re.I)
         text = re.sub(r"\A#\s+.*?\n+", "", text)
         return index, f"# {title}\n\nSource: {url}\n\n{text}", jojo_hit
 
@@ -92,9 +97,8 @@ def main() -> None:
 
     header = (
         "# My EA Blog\n\n"
-        f"> Personal essays and drafts by Alejandro Acelas ({SITE}). "
-        "This file contains the full text of every post, newest first. "
-        "All posts are drafts.\n"
+        f"> Personal essays, drafts, and bullet-point notes by Alejandro Acelas ({SITE}). "
+        "This file contains the full text of every post, newest first.\n"
     )
 
     full = header + "\n---\n\n" + "\n\n---\n\n".join(ordered_bodies) + "\n"
