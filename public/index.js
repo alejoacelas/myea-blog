@@ -1,12 +1,4 @@
 (function () {
-  var noteStyles = new Set(["tucked", "gutter", "stacked", "proof", "whisper"]);
-  var noteAliases = { wispr: "whisper" };
-  var params = new URLSearchParams(window.location.search);
-  var requestedNotes = (params.get("notes") || "whisper").toLowerCase();
-  var notes = noteAliases[requestedNotes] || requestedNotes;
-  notes = noteStyles.has(notes) ? notes : "whisper";
-  document.body.dataset.notes = notes;
-
   var tools = document.querySelector("[data-tools]");
   var trigger = document.querySelector(".tool-trigger");
   var searchButton = document.querySelector('[data-tool="search"]');
