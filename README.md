@@ -1,15 +1,5 @@
 # My EA Blog
 
-Static personal blog pages with small Vercel APIs for counters and generated text indexes.
+Single-page index of Alejandro Acelas's writing — drafts, cross-posts, and bullet-point notes — each linking to a Google Doc. Live at [myea.blog](https://myea.blog).
 
-## Status
-
-Public candidate after checking local notes and environment files.
-
-## Commands
-
-- `yarn install`
-
-## Notes
-
-Keep longer research notes, raw transcripts, and implementation details outside this short README unless they are necessary for first-time orientation.
+Static HTML/CSS/JS in `public/`, with small Vercel functions in `api/` for click analytics. See [`CLAUDE.md`](CLAUDE.md) for how posts are classified, sorted, and deployed.
