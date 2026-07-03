@@ -19,6 +19,11 @@
       "permanent": true
     },
     {
+      "source": "/unusual-habits",
+      "destination": "https://docs.google.com/document/d/1CkwRsNP0g2k0-5H0w8IDyi8MsimEz1yxCyIW1rmQdNE/edit",
+      "permanent": false
+    },
+    {
       "source": "/faith",
       "destination": "https://docs.google.com/document/d/18snWk0BjtSh8XejxhiWR3IOpE4tZdT79OcIrTs46alk/edit",
       "permanent": false
