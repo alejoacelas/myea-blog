@@ -133,10 +133,15 @@ def set_subtitle(doc_id: str, account: str, url: str, tab_id: str = "") -> str:
 
     title = paragraphs[title_position]
     following = paragraphs[title_position + 1] if title_position + 1 < len(paragraphs) else None
+    existing_text = paragraph_text(following) if following else ""
     existing_subtitle = bool(
-        following
-        and re.fullmatch(r"(?:Find this post at )?myea\.blog/[\w-]+", paragraph_text(following))
+        re.fullmatch(r"(?:Find this post at )?myea\.blog/[\w-]+", existing_text)
     )
+    if existing_text == visible_url:
+        if requests:
+            batch_update(doc_id, account, requests)
+        return visible_url
+
     if existing_subtitle:
         start = int(following["startIndex"])
         end = int(following["endIndex"]) - 1
