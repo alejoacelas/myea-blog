@@ -19,6 +19,21 @@
       "permanent": true
     },
     {
+      "source": "/be-cea",
+      "destination": "https://docs.google.com/document/d/1nX9u-cZo9uQTx_niRw6X8Ajd7Vq1H5ZhB4HW7Ay_5uQ/edit",
+      "permanent": false
+    },
+    {
+      "source": "/costs-of-asking",
+      "destination": "https://docs.google.com/document/d/1nR8WdLMnDEuaBpZlOTaBwjF73bBHhUFwGiiDaj74Ejc/edit",
+      "permanent": false
+    },
+    {
+      "source": "/palantir-for-ea",
+      "destination": "https://docs.google.com/document/d/1TW5JVFrlbaesLBJcIDcvr8lbf25Z6U5YKHIqE_tx8jQ/edit?tab=t.f2u51slwfb4g#heading=h.ehqbgo6dcn6b",
+      "permanent": false
+    },
+    {
       "source": "/unusual-habits",
       "destination": "https://docs.google.com/document/d/1CkwRsNP0g2k0-5H0w8IDyi8MsimEz1yxCyIW1rmQdNE/edit",
       "permanent": false

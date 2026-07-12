@@ -74,7 +74,7 @@ A Doc that only changed (no new post) still needs steps 5–6: refresh its `data
 <!--/ai-->
 
 <!--ai-->
-`scripts/add_doc_headers.py` writes `Find this post at myea.blog/<slug>` into each Doc's page header, linked to the live URL. That header is the canonical slug: if a Doc's header slug differs from `public/index.html`, trust the header — update the homepage link and `vercel.json`, and redirect the old slug to the new one. Never break a live URL: any time a served route or slug changes, add a permanent redirect in `vercel.json`.
+`scripts/sync_doc_subtitles.py` writes a muted, linked `myea.blog/<slug>` subtitle below each Doc's title and removes the old repeating page header. The subtitle is the canonical slug: if it differs from `public/index.html`, trust the subtitle — update the homepage link and `vercel.json`, and redirect the old slug to the new one. Never break a live URL: any time a served route or slug changes, add a permanent redirect in `vercel.json`.
 <!--/ai-->
 
 <!--ai-->
@@ -86,13 +86,13 @@ Vercel project `myea-blog` (org `alejandros-projects-a115cc74`), production doma
 <!--/ai-->
 
 <!--ai-->
-1. `npm run build` and `uv run scripts/build_llms_txt.py` — render Open Problems and regenerate `llms.txt` and `all.txt`.
+1. `npm run update` — render Open Problems and regenerate `llms.txt` and `all.txt`. Unchanged Docs are reused; run `uv run scripts/build_llms_txt.py --full` for a complete refetch.
 2. Verify locally.
 3. `vercel deploy --prod` from the repo root.
-4. `uv run scripts/add_doc_headers.py` — set each Doc's `myea.blog/<slug>` header (run once the `/<slug>` redirects are live).
+4. `uv run scripts/sync_doc_subtitles.py` — set each Doc's linked `myea.blog/<slug>` subtitle (run once the `/<slug>` redirects are live).
 5. Commit.
 <!--/ai-->
 
 <!--ai-->
-Both scripts read every linked Doc with bounded concurrency (8 workers, `--workers N`). `add_doc_headers.py` also takes `--dry-run` and `--only <slug>`.
+Both scripts use bounded concurrency (8 workers, `--workers N`). The LLM-text build reuses unchanged posts; `sync_doc_subtitles.py` takes `--dry-run` and `--only <slug>`.
 <!--/ai-->

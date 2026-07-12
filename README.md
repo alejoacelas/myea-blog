@@ -13,3 +13,7 @@ Static HTML/CSS/JS in `public/`, with small Vercel functions in `api/` for click
 <!--ai-->
 Edit [`open-problems.md`](open-problems.md), then run `npm run build` to update the Open Problems page.
 <!--/ai-->
+
+<!--ai-->
+Run `npm run update` after changing the post index. It rebuilds the static page and the LLM text files, fetching only Docs whose recorded modification time changed.
+<!--/ai-->

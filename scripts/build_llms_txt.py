@@ -17,9 +17,11 @@ before the text can be published — see CLAUDE.md).
 """
 
 import argparse
+import json
 import re
 import subprocess
 import sys
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
@@ -27,9 +29,12 @@ SITE_DIR = Path(__file__).resolve().parent.parent / "public"
 SITE = "https://myea.blog"
 ALL_POSTS_FILENAME = "all.txt"
 DEFAULT_WORKERS = 8
+CACHE = Path(__file__).resolve().parent.parent / ".llms-build-cache.json"
 
 POST_RE = re.compile(
-    r'<a class="post-link" href="([^"]+)"(?: data-doc="([\w-]+)")?[^>]*>\s*'
+    r'<li[^>]*data-modified-time="([^"]+)"[^>]*>\s*'
+    r'<a class="post-link" href="([^"]+)"(?: data-doc="([\w-]+)")?'
+    r'(?: data-tab="([\w.-]+)")?[^>]*>\s*'
     r'<span class="post-title">(.*?)</span>',
     re.S,
 )
@@ -37,13 +42,48 @@ POST_RE = re.compile(
 DOC_URL_RE = re.compile(r"/document/d/([\w-]+)")
 
 
-def fetch_doc(doc_id: str) -> str:
-    result = subprocess.run(
-        ["gdoc", "cat", doc_id, "--no-images", "--quiet"],
-        capture_output=True,
-        text=True,
-        check=True,
-    )
+def previous_bodies() -> dict[str, str]:
+    """Return already-generated post sections, keyed by their source URL."""
+    path = SITE_DIR / ALL_POSTS_FILENAME
+    if not path.exists():
+        return {}
+    full = path.read_text()
+    starts = list(re.finditer(r"(?m)^# .+\n\nSource: (\S+)\n", full))
+    bodies = {}
+    for index, match in enumerate(starts):
+        end = starts[index + 1].start() if index + 1 < len(starts) else len(full)
+        section = full[match.start():end]
+        section = re.sub(r"\n\n---\n\n\Z", "", section).rstrip()
+        bodies[match.group(1)] = section
+    return bodies
+
+
+def read_cache() -> dict[str, dict[str, str]]:
+    if not CACHE.exists():
+        return {}
+    try:
+        data = json.loads(CACHE.read_text())
+    except (json.JSONDecodeError, OSError):
+        return {}
+    return data.get("posts", {}) if data.get("version") == 1 else {}
+
+
+def fetch_doc(doc_id: str, tab_id: str) -> str:
+    result = None
+    for attempt in range(3):
+        result = subprocess.run(
+            ["gdoc", "cat", doc_id, "--no-images", "--quiet"]
+            + (["--tab", tab_id] if tab_id else []),
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode == 0:
+            break
+        if attempt < 2:
+            time.sleep(0.5 * (2**attempt))
+    if result is None or result.returncode:
+        detail = (result.stderr if result else "gdoc did not run").strip()
+        raise RuntimeError(f"gdoc failed for {doc_id}: {detail}")
     text = result.stdout
     text = re.sub(r"\AUpdate available:.*\n", "", text)
     text = re.sub(r"\Aaccount:.*\n", "", text)
@@ -58,6 +98,7 @@ def fetch_doc(doc_id: str) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help="parallel Doc fetches")
+    parser.add_argument("--full", action="store_true", help="fetch every Doc instead of reusing unchanged text")
     args = parser.parse_args()
 
     html = (SITE_DIR / "index.html").read_text()
@@ -65,8 +106,8 @@ def main() -> None:
     if not raw_posts:
         sys.exit("No posts found in index.html — check POST_RE")
 
-    posts: list[tuple[str, str, str]] = []
-    for href, data_doc, title in raw_posts:
+    posts: list[tuple[str, str, str, str, str]] = []
+    for modified_time, href, data_doc, tab_id, title in raw_posts:
         doc_id = data_doc
         if not doc_id:
             match = DOC_URL_RE.search(href)
@@ -74,34 +115,63 @@ def main() -> None:
         if not doc_id:
             sys.exit(f"No Google Doc id found for post: {title}")
         source_url = f"{SITE}{href}" if href.startswith("/") else href
-        posts.append((source_url, doc_id, title))
+        posts.append((source_url, doc_id, title, modified_time, tab_id))
 
     print(f"Found {len(posts)} posts in index.html")
 
     bodies: list[str | None] = [None] * len(posts)
     jojo_hits: list[tuple[int, str]] = []
+    old_bodies = previous_bodies()
+    cache = read_cache()
+    reused = 0
 
-    def fetch_post(index: int, url: str, doc_id: str, title: str) -> tuple[int, str, str | None]:
-        text = fetch_doc(doc_id)
+    for index, (url, doc_id, title, modified_time, tab_id) in enumerate(posts):
+        cached = cache.get(f"{doc_id}:{tab_id}")
+        if cached is None and not tab_id:
+            cached = cache.get(doc_id, {})
+        cached = cached or {}
+        body = old_bodies.get(url)
+        if not args.full and body and cached.get("modified_time") == modified_time:
+            bodies[index] = body
+            reused += 1
+            if re.search(r"jojo", body, re.I):
+                jojo_hits.append((index, title))
+
+    def fetch_post(index: int, url: str, doc_id: str, tab_id: str, title: str) -> tuple[int, str, str | None]:
+        text = fetch_doc(doc_id, tab_id)
         jojo_hit = title if re.search(r"jojo", text, re.I) else None
         # gdoc may emit a tab label before the document title. Drop that and
         # then drop the document's own H1 because we add the index title.
         text = re.sub(r"\A#\s+Tab\s+\d+\n+", "", text, flags=re.I)
         text = re.sub(r"\A#\s+.*?\n+", "", text)
+        # The public URL already appears in Source; omit the linked Doc subtitle.
+        text = re.sub(
+            r"(?m)^#{0,2}\s*\[?myea\.blog/[\w-]+\]?(?:\(https://myea\.blog/[\w-]+\))?\s*\n+",
+            "",
+            text,
+            count=1,
+        )
         return index, f"# {title}\n\nSource: {url}\n\n{text}", jojo_hit
 
-    workers = max(1, min(args.workers, len(posts)))
-    print(f"Fetching with {workers} worker(s)")
-    with ThreadPoolExecutor(max_workers=workers) as executor:
-        futures = []
-        for index, (url, doc_id, title) in enumerate(posts):
-            print(f"  fetching: {title}")
-            futures.append(executor.submit(fetch_post, index, url, doc_id, title))
-        for future in as_completed(futures):
-            index, body, jojo_hit = future.result()
-            bodies[index] = body
-            if jojo_hit:
-                jojo_hits.append((index, jojo_hit))
+    pending = [
+        (index, url, doc_id, title, tab_id)
+        for index, (url, doc_id, title, _modified_time, tab_id) in enumerate(posts)
+        if bodies[index] is None
+    ]
+    print(f"Reusing {reused} unchanged post(s); fetching {len(pending)}")
+    if pending:
+        workers = max(1, min(args.workers, len(pending)))
+        print(f"Fetching with {workers} worker(s)")
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            futures = []
+            for index, url, doc_id, title, tab_id in pending:
+                print(f"  fetching: {title}")
+                futures.append(executor.submit(fetch_post, index, url, doc_id, tab_id, title))
+            for future in as_completed(futures):
+                index, body, jojo_hit = future.result()
+                bodies[index] = body
+                if jojo_hit:
+                    jojo_hits.append((index, jojo_hit))
 
     if jojo_hits:
         jojo_hits.sort()
@@ -124,7 +194,7 @@ def main() -> None:
     full = header + "\n---\n\n" + "\n\n---\n\n".join(ordered_bodies) + "\n"
     (SITE_DIR / ALL_POSTS_FILENAME).write_text(full)
 
-    index_lines = [f"- [{title}]({url})" for url, _, title in posts]
+    index_lines = [f"- [{title}]({url})" for url, _, title, _, _ in posts]
     index = (
         header
         + "\n## Full text\n\n"
@@ -134,6 +204,21 @@ def main() -> None:
         + "\n"
     )
     (SITE_DIR / "llms.txt").write_text(index)
+
+    CACHE.write_text(
+        json.dumps(
+            {
+                "version": 1,
+                "posts": {
+                    f"{doc_id}:{tab_id}": {"modified_time": modified_time, "source_url": url}
+                    for url, doc_id, _title, modified_time, tab_id in posts
+                },
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
 
     print(f"Wrote {ALL_POSTS_FILENAME} ({len(full):,} chars) and llms.txt")
 

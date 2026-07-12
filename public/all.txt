@@ -4,6 +4,111 @@
 
 ---
 
+# Maybe do the thing you wish CEA would do
+
+Source: https://myea.blog/be-cea
+
+*I used AI to clean transcription errors, suggest better wording for tangled sentences, and make high-level tweaks to improve the writing.*
+
+Three of the most exciting projects to come out of EA in recent years are, in a vague sense, CEA spinouts:
+
+* **Kairos** is directly a spinout of CEA and now handles most support for university AI safety groups. Basically everyone I've found who knows them is really excited about what they do
+* **NEST** is an opinionated ideas-first support network for EA (university) groups. And you can see from [Matt's blog](https://frommatter.substack.com/p/effective-altruism-will-be-great) the absolutely insane care he has for us.
+* **BlueDot** grew out of a group of Cambridge EAs that wanted to make much better introductions to EA topics than what was available out there, and now they're basically trying to solve the talent gap for anything bad AI forever after
+
+My natural next thought, is that maybe some more of the responsibilities currently conceived as “CEA's job” would be better handled by small teams not directly (or only loosely affiliated with) CEA.
+
+Beyond the previous examples, there's many advantages to small independent teams here:
+
+1. You can take risks that CEA can't
+2. You can kindle a culture that promotes ambitious bets
+3. You can set things from the start to benefit from pumping lots of AI into the project
+4. CEA is just one org, they simply can't do everything
+
+If you want concrete suggestions, here's the first that came to mind:
+
+* More and better EA events.
+  * EAGs are great, and EA Summits are an interesting experiment, but possibly there's many more formats and audiences to explore\!
+    * Also, you can vibecode your own Swapcard alternative\!
+* New introductions to EA ideas
+  * I got into EA because helping the poor seemed great and doing that more effectively seemed even better. I'm not sure the AGI-focused content from 80k would have grabbed me, so there's possibly a good audience for what 80k was for me in 2016\!
+* Online communities and discussion spaces
+  * AI makes sourcing and curating content much easier, or you can pick a niche community and topic and start from there (I'm the proud owner of the \#too-much-ai channel for AI use enthusiasts\!)
+* Intellectual leadership on EA ideas
+  * Many institutions that did this have evolved or died (Open Philanthropy, GiveWell, the Global Priorities Institute, Scott Alexander, the Future of Humanity Institute), so, again, it's free real state\!
+    * If you're looking for a concrete idea: What are the central virtues a committed utilitarian should cultivate? I would kill for a really great answer to this question
+* Support for local EA groups
+  * What about more active grant-making for EA groups? Maybe even faster funding? Just asking some EA community builders what they'd want and iterating from a minimal version of that could take you really far
+
+I'd personally be very excited to see someone who's passionate about it pursue any of these ideas. Maybe it's more important to work on AI or something, but I think the heuristic of working on something you care about really hard can take you very far.
+
+Also, you don't need to wait for CEA to give you a role to do any of this\! You can write up a Google Docs with the idea, send it to me for comments ([alejoacelas@gmail.com](mailto:alejoacelas@gmail.com)), figure out the minimal version you can get started on, and then go for it\!
+
+---
+
+# The costs of asking
+
+Source: https://myea.blog/costs-of-asking
+
+* in a naive version of ask culture/consent talk, you can do anything within the bounds of law and morality, as long as you ask and get explicit consent first
+* but asking can be an act of itself “oh, attractive stranger, may I get your warmth? I'm lonely” and the boundaries of what you got consent for can be very blurry “how tightly can I hold you if you consented for a hug”
+* a fix often suggested is to use your judgement to figure out the right asks, and do mostly those. but ‘avoid self-censoring from your internal judgment’ was the whole reason we created ask culture for
+* Given how powerful and mutually beneficial asking can be “what do you think about the prospect of us marrying?”, it would be good to get a sharper picture of its costs, so we can pick up more of its juicy fruits while avoiding the downsides
+* Here's a tentative round down of the costs of asking:
+  * Being intrusive: many things here feel like “I think I recognize something in you/your plans that you don't see yourself. Let me venture my guess” and while this framing sounds innocuous, it often represents some form of being patronizing, paternalistic, or intrusive. I still don't know how to tell the good and bad instances of intrusiveness apart
+  * Misrepresenting others: EV situation
+  * Misrepresenting yourself: it's okay to be open about your flaws, and not actively hide them in interaction, but especially when interacting with people who don't know you much, it's easy for a question to divert people from forming a good picture of who you are (e.g., if they stop engaging or filter future interactions through an inaccurate first lens)
+  * Causing discomfort: where does the discomfort come from? how much should we avoid it?
+* It would be similarly great to get a picture of the benefits of asking, especially those that are unpredictable or don't accrue to the person asking
+
+---
+
+# Palantir for EA
+
+Source: https://myea.blog/palantir-for-ea
+
+The Plan
+Over the next 3 months, I'll focus on 1-on-1 coaching to help executives and founders at EA orgs (VIPs) use AI to do their job better.
+
+My case for it is:
+
+AIM executives love our coaching calls, and I love doing them as well
+Calls have a low cost of entry (1h30m of call + prep) and VIPs come out feeling more empowered and often times immediately more productive
+Even before this, I gravitated towards interacting with friends in a coaching-style relationship
+VIPs provide high leverage for AI adoption at their org
+They can set up accountability structures, negotiate access permissions, and model a culture of AI enthusiasm
+One-on-ones have quick reaction and learning cycles
+I often react mid-call to something my VIP says. I can build directly the product they said they'd like to use
+Group workshops allow more users at a time, but at the cost of a less custom, curated, and time-efficient experience
+
+To do this, I will mostly focus on:
+
+Booking coaching calls, prepping hard for them, and adding users slowly
+Priority is giving each VIP the best user experience
+Unsure on how early I should reach out to other orgs
+Sourcing and making delightful software for me and my VIPs
+I need to stay at the frontier to pull them towards it
+I can find existing software for their needs, and quickly build new things to fill gaps
+Headhunting for a co-founder
+My current guess is that either an extreme AI power user or someone with lots of accrued trust among EA leadership would complement me best
+I can scourge the internet for them, visit EA offices, and follow leads and recommendations
+I'd love your help with
+I'd love any advice, pointers, or introductions you could offer to solve the challenges below, so I have a better chance at ambitious success:
+
+Preserve my focus
+Decide on, and enforce boundaries for distributing my time between (A) coaching, (B) building, and (C) headhunting
+Maybe wrap up/pause my recurrent mentoring commitments with Latam community builders (~3hrs/wk), and my final biosecurity deliverables
+Maybe add friction to responding on email and Slack to everyone but my VIPs and co-founder leads
+Get permission to work from the UK and the US
+I have a visitor visa for both, but that only lets me “take calls” but not “work” for there
+I'm applying for a UK Global Talent Visa, but I need to build up ‘independent evidence’ of being an exceptional promise in tech, such as public statements of my skills that are not directly linked to me
+Prevent a Bipolar II depressive episode
+Previous episodes have reduced my effective work output to ~10hrs/week for a month or more
+I suspect daylight is a big factor. 16-hour daylight often triggers hypomanic episodes (which can be great and productive) and switching back to less daylight has been a strong predictor of the timing for depressive episodes
+I have a decently good psychiatrist, I'm on the most suitable drug for prevention (Lamotrigine) and Claude provides lots of guidance, but maybe a great psychiatrist could help
+
+---
+
 # Some of my unusual habits
 
 Source: https://myea.blog/unusual-habits
@@ -41,6 +146,8 @@ A friend asked me to make a list of my most unusual habits, here's some I came u
 # Faith in humanity
 
 Source: https://myea.blog/faith
+
+##
 
 \[[Crossposted](https://forum.effectivealtruism.org/posts/q9qBD8LvBLjsTbHaA/faith-in-humanity) from the EA Forum. AI Use Disclosure: Asked Claude to draft this, then entirely rejected its suggestions\]
 
@@ -821,6 +928,7 @@ Turns out that bipolar II is basically what I just described: it's marked by shi
 Source: https://myea.blog/ev-app
 
 **Tweet version**
+
 EA is not taking AI seriously, for no good reason. We should be hurling ourselves to find how AI can promote the outcomes we want (at orgs, in new projects, individuals).
 
 I hope that by relentlessly pushing for this I can make a change, though I haven't settled on a concrete strategy.

@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build_open_problems.mjs"
+    "build": "node scripts/build_open_problems.mjs",
+    "update": "npm run build && uv run scripts/build_llms_txt.py"
   },
   "dependencies": {
     "@vercel/blob": "^2.6.1",
