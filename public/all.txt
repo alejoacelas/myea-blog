@@ -68,6 +68,7 @@ Source: https://myea.blog/costs-of-asking
 Source: https://myea.blog/palantir-for-ea
 
 The Plan
+
 Over the next 3 months, I'll focus on 1-on-1 coaching to help executives and founders at EA orgs (VIPs) use AI to do their job better.
 
 My case for it is:
@@ -146,8 +147,6 @@ A friend asked me to make a list of my most unusual habits, here's some I came u
 # Faith in humanity
 
 Source: https://myea.blog/faith
-
-##
 
 \[[Crossposted](https://forum.effectivealtruism.org/posts/q9qBD8LvBLjsTbHaA/faith-in-humanity) from the EA Forum. AI Use Disclosure: Asked Claude to draft this, then entirely rejected its suggestions\]
 
@@ -792,8 +791,6 @@ Here's my blog if you want more context on me: [myea.blog](http://myea.blog)
 
 Source: https://myea.blog/pride
 
-**On using pride as fuel**
-
 A friend died this past weekend. There's a few things that need to be done to increase the chances that the people who cared for him make it out of this okay. I've been doing a few of those things myself, and one of the motivations I'm relying on is that I like the image of me who's able to help them.
 
 I like to imagine going to the job interview at BlueDot and telling those guys that, in a hard episode of my life, I still managed to keep a clear head and care for those who needed it.
@@ -899,8 +896,6 @@ If you want to be alerted in case Robin considers giving up on me, you can leave
 
 Source: https://myea.blog/weird-health
 
-**Maybe your weirdness is a mental health condition**
-
 [**https://claude.ai/share/5b7babb6-8fd1-4329-926a-ce403320962a**](https://claude.ai/share/5b7babb6-8fd1-4329-926a-ce403320962a)
 
 I was surprised recently when I discovered how stereotypical I am. If you search for the symptoms of bipolar II disorder, a bunch of those just look like the description of my last three years. Similar thing for descriptions of people with low cognitive empathy. I read them, and I was like, yep. That's me. And it's not exactly me — there's some social situations in which I'm unusually perceptive compared to the median person or the median EA. But still, I think as a rough cluster, they managed to capture some wide-ranging traits of my personality.
@@ -928,7 +923,6 @@ Turns out that bipolar II is basically what I just described: it's marked by shi
 Source: https://myea.blog/ev-app
 
 **Tweet version**
-
 EA is not taking AI seriously, for no good reason. We should be hurling ourselves to find how AI can promote the outcomes we want (at orgs, in new projects, individuals).
 
 I hope that by relentlessly pushing for this I can make a change, though I haven't settled on a concrete strategy.
@@ -1130,8 +1124,6 @@ This talk about loving forever—I'm just like, "What? No." Probably the only co
 
 Source: https://myea.blog/keep-the-number
 
-**Keep the number of people you like**
-
 Not those people. Well, those people as well, but everyone you like — everyone you enjoy or benefit from conversing with. The more relevant case for me is people you meet through work who you're incredibly excited to keep interacting with.
 
 Email feels too high-friction for some of this communication, where you just want to spout an idea and see if the other person is interested in running with it. This, for me, has been one of the most valuable affordances I've acquired that has let me act on all my great ideas.
@@ -1321,8 +1313,6 @@ This is yet another reason to never shut up talking about love and romance. You 
 
 Source: https://myea.blog/play-with-ai
 
-**Play Hard (with AI) So You Can Work Hard (with AI)**
-
 Stub: play-hard
 
 *Field notes from watching Luca and Pablo “work”*
@@ -1459,10 +1449,6 @@ So before you take your next opportunity, consider whether you should be asking 
 
 Source: https://myea.blog/worth-it
 
----
-
-**EA groups are hard and great and worth it**
-
 *To Alejandro, Yuli, and Efrén*
 
 Ben Kuhn says you don't have to do hard things \[[link](http://placeholder)\]. But there are obviously some hard things worth doing. I want to point at a cluster of things that are.
@@ -1500,8 +1486,6 @@ But now it's a different thing. And it's yours to seize it.
 # Please forgive the errors in my ways
 
 Source: https://myea.blog/please-forgive
-
-## Please Forgive the Errors in My Ways
 
 I spend too much of my time talking and thinking about extreme versions of honesty. As a result, I often feel compelled to direct my thoughts to friends in ways that may reveal not only my lack of decorum but also my ignorance of their goals, their situation, their emotions, and even of the world itself and its workings.
 

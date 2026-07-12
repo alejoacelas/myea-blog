@@ -31,6 +31,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 SITE = "https://myea.blog"
+SUBTITLE_FONT = "Arial"
+SUBTITLE_FONT_SIZE = 11
+SUBTITLE_COLOR = {"red": 0.275, "green": 0.467, "blue": 0.824}
 DEFAULT_WORKERS = 8
 WRITE_INTERVAL_SECONDS = 1.1
 INDEX = Path(__file__).resolve().parent.parent / "public" / "index.html"
@@ -103,7 +106,32 @@ def paragraph_text(block: dict) -> str:
     ).strip()
 
 
-def set_subtitle(doc_id: str, account: str, url: str, tab_id: str = "") -> str:
+def normalized_title(text: str) -> str:
+    return re.sub(r"[^\w]+", "", text.casefold())
+
+
+def subtitle_style_is_current(block: dict, url: str) -> bool:
+    runs = [
+        element["textRun"]
+        for element in block.get("paragraph", {}).get("elements", [])
+        if element.get("textRun", {}).get("content", "").strip()
+    ]
+    if len(runs) != 1:
+        return False
+    style = runs[0].get("textStyle", {})
+    color = style.get("foregroundColor", {}).get("color", {}).get("rgbColor", {})
+    family = style.get("weightedFontFamily", {}).get("fontFamily")
+    return (
+        family in (None, SUBTITLE_FONT)  # Docs omits an explicit Arial override when it matches the default.
+        and style.get("fontSize") == {"magnitude": SUBTITLE_FONT_SIZE, "unit": "PT"}
+        and style.get("link", {}).get("url") == url
+        and all(abs(color.get(channel, -1) - value) < 0.001 for channel, value in SUBTITLE_COLOR.items())
+    )
+
+
+def set_subtitle(
+    doc_id: str, account: str, url: str, expected_title: str, tab_id: str = ""
+) -> str:
     visible_url = display_url(url)
     doc = api_get(doc_id, account, "documentStyle,body.content", tab_id)
 
@@ -132,12 +160,43 @@ def set_subtitle(doc_id: str, account: str, url: str, tab_id: str = "") -> str:
         raise ValueError("document has no title paragraph")
 
     title = paragraphs[title_position]
+    actual_title = paragraph_text(title)
+    if int(title["startIndex"]) != 1:
+        raise ValueError(f"title starts at index {title['startIndex']}, not at the top")
+    if normalized_title(actual_title) != normalized_title(expected_title):
+        raise ValueError(
+            f"first paragraph is {actual_title!r}, expected title {expected_title!r}"
+        )
+    if title.get("paragraph", {}).get("paragraphStyle", {}).get("namedStyleType") != "HEADING_1":
+        requests.append(
+            {
+                "updateParagraphStyle": {
+                    "range": body_range(int(title["startIndex"]), int(title["endIndex"])),
+                    "paragraphStyle": {"namedStyleType": "HEADING_1"},
+                    "fields": "namedStyleType",
+                }
+            }
+        )
     following = paragraphs[title_position + 1] if title_position + 1 < len(paragraphs) else None
     existing_text = paragraph_text(following) if following else ""
     existing_subtitle = bool(
         re.fullmatch(r"(?:Find this post at )?myea\.blog/[\w-]+", existing_text)
     )
-    if existing_text == visible_url:
+    blank_subtitles = []
+    for blank in paragraphs[title_position + 2 :]:
+        style = blank.get("paragraph", {}).get("paragraphStyle", {})
+        if paragraph_text(blank) or style.get("namedStyleType") != "SUBTITLE":
+            break
+        blank_subtitles.append(blank)
+    for blank in reversed(blank_subtitles):
+        requests.append(
+            {
+                "deleteContentRange": {
+                    "range": body_range(int(blank["startIndex"]), int(blank["endIndex"]))
+                }
+            }
+        )
+    if existing_text == visible_url and subtitle_style_is_current(following, url):
         if requests:
             batch_update(doc_id, account, requests)
         return visible_url
@@ -153,9 +212,10 @@ def set_subtitle(doc_id: str, account: str, url: str, tab_id: str = "") -> str:
         start = int(title["endIndex"])
 
     text = visible_url
+    inserted_text = text if existing_subtitle else f"{text}\n"
     requests.extend(
         [
-            {"insertText": {"location": body_location(start), "text": f"{text}\n"}},
+            {"insertText": {"location": body_location(start), "text": inserted_text}},
             {
                 "updateParagraphStyle": {
                     "range": body_range(start, start + len(text) + 1),
@@ -167,10 +227,12 @@ def set_subtitle(doc_id: str, account: str, url: str, tab_id: str = "") -> str:
                 "updateTextStyle": {
                     "range": body_range(start, start + len(text)),
                     "textStyle": {
-                        "foregroundColor": {"color": {"rgbColor": {"red": 0.45, "green": 0.45, "blue": 0.45}}},
+                        "foregroundColor": {"color": {"rgbColor": SUBTITLE_COLOR}},
+                        "weightedFontFamily": {"fontFamily": SUBTITLE_FONT},
+                        "fontSize": {"magnitude": SUBTITLE_FONT_SIZE, "unit": "PT"},
                         "link": {"url": url},
                     },
-                    "fields": "foregroundColor,link",
+                    "fields": "foregroundColor,weightedFontFamily,fontSize,link",
                 }
             },
         ]
@@ -221,7 +283,7 @@ def main() -> None:
     def update_post(slug_path: str, doc_id: str, tab_id: str, title: str) -> tuple[str, str, str, str | None]:
         url = f"{args.site}{slug_path}"
         try:
-            set_subtitle(doc_id, args.account, url, tab_id)
+            set_subtitle(doc_id, args.account, url, title, tab_id)
             return "OK", url, title, None
         except Exception as exc:  # noqa: BLE001
             detail = getattr(exc, "read", lambda: b"")() or str(exc)

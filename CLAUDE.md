@@ -74,7 +74,7 @@ A Doc that only changed (no new post) still needs steps 5–6: refresh its `data
 <!--/ai-->
 
 <!--ai-->
-`scripts/sync_doc_subtitles.py` writes a muted, linked `myea.blog/<slug>` subtitle below each Doc's title and removes the old repeating page header. The subtitle is the canonical slug: if it differs from `public/index.html`, trust the subtitle — update the homepage link and `vercel.json`, and redirect the old slug to the new one. Never break a live URL: any time a served route or slug changes, add a permanent redirect in `vercel.json`.
+`scripts/sync_doc_subtitles.py` writes a linked, light-blue `myea.blog/<slug>` subtitle in 11-point Arial immediately below each Doc's Heading 1 title, and removes the old repeating page header. It fails if the indexed title is not the first paragraph. The subtitle is the canonical slug: if it differs from `public/index.html`, trust the subtitle — update the homepage link and `vercel.json`, and redirect the old slug to the new one. Never break a live URL: any time a served route or slug changes, add a permanent redirect in `vercel.json`.
 <!--/ai-->
 
 <!--ai-->

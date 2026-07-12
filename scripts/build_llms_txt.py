@@ -144,6 +144,7 @@ def main() -> None:
         # then drop the document's own H1 because we add the index title.
         text = re.sub(r"\A#\s+Tab\s+\d+\n+", "", text, flags=re.I)
         text = re.sub(r"\A#\s+.*?\n+", "", text)
+        text = re.sub(rf"\A{re.escape(title)}\s*\n+", "", text, flags=re.I)
         # The public URL already appears in Source; omit the linked Doc subtitle.
         text = re.sub(
             r"(?m)^#{0,2}\s*\[?myea\.blog/[\w-]+\]?(?:\(https://myea\.blog/[\w-]+\))?\s*\n+",
@@ -151,6 +152,7 @@ def main() -> None:
             text,
             count=1,
         )
+        text = re.sub(r"(?m)^#{1,6}\s*$\n?", "", text)
         return index, f"# {title}\n\nSource: {url}\n\n{text}", jojo_hit
 
     pending = [
