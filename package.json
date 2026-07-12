@@ -2,7 +2,11 @@
   "name": "myea-blog",
   "private": true,
   "type": "module",
+  "scripts": {
+    "build": "node scripts/build_open_problems.mjs"
+  },
   "dependencies": {
-    "@vercel/blob": "^0.27.0"
+    "@vercel/blob": "^2.6.1",
+    "marked": "^16.1.1"
   }
 }

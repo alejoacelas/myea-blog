@@ -9,3 +9,7 @@ Single-page index of Alejandro Acelas's writing — drafts, cross-posts, and bul
 <!--ai-->
 Static HTML/CSS/JS in `public/`, with small Vercel functions in `api/` for click analytics. See [`CLAUDE.md`](CLAUDE.md) for how posts are classified, sorted, and deployed.
 <!--/ai-->
+
+<!--ai-->
+Edit [`open-problems.md`](open-problems.md), then run `npm run build` to update the Open Problems page.
+<!--/ai-->
