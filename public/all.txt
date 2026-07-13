@@ -46,6 +46,231 @@ Also, you don't need to wait for CEA to give you a role to do any of this\! You 
 
 ---
 
+# Silly games Tomáš taught me
+
+Source: https://myea.blog/silly-games
+
+The German Summer Camp was lots of fun, and one of my personal highlights was Tomáš’ silly games workshop. Here's some of the games we played there, mixed in with some games I personally like.
+
+These games are best for groups of 8-20 people. Paste this document to your LLM of choice if you need more detailed instructions.
+
+Poses warmup
+
+* Stand in a circle. One of you says their name and does a pose/motion
+* Once they finish, everyone repeats your name and pose
+* The person to their left repeats the routine: name, motion, then everyone joins
+* Do a first loop at a leisurely pace. Second round should be as fast as possible
+
+Honey, do you love me?
+
+* Stand in a circle. One of you locks eyes with someone else from the circle and approaches them
+* As you get close to them, say the words “honey, do you love me?”
+* The other person replies “yes, honey, I love you, but I just can't smile”
+* If they smile as they say this, they're out. If they don't, you're out. The survivor chooses a new victim and the process repeats until only one person remains
+
+Wooosh
+
+* Stand in a circle, one of you holds an imaginary ball of energy
+* You can send the ball to the person next to you by saying ‘wooosh’ and pushing it in their direction. Now it's their turn to wooosh
+* Once you've mastered your wooosh, add other movements:
+  * boing: bounce up and down and you knock your head
+  * aaaaaaah: stop passing the ball and scream, everyone runs around until the initial screamer settles which is your cue to remake a circle
+  * …
+  * …
+
+Puking kangaroo
+
+* Like wooosh, but each pose involves three people
+* Stand in a circle. One of you points at someone else to make them the lead. The two people next to them become their sidekicks
+* As you point at them, shout one of the following:
+  * Puking kangaroo: sidekick arms stretched at should height, lead steps back to puke over the bag-shaped space created by sidekicks
+  * Washing machine: sidekicks join arms in a circle, lead crouches and does a circular motion with their head
+  * James Bond: lead holds a finger gun to their chest, sidekicks swoon with sexy delight
+  * Toaster: sidekicks extend arms straight to surround the lead, the lead jumps
+  * Blender: sidekicks extend one arm up and one down to form a vase shape, lead spins in the spot
+
+Ninja war
+
+* Stand in a circle and hold one hand to the center
+* At the count of three, everyone jumps apart to their standing position. No one can move until it's their turn
+* On your turn, you're allowed one continuous movement. If, through that movement, you touch someone's arm(s) or leg(s), they're not allowed to use them for the rest of the game
+* If you expect the attacker to touch you, you're allowed one continuous movement to get out of the way. You can only move after the attacker moves, otherwise you must return to your original position
+* After the confrontation ends, it's the next person's turn. They don't need to wait for permission
+* Make sure to always do turns in the same order and not skip anyone. The order can come from from your position in the initial circle, from the initial player then clockwise
+
+Assasin
+
+* The policeman goes away. Someone volunters to murder
+* Everybody walks around, with the assasin winking at people to kill them
+* The policeman gets three guesses to spot the assasin, if everyone's dead before that, they win
+
+Guess the lead
+
+* Like Assasin but instead of winking the game lead makes a dance/gesture that everyone else has to copy as soon as they notice
+* The policeman attempts to discover the lead in 3 guesses
+
+Evolution
+
+* You start life as a worm. Shake your body in worm-like fashion
+* Look for someone who's the same animal as you. Challenge them to rock-paper-scissors. The winner upgrades to a better animal, the loser downgrades or remains worm if they're already at the bottom
+* The animal hierarchy is:
+  * Worm
+  * Chicken
+  * Pinguin
+  * Elephant
+  * Monkey
+  * Human
+  * Superintelligence
+* Remember to imitate the sound and movements of your animal
+* The game continues until superintelligence arrives
+
+Giving circle:
+
+* Stand in a circle. Someone, without words, hands the person to their right an imaginary gift
+* Through pose and mime they attempt to convey the gift's content. The receiver then states the gift content with gratitude “oh, thank you for this \[baby crocodile\]\!”. The giver can reply if they like “You're welcome\! I caught it myself”
+* Go around the circle until you make a full round
+
+# Card games
+
+### Standard Deck Games
+
+Get a standard poker deck with a box (to make it easy to carry around) and learn the rules of these games:
+
+* **Bullshit (Cheat)** – Take turns playing cards face-down, claiming a rank. Ranks must follow in sequence. Anyone can call "Bullshit\!" If the accusation is correct, the liar picks up the pile; if wrong, the accuser picks it up. First to empty their hand wins.
+  → [Rules (Pagat.com)](https://www.pagat.com/beating/cheat.html)
+
+* **Indian Poker (Blind Man's Bluff) – Penalty Version** – Each player sticks one card to their forehead facing out (you see everyone's card except your own). Going around the table, decide to stay in or fold. Among those who stayed in, the lowest card gets a *penitencia* (drinking a bit of ketchup, maybe?). Fold too often and you also get one.
+  → [Rules (Pagat.com)](https://www.pagat.com/poker/variants/indian.html)
+
+* **Assassin (Wink Murder)** – Deal cards; whoever gets the Joker (or Ace of Spades) is the secret Assassin. The Assassin kills players by discreetly winking at them—victims dramatically "die" after a few seconds. I play it Mafia-style, with a Detective (who was *n* attempts to identify the murderer), a Prostitute (that can rise the dead), and a Grave-digger (who can foreclose the prostitutes powers, making sure you stay dead for good)
+  → [Rules (Wikipedia)](https://en.wikipedia.org/wiki/Wink_murder)
+
+* **Skull** – Pure bluffing. Each player has 3 roses (red cards) \+ 1 skull (black card). Place cards face-down, then bid how many you can flip without hitting a skull—must flip your own stack first. Win two challenges to win. You can buy it as well.
+  → [Rules (Wikipedia)](https://en.wikipedia.org/wiki/Skull_\(card_game\))
+
+* **Any other game you've enjoyed** – Even complex games work when you're enthusiastic. People pick up on your energy and join in.
+
+---
+
+### Out-of-the-Box Games
+
+* [**Exploding Kittens (Party Pack)**](https://www.amazon.com/dp/B07CTXHNSL) – Russian roulette with cats. Draw cards, avoid exploding, sabotage friends. The Party Pack (and some other extensions) supports up to 10 players—get this version unless you'll already know who you'll be playing with and it's a small group
+
+* [**Jungle Speed**](https://www.amazon.com/dp/B09TBJGLJ1) or [**Anomia**](https://www.amazon.com/dp/B00363B5FC) – Fast-paced pattern/word-matching games. Incredibly easy to explain—I often just start playing and people pick up the rules as we go.
+
+* [**UNO**](https://www.amazon.com/dp/B00GTJSGXE) – A classic for a reason.
+
+* [Codenames](https://www.amazon.com/CGE-Codenames-Association-Friends-Players/dp/B0FJMQB63N/ref=sr_1_1?crid=K5MIS019KI1N&dib=eyJ2IjoiMSJ9.oHvvl7Nedz_PjxKHSMFAsqx9tfhe_kd8PqYn7waozgsAwbLu5V6u3SCmaEA0VQxyPduQmH49KlqKuDl3whGu7f6VZ0wSUCz5U6-TCuXJSOBuU-R_1QrcjEerX2xwhfhNgMsetrx0PGY6rz5vXUc_ZSoJoSmZmSF32GRp6UgqnXiXlDRtO9Qjirks4GYWjaGjh3grxYIO7MR4U_5IDMr48lWSCx5y-jpV8c3uKx0w---bigfEUbbvxJfYEFcdNDu0REzzNw8SAxYo5_5DqsTmH0FHb_lKSMkuPunWWspC5sU.065MZxiV1ghCZZaz_j6bS-bQzdoVi3P1p0D7ddbW1hk&dib_tag=se&keywords=codenames&qid=1768870387&sprefix=codenames%2Caps%2C303&sr=8-1&th=1) or [Werewolf](https://www.amazon.com/Bezier-Games-UWEXBEZ-Ultimate-Werewolf/dp/B08WHMTZ61/ref=sr_1_6?crid=129TRJCVNWH95&dib=eyJ2IjoiMSJ9.odURcwqO5o9NYeuIJcD73GQtVIIvqBGwODwScsBNTDFQDKTKX1aha4ZtZD5iNdOcdExyR0k_x8q_3_RfhYC_l-8wk7nxV0-HGIAdW6N6nsvBOo2jt8FFI9Ed6_4QcEf2hATirGuP37k5yLwG1fxIFzCNwxi_yq2nfdi2lsdpy7DqbimdvxSK28omehMqPP6YahwkP55eJ7QzgiVz0nbh1cYMFBQamyclhZzxdjc78okvmvpdptpJBAVB9BfPG8lfdrgFUDREXL8LgYxw8x541SfW9664fgmsM213UNxGRQ0.3DapGao1kdctCYycHa6l180wXb95WvfDszcVNaBgNg8&dib_tag=se&keywords=werewolf+game&qid=1768870443&sprefix=werewolf%2Caps%2C204&sr=8-6) – Pretty good if you have at least 1 hour of late-night uninterrupted time to play. Werewolf needs someone who've seen it played before and can guide / be the session's God.
+
+* I've played many of the [games here](https://archive.ph/I7rMf), and recommend them as well. Many need only paper and pencils or a free app.
+
+## Other games I haven't explored
+
+### Mao
+
+The object of the game of Mao is to get rid of all your cards. And this is the ONLY thing you are told about this game. ***You have to figure out the rest of the rules by yourself.*** Every time you break a rule, a penalty is called, and you are penalized a card.
+
+Arthur Machen's short story [The White People](https://archive.org/details/TheWhitePeople/page/n9/mode/2up?q=mao), in which a young girl recording her bizarre experiences with witchcraft:
+
+"I must not write down the real names of the days and months which I found out a year ago, nor the way to make the Aklo letters, or the Chian language, or the great beautiful Circles, nor the Mao Games, nor the chief songs."
+
+Every person who learned how to play figured out the rules by himself (or herself). If you can figure out the rules, then you know how to play. If you can't figure out the rules, then you don't deserve to be told what the rules are. (Actually, there are probably some people who were told the rules without figuring them out themselves. We true Mao players look down upon these unworthy slime.)
+
+#### Ejemplos de reglas
+
+[http://web.archive.org/web/20121228174230/http://kw.tamlylin.com/puz/mao\_sample.html](http://web.archive.org/web/20121228174230/http://kw.tamlylin.com/puz/mao_sample.html)
+
+### Egyptian Rat Screw
+
+Face Cards
+
+If a player draws a face card from their deck, the next player has a given number of chances to also draw a face card or else the pile goes to players on their right. A player’s number of chances to draw a face card depends on which face card was initially drawn.
+
+        	If an Ace was drawn, the next player has 4 chances.
+
+        	If a King was drawn, the next player has 3 chances.
+
+        	If a Queen was drawn, the next players has 2 chances.
+
+        	If a Jack was drawn, the next player has 1 chance.
+
+Slapping
+
+The following card sequences allow any player to slap the pile and get all of the cards:
+
+        	Two cards of the same rank are played consecutively
+
+        	The card played is the same rank as the first card of the pile
+
+        	A combination of King and Queen are played consecutively
+
+        	Two cards of the same rank have one different card in between them
+
+        	The number value of the cards played adds up to 10
+
+        	An ascending or descending run of four cards is played
+
+Penalty
+
+If you slap the pile when no sequences are in effect, you must add two cards to the bottom of the pile.
+
+[https://playingcarddecks.com/blogs/how-to-play/egyptian-rat-screw-game-rules](https://playingcarddecks.com/blogs/how-to-play/egyptian-rat-screw-game-rules)
+
+[https://playingcarddecks.com/blogs/how-to-play/president-game-rules](https://playingcarddecks.com/blogs/how-to-play/president-game-rules)
+[https://playingcarddecks.com/blogs/how-to-play/screw-your-neighbor-game-rules](https://playingcarddecks.com/blogs/how-to-play/screw-your-neighbor-game-rules)
+
+# Icebreakers
+
+# Icebreakers I like
+
+Two truths and a lie
+
+* Jot down your ideas before others start thinking of them, to set an example of the kinds of aspects of your lives you want to share
+
+Three snaps (everyone shares 3 pictures from their life)
+
+Everyone answers the same surreptitiously personal question
+
+* What's the first memory you have?
+* If you really knew me, you'd know that I…
+
+Because of that…
+
+* [https://www.sessionlab.com/methods/your-amazing-future](https://www.sessionlab.com/methods/your-amazing-future)
+
+Create a one-word story on a topic
+
+* [https://www.sessionlab.com/methods/one-word-method](https://www.sessionlab.com/methods/one-word-method)
+
+Count up to the number of participants with your eyes closed. Start again if two people try to speak at the same time
+
+* [https://www.sessionlab.com/methods/count-up](https://www.sessionlab.com/methods/count-up)
+
+A name game where you say what you would bring to a deserted island that starts with the first letter of your name and have to say all the names previously said.
+
+Honey do you love me (make sure to set boundaries ie: no touching)
+
+Two truths and a lie (might need to split into groups)
+
+EA charades (we just use common EA terms, organizations, and or people)
+
+Human knot
+
+Not an icebreaker: appreciation circle
+
+* Take turns to express gratitude towards someone else/the group
+* The receiver just says ‘Thank you’
+
+**Tips for a 3-6-person, same-age group**
+
+* Pick one activity, keep it under 10 minutes, and model the desired depth first.
+
+* Encourage—but never force—vulnerability; use humor to lighten the mood when needed.
+
+https://www.sessionlab.com/blog/icebreaker-games/
+
+---
+
 # The costs of asking
 
 Source: https://myea.blog/costs-of-asking

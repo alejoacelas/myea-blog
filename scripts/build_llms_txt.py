@@ -144,6 +144,9 @@ def main() -> None:
         # then drop the document's own H1 because we add the index title.
         text = re.sub(r"\A#\s+Tab\s+\d+\n+", "", text, flags=re.I)
         text = re.sub(r"\A#\s+.*?\n+", "", text)
+        text = re.sub(
+            rf"\A#\s+{re.escape(title)}\s*\n+", "", text, flags=re.I
+        )
         text = re.sub(rf"\A{re.escape(title)}\s*\n+", "", text, flags=re.I)
         # The public URL already appears in Source; omit the linked Doc subtitle.
         text = re.sub(

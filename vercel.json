@@ -19,6 +19,11 @@
       "permanent": true
     },
     {
+      "source": "/silly-games",
+      "destination": "https://docs.google.com/document/d/1tnKjJRVCp9pq3gLBBdT1gCp7X3xvES2OrOfzZxmDkKU/edit",
+      "permanent": false
+    },
+    {
       "source": "/be-cea",
       "destination": "https://docs.google.com/document/d/1nX9u-cZo9uQTx_niRw6X8Ajd7Vq1H5ZhB4HW7Ay_5uQ/edit",
       "permanent": false
