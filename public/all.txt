@@ -4,6 +4,122 @@
 
 ---
 
+# My Claude Code spiel to non-technical EAs
+
+Source: https://myea.blog/claude-code-spiel
+
+*Getting started with Claude Code when you're not technical*
+
+[Alejo Acelas](mailto:alejoacelas@gmail.com). Jun 4, 2026\. [alejoacelas.com](http://alejoacelas.com)
+
+\[What follows is mostly verbatim from an improvised call with Jeremiah, who had tried Claude Code exactly once and felt frustrated when it broke. It has a different format to my usual coaching calls which are more customized to a person's workflow, but hopefully this will be more widley useful as well.
+
+Claude helped me cut the small talk and added section headers; the rest is what I said on the call.\]
+
+## You don't need to learn how to code
+
+**Jeremiah**
+That's one of the things that put me off ever going to Code. I thought: Claude Code — I'm going to need to learn how to code, at least a bit. So it's quite a relief that you just speak to it in natural language and it does stuff.
+
+**Alejo**
+Exactly that. You speak to it in natural language and it does stuff.
+
+## Why Claude Code and not Cowork
+
+The main case is it gives you more affordances to do stuff.
+
+Cowork is very centrally managed by Anthropic: you can mostly only use Cowork from the Claude desktop app, and they tell you "you can connect to this data service but not this one, you can run this script but not that script". They're opinionated, and they do that for two reasons:
+
+* to protect you from shooting yourself in the foot security-wise
+* to make the onboarding experience easier.
+
+On the shooting-yourself-in-the-foot side, I think they've made many reasonable decisions — things that should be most people's defaults. But they're making decisions that are safe for all knowledge-work professionals, and you might want to make different trade-offs than the minimum common denominator of all humanity.
+
+And the deeper reason why everyone should switch to Claude Code is that this is what the Anthropic engineers use. They're trying to automate themselves into creating God, and so you should basically use the tools that they use to create God, because it's the thing they put the most effort into.
+
+## Expect the first day to be Linux, not Windows
+
+**Jeremiah** (on his first attempt at Claude Code):
+“the Chrome extension isn't connected", "the sheet requires authentication, you now need to download this and save it for me separately". Is that just the first time?
+
+**Alejo**
+Exactly. The thing about Cowork is they want you to have a good out-of-the-box experience — you just click and it works. The thing about Claude Code is it's made for hackers. It's the same as Linux. You can think of Cowork as your Windows: you power it on and there's the intro screen, your file manager, whatever.
+
+Linux is a free-for-all: you can absolutely customize it to fulfill your deepest desires if you're into having desires that computers can fulfill, but it also just breaks, and it exposes a lot of things — some versions of Linux don't even come with a graphical interface, just a text prompt. That's what happens with Claude Code: you need to set up some things the first time.
+
+## Worry less about security
+
+One piece of advice I give to people who want to take the most advantage of AI is to worry less about security. There's a bunch of security-versus-convenience trade-offs, and for me the key to using Claude Code and getting a bunch of value out of it is going all the way to the convenience side: I want it to be almost instinctive that I can just open Claude Code, throw in what's on my brain, and get some valuable output at the end.
+
+What you could reasonably be scared of is a few things. One is taking irrecoverable action on some important asset of yours — deleting something on your Drive, messing up your computer. I think with Claude Code, unless you ask it to do stupid things — "please install this program at all costs" — where you're actually inviting harm in, failures are reasonably rare, and when you find a failure it's often recoverable.
+
+But for some things you might want to screen off the possibility entirely. If you connect it to your Drive, you can ask it: "Can you delete files? Make sure you cannot delete files" — and there are tool configurations such that it can never delete files, or Drive already has snapshots. For anything you fear losing — if you fear it's going to screw up your Mac — ask Claude Code: "What are some ways that might happen?" It gives you a couple of ways, and then you ask: "Are there passive, zero-maintenance, zero-attention things we can set up so that won't happen?"
+
+The other thing is prompt injection risk — a malicious page hijacking the agent to do something terrible on your computer. It has been well documented in the academic literature, but it's not actually a threat in practice so far. So I think you can for the most part ignore that kind of risk, even though it's been widely discussed in many places.
+
+Most of what can happen is like lending your computer to an over-enthusiastic friend. If you gave your computer to me, I might try to do stuff and do something crazy. These agents are often too goal-oriented: if you give them an overly broad goal — "just update my Mac to the next version, do it, and don't check with me on the plan, just do it" — there are many ways of achieving that, and some of them have substantial risks. So giving it goals with an overly broad scope puts you at some risk. But for many of the things you do — adding a file, editing a spreadsheet — when was the last time you blew up your computer editing a spreadsheet? I hope never.
+
+## Feed it text
+
+Everything you put on your computer is now in the ownership of Claude Code — if it's on your computer, Claude Code can access it. And there are some file types, like XLSX, that are just hard to process, because agents read text. They cannot read the raw file of an XLSX — if you open that in your text editor it's just garbage. But a CSV — you open that in a text editor and you can read it. Claude can manipulate XLSX files, but it's a little bit harder and sometimes it screws up a bit more. So you ideally want something that's text-in, text-out, and to think carefully about what's the text you're feeding in and the text that's coming out.
+
+So if a connector is giving you trouble — the spreadsheet requires authentication, the Chrome extension isn't connected — often the simplest move is: download the thing as a text file (a CSV, not an XLSX) and drop it in the folder.
+
+## It will lie to you
+
+It will lie to you. So you should find ways to actively verify what it does. If it created a file: "okay, show me the file". If it said "I downloaded this" — you need to get an intuition for what are the things it can and cannot do.
+
+I often start by dictating the prompt. (On dictating: you should dictate, you should never type — at least for interacting with AIs.) You start by dictating the goal you have, and for the things where you have an intuition they might or might not work, you say — literally the same way you'd say it to a person — "hey, I suspect we might not be able to connect to this data source; I don't know if you can access Substack; here's a spreadsheet, I've never done spreadsheets with you — just pull the first rows and open the file at the end so I can see you got the data right." You don't want it to report on whether it was able to do the thing — you want to find the small test for whether it was able to do the thing.
+
+## Be curious when it fails
+
+**Jeremiah** (after Claude Code failed to load a Google Sheets and connect to Swapcard)
+
+"well, why don't you unblock web search and just do the task like I told you to?"
+
+**Alejo**
+You're doing it wrong — because you're not being sufficiently curious. Andrej Karpathy — whose Twitter you should obviously follow — had this really nice quote: "you can delegate your thinking but you cannot delegate your understanding". If a part is critical for getting the final output working — the thing being able to do web search, the thing being able to access external data sources. Getting annoyed is trying to delegate again to the AI after it failed.
+
+What I would do is: "okay, it seems to me that you didn't manage to connect properly to this — why was that?" Then I read the explanation and go back and make sure it matches what I saw. Then: "okay, sounds like that's the explanation — what are some ways of fixing it?" And then: "okay, let's try them and test them."
+
+Once you've got it working the first time, you don't need to worry about that anymore — you set it up working. And then maybe: "add this to your global instructions" — that's a move I do for things that aren't obvious to set up. For example, for interacting with Google Docs, I have a special tool, and I said "always use this tool when interacting with Google Docs".
+
+## Ask Claude first
+
+All of these are things you can ask Claude, and you should have the impulse to just ask it first. For many things you realize very quickly — oh yeah, that makes sense. When I've already worked a lot on a piece and just say "improve my writing", it often suggests absolute shit, but at least I found out quickly that it was bad and can decide whether to try a more specific prompt or simply not use it for that purpose.
+
+You should just start by asking the machine, see if you get a good response, and either be merry because it made it or think whether it's worth spending the work of doing a better prompt.
+
+## Don't worry about tokens and rate limits
+
+My approach to token use just buy as much as you need, because your productivity is important. If you're hitting rate limits ever you should basically buy the $100 or $200 dollar plan, and buy more plans if you hit the rate limits again.
+
+You should use as many tokens as you want, but you should also be careful about keeping good performance from your AIs.
+
+One thing that's not obvious to people who haven't read machine learning papers: when you have long conversations, the quality — for structural reasons — is expected to get worse the longer the conversation goes. In Claude Code you sometimes see a little thing at the bottom that says "using 300,000 tokens out of a million". If you're past 200,000 tokens, you can start thinking about how to delegate to another session. Oftentimes I ask it to “write down the things we've agreed upon and then give me a prompt to feed to another agent". But I do that not for cost reasons — again, I use as much AI as my work demands — I do it for performance reasons.
+
+## Everything is just a file on your computer
+
+Cowork kind of hides the files it creates sometimes — hides them in a virtual machine on your computer. When you use Claude Code, it doesn't do the hiding-files thing: it's just a folder on your computer, and everything you've created is just a file on your computer — including the conversation history, which is deleted after 30 days by default; and you can just say "hey Claude, can you change that? I want to keep all the history of my conversations."
+
+This also makes Claude Code a future-proof move. Jeremiah was doing all his AI work inside an organization's subscription he'd eventually have to leave. With Claude Code, if you change subscription, you're basically just saying "instead of charging this account, charge this other account" — all the files on your computer stay there.
+
+## The starter pack
+
+Here's the starter pack:
+
+- [Talk to your computer](https://wisprflow.ai/) [Wispr Flow](https://wisprflow.ai/)
+- [Connect to Google Docs](https://github.com/LucaDeLeo/gdoc)
+- [Connect to everything else Google](https://gogcli.sh/)
+- [The best interface for Claude Code](https://super.engineering/)
+  - Use it instead of the Claude desktop app.
+  - It has a lot of shortcuts for moving across projects, it makes it easier to have different versions of the same thing, it makes it easier to see the files you created.
+  - If I were using the Claude desktop app, I wouldn't have started this many projects at all — this makes it really easy to start new things, and I get notified when a thing finishes. A lot of design decisions made for AI users
+
+That setup should take you maybe about an hour if you're reasonably computer-savvy — clicking the right buttons at the right time — but maybe up to two hours. If you do that, you'll be in a good position to just ask Claude for stuff.
+
+---
+
 # Silly games Tomáš taught me
 
 Source: https://myea.blog/silly-games

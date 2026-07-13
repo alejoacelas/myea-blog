@@ -8,6 +8,7 @@
 
 ## Posts
 
+- [My Claude Code spiel to non-technical EAs](https://myea.blog/claude-code-spiel)
 - [Silly games Tomáš taught me](https://myea.blog/silly-games)
 - [Maybe do the thing you wish CEA would do](https://myea.blog/be-cea)
 - [The costs of asking](https://myea.blog/costs-of-asking)
