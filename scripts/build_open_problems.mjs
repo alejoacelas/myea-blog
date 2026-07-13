@@ -19,7 +19,7 @@ const html = `<!DOCTYPE html>
 <body>
   <nav class="site-nav">
     <a href="/">home</a>
-    <a href="/open-problems" class="active">Open Problems</a>
+    <a href="/open-problems" class="active">open problems</a>
     <a href="/chat-in-spanish">chat in spanish</a>
     <a href="/live-with-me">live with me</a>
   </nav>
