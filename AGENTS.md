@@ -27,7 +27,7 @@ Each post is an `<li>` in the `.post-list` of `public/index.html`:
 <!--/ai-->
 
 <!--ai-->
-- `data-kind` is exactly one of `draft`, `bullet points`, or `cross-post` — `bullet points` for list-shaped notes, `cross-post` for writing mainly published elsewhere, `draft` otherwise. No other values.
+- `data-kind` is exactly one of `draft`, `bullet points`, or `cross-post` — use `draft` for any coherent piece that reads clearly from top to bottom, even if it consists mostly of bullet points; use `bullet points` only for list-shaped notes that do not form such a piece; use `cross-post` for writing mainly published elsewhere. No other values.
 - `data-created-time` and `data-modified-time` record the Doc's Drive timestamps; sort order uses `modifiedTime`.
 - The `<a class="post-link" href="/<slug>" data-doc="<doc-id>">` carries a clean local slug and the stable Google Doc id. `<span class="post-title">` holds the title; `<span class="post-tag">` holds the bare kind word (the surrounding `[ ]` are added by CSS — don't type them).
 <!--/ai-->

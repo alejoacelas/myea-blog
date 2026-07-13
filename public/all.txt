@@ -4,48 +4,6 @@
 
 ---
 
-# Maybe do the thing you wish CEA would do
-
-Source: https://myea.blog/be-cea
-
-*I used AI to clean transcription errors, suggest better wording for tangled sentences, and make high-level tweaks to improve the writing.*
-
-Three of the most exciting projects to come out of EA in recent years are, in a vague sense, CEA spinouts:
-
-* **Kairos** is directly a spinout of CEA and now handles most support for university AI safety groups. Basically everyone I've found who knows them is really excited about what they do
-* **NEST** is an opinionated ideas-first support network for EA (university) groups. And you can see from [Matt's blog](https://frommatter.substack.com/p/effective-altruism-will-be-great) the absolutely insane care he has for us.
-* **BlueDot** grew out of a group of Cambridge EAs that wanted to make much better introductions to EA topics than what was available out there, and now they're basically trying to solve the talent gap for anything bad AI forever after
-
-My natural next thought, is that maybe some more of the responsibilities currently conceived as “CEA's job” would be better handled by small teams not directly (or only loosely affiliated with) CEA.
-
-Beyond the previous examples, there's many advantages to small independent teams here:
-
-1. You can take risks that CEA can't
-2. You can kindle a culture that promotes ambitious bets
-3. You can set things from the start to benefit from pumping lots of AI into the project
-4. CEA is just one org, they simply can't do everything
-
-If you want concrete suggestions, here's the first that came to mind:
-
-* More and better EA events.
-  * EAGs are great, and EA Summits are an interesting experiment, but possibly there's many more formats and audiences to explore\!
-    * Also, you can vibecode your own Swapcard alternative\!
-* New introductions to EA ideas
-  * I got into EA because helping the poor seemed great and doing that more effectively seemed even better. I'm not sure the AGI-focused content from 80k would have grabbed me, so there's possibly a good audience for what 80k was for me in 2016\!
-* Online communities and discussion spaces
-  * AI makes sourcing and curating content much easier, or you can pick a niche community and topic and start from there (I'm the proud owner of the \#too-much-ai channel for AI use enthusiasts\!)
-* Intellectual leadership on EA ideas
-  * Many institutions that did this have evolved or died (Open Philanthropy, GiveWell, the Global Priorities Institute, Scott Alexander, the Future of Humanity Institute), so, again, it's free real state\!
-    * If you're looking for a concrete idea: What are the central virtues a committed utilitarian should cultivate? I would kill for a really great answer to this question
-* Support for local EA groups
-  * What about more active grant-making for EA groups? Maybe even faster funding? Just asking some EA community builders what they'd want and iterating from a minimal version of that could take you really far
-
-I'd personally be very excited to see someone who's passionate about it pursue any of these ideas. Maybe it's more important to work on AI or something, but I think the heuristic of working on something you care about really hard can take you very far.
-
-Also, you don't need to wait for CEA to give you a role to do any of this\! You can write up a Google Docs with the idea, send it to me for comments ([alejoacelas@gmail.com](mailto:alejoacelas@gmail.com)), figure out the minimal version you can get started on, and then go for it\!
-
----
-
 # Silly games Tomáš taught me
 
 Source: https://myea.blog/silly-games
@@ -268,6 +226,48 @@ Not an icebreaker: appreciation circle
 * Encourage—but never force—vulnerability; use humor to lighten the mood when needed.
 
 https://www.sessionlab.com/blog/icebreaker-games/
+
+---
+
+# Maybe do the thing you wish CEA would do
+
+Source: https://myea.blog/be-cea
+
+*I used AI to clean transcription errors, suggest better wording for tangled sentences, and make high-level tweaks to improve the writing.*
+
+Three of the most exciting projects to come out of EA in recent years are, in a vague sense, CEA spinouts:
+
+* **Kairos** is directly a spinout of CEA and now handles most support for university AI safety groups. Basically everyone I've found who knows them is really excited about what they do
+* **NEST** is an opinionated ideas-first support network for EA (university) groups. And you can see from [Matt's blog](https://frommatter.substack.com/p/effective-altruism-will-be-great) the absolutely insane care he has for us.
+* **BlueDot** grew out of a group of Cambridge EAs that wanted to make much better introductions to EA topics than what was available out there, and now they're basically trying to solve the talent gap for anything bad AI forever after
+
+My natural next thought, is that maybe some more of the responsibilities currently conceived as “CEA's job” would be better handled by small teams not directly (or only loosely affiliated with) CEA.
+
+Beyond the previous examples, there's many advantages to small independent teams here:
+
+1. You can take risks that CEA can't
+2. You can kindle a culture that promotes ambitious bets
+3. You can set things from the start to benefit from pumping lots of AI into the project
+4. CEA is just one org, they simply can't do everything
+
+If you want concrete suggestions, here's the first that came to mind:
+
+* More and better EA events.
+  * EAGs are great, and EA Summits are an interesting experiment, but possibly there's many more formats and audiences to explore\!
+    * Also, you can vibecode your own Swapcard alternative\!
+* New introductions to EA ideas
+  * I got into EA because helping the poor seemed great and doing that more effectively seemed even better. I'm not sure the AGI-focused content from 80k would have grabbed me, so there's possibly a good audience for what 80k was for me in 2016\!
+* Online communities and discussion spaces
+  * AI makes sourcing and curating content much easier, or you can pick a niche community and topic and start from there (I'm the proud owner of the \#too-much-ai channel for AI use enthusiasts\!)
+* Intellectual leadership on EA ideas
+  * Many institutions that did this have evolved or died (Open Philanthropy, GiveWell, the Global Priorities Institute, Scott Alexander, the Future of Humanity Institute), so, again, it's free real state\!
+    * If you're looking for a concrete idea: What are the central virtues a committed utilitarian should cultivate? I would kill for a really great answer to this question
+* Support for local EA groups
+  * What about more active grant-making for EA groups? Maybe even faster funding? Just asking some EA community builders what they'd want and iterating from a minimal version of that could take you really far
+
+I'd personally be very excited to see someone who's passionate about it pursue any of these ideas. Maybe it's more important to work on AI or something, but I think the heuristic of working on something you care about really hard can take you very far.
+
+Also, you don't need to wait for CEA to give you a role to do any of this\! You can write up a Google Docs with the idea, send it to me for comments ([alejoacelas@gmail.com](mailto:alejoacelas@gmail.com)), figure out the minimal version you can get started on, and then go for it\!
 
 ---
 
