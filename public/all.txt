@@ -528,56 +528,6 @@ Source: https://myea.blog/stop-dread
 
 ---
 
-# Have you tried violent passion?
-
-Source: https://myea.blog/violent-passion
-
-* A friend told me 80k finds it hard to hire for their advising team. I think the only reasonable explanation for that is that a bunch of you are absolute morons
-* You either don't know what you want, or want really silly things. If you were passionate about something good, you'd realize how exciting advising at 80k is and how flabbergastingly talent-dense the 80k team is.
-* Maybe you are too comformist. Quitting your job (or your three part time roles, which was my case) to work on AI Tools for Existential Security was always an option, and you haven't taken it
-* Seems many of you would be indifferent between working at cG, Anthropic, or Redwood. You don't quite care what you do as long as it ticks some abstract silly boxes that some uncaring social gestalt demarcated as important
-* Same for dating. Lilia, who works at a dating startup, tells me they enforce a rule of not talking about religion or politics on the first date, because some people are dumb enough to discard their future wife or husband based on a superficial dislike of their politics
-* What's the opposite of that? What should you aspire to be in your life? Not sure if this fits for most, but maybe I'd suggest you try violent passion
-* If Coefficient Giving rejects you from your dream role, maybe you should consider something along the lines of founding another cG, running it for 10 years, and then renouncing the CEO role to go take the role you were rejected for. The motivation behind that option should be clear if you really cared about what you're doing, even if for practicality you should do other things instead
-* I served as mentor for a friend who didn't seem too competent to me when he started. He's now impressed me several times and he's developed a hunger for greatness that I quite like. The thing that I saw in him is that he's earnest, and maybe that's a precondition to violent passion, and a decent predictor of outlier success
-
-# quests, not jobs
-
-Look for quests, not jobs
-
-* Jobs constrain the space of what you can try
-* The space for ‘succeeding’ (ie., growing a lot and maybe having some valuable output) for quests is much larger than for jobs
-
----
-
-# The EAG Playbook for Career Success
-
-Source: https://myea.blog/success-playbook
-
-\[keep uppercase in title pls\!\]
-
-* Aim: Have a secure-baseline and really high-upside strategy for succeeding in your career
-* Pick an EAG, and go every year
-  * Find mentors, find peers. Obsess over them
-* There's great need in EA for people you trust and delegate tasks to. You can become that, even if you're not better than the average, and even if you're substantially worse (comparative advantage\!)
-* Live in the EAG location for longer if you can
-
----
-
-# Identity as a barrier to AI diffusion
-
-Source: https://myea.blog/identity-barrier
-
-On Slack I wrote:
-
-One important trait in my mind for predicting who's a power user is "are you willing to let AI reshape your personal identity?"
-
-Power users approach this different ways, but when I've encountered resistance to use AI, is often of the sort: "won't it fragment my attention?", "shouldn't we remain in control of work?", "I like doing the work myself", "isn't it bad to depend on AI for work/handling emotions/taking decisions?" which seem to come from some identity conflict in many cases
-
-My attitude is often more like "I'll shape my cognition to whatever shape is most conducive to getting output from AIs" which does involve a lot of attention fragmentation and reckless delegation to AIs. Wonder how you guys feel that AI has influenced your self-image
-
----
-
 # Be so candid they ask you to stop
 
 Source: https://myea.blog/so-candid
@@ -626,25 +576,31 @@ Turns out emotions may be important
 
 ---
 
-# You can't compound on your own
+# The EAG Playbook for Career Success
 
-Source: https://myea.blog/cant-own
+Source: https://myea.blog/success-playbook
 
-Coda to Sam Altman's [How To Be Successful](https://blog.samaltman.com/how-to-be-successful)
+\[keep uppercase in title pls\!\]
 
-* Robin can be a great researcher, but they won't be an Amanda Askell if they don't find a similarly big and demanded problem to work on
-* When trying to list skills I was trying to compound on, most of them were about making it more pleasant for others to work with me. That seemed accidental, but I think it might be the case more generally, as most of your productivity increase will come from locating yourself in networks with better affordances to do great things (eg., receiving more money, directing others, advising governments, receiving curated problem ideas, strategic guidance from great leaders, etc.) rather than your individual productivity increasing
-* The same way migrant's productivity increases more than 10-fold when moving to a higher income country, your main productivity boost will come from creating your own personal country, connecting to the infrastructure that's built in there, and creating some infrastructure of your own
+* Aim: Have a secure-baseline and really high-upside strategy for succeeding in your career
+* Pick an EAG, and go every year
+  * Find mentors, find peers. Obsess over them
+* There's great need in EA for people you trust and delegate tasks to. You can become that, even if you're not better than the average, and even if you're substantially worse (comparative advantage\!)
+* Live in the EAG location for longer if you can
 
 ---
 
-# Reasonable plans, pursued with conviction
+# Identity as a barrier to AI diffusion
 
-Source: https://myea.blog/conviction
+Source: https://myea.blog/identity-barrier
 
-* It's great to be on a field that moves fast. I've had ideas that I didn't pursue, and 3 months (and once 3 weeks\!) later someone else implements it and you get to learn if it was a good idea. Also it's great if *you* personally move fast. You'll get to know much more quickly which of your ideas pan out
-* After I've seen some of my 3-month project ideas come up again in the future and be a bit more validated as a worthwhile endeavour, I've gotten more confident that I can actually figure out things that would be worth me investing a year or more working on. Specially if I'm proactive at formulating clearly and getting feedback on the high-level plan
-* The conviction part is important. An important mission pursued with conviction is one of the main factors for attracting talent. The other is being able to recognize the talent's strengths and create a narrative for how they fit in that mission
+On Slack I wrote:
+
+One important trait in my mind for predicting who's a power user is "are you willing to let AI reshape your personal identity?"
+
+Power users approach this different ways, but when I've encountered resistance to use AI, is often of the sort: "won't it fragment my attention?", "shouldn't we remain in control of work?", "I like doing the work myself", "isn't it bad to depend on AI for work/handling emotions/taking decisions?" which seem to come from some identity conflict in many cases
+
+My attitude is often more like "I'll shape my cognition to whatever shape is most conducive to getting output from AIs" which does involve a lot of attention fragmentation and reckless delegation to AIs. Wonder how you guys feel that AI has influenced your self-image
 
 ---
 
@@ -694,22 +650,25 @@ My deep-seated optimism
 
 ---
 
-# Art is the thing that engages you
+# You can't compound on your own
 
-Source: https://myea.blog/engaging-thing
+Source: https://myea.blog/cant-own
 
-* It may not engage you superficially (long boring books), but it must engage you at some level
-* Force/compell you to think or feel, often doing some shaping as well
-  * Often? Is there a case where art just compels feeling but it's unopinionated about content? No
-* People and places are great forms of art. They're among the most compelling things we have
-* Most of what we call ‘art’ refers to the non-rival / scalable forms of art. Those that can be shared and appreciated by many people
-* Food can be a more or less artistic form of art. For some it may be just an immediate thrill, but it can also bond you to people around you, to a community or set of ideas
-* Drugs are a pointy kind of art. Many forms of art (those that detract from your enjoyment of other arts) can be very drug-like
-* This definition feels too broad. I wonder how we can narrow it. Maybe:
-  * Art needs to be deliberate (nature?)
-  * Art is reserved for the strongest/most compelling forms
-* The classics can be compelling for a really broad set of people, and they can be compelling in a lasting way
-  * Movies may surpass books here. They're more accessible and in some cases have stronger and more lasting effects on people
+Coda to Sam Altman's [How To Be Successful](https://blog.samaltman.com/how-to-be-successful)
+
+* Robin can be a great researcher, but they won't be an Amanda Askell if they don't find a similarly big and demanded problem to work on
+* When trying to list skills I was trying to compound on, most of them were about making it more pleasant for others to work with me. That seemed accidental, but I think it might be the case more generally, as most of your productivity increase will come from locating yourself in networks with better affordances to do great things (eg., receiving more money, directing others, advising governments, receiving curated problem ideas, strategic guidance from great leaders, etc.) rather than your individual productivity increasing
+* The same way migrant's productivity increases more than 10-fold when moving to a higher income country, your main productivity boost will come from creating your own personal country, connecting to the infrastructure that's built in there, and creating some infrastructure of your own
+
+---
+
+# Reasonable plans, pursued with conviction
+
+Source: https://myea.blog/conviction
+
+* It's great to be on a field that moves fast. I've had ideas that I didn't pursue, and 3 months (and once 3 weeks\!) later someone else implements it and you get to learn if it was a good idea. Also it's great if *you* personally move fast. You'll get to know much more quickly which of your ideas pan out
+* After I've seen some of my 3-month project ideas come up again in the future and be a bit more validated as a worthwhile endeavour, I've gotten more confident that I can actually figure out things that would be worth me investing a year or more working on. Specially if I'm proactive at formulating clearly and getting feedback on the high-level plan
+* The conviction part is important. An important mission pursued with conviction is one of the main factors for attracting talent. The other is being able to recognize the talent's strengths and create a narrative for how they fit in that mission
 
 ---
 
@@ -732,6 +691,47 @@ So that seems like a long aside, but the central point I was going for is that I
 PS. I also thought a bit about ways of encouraging or selecting certain motivations from me that might be preferable. So for example, if you want to discourage behaviors from me that are romantically motivated, we might think of having an explicit agreement that we won't date, at least for the duration of my stay, let's say. I think that's mostly an example for illustration. I doubt that it would do much in practice. I'm a terribly patient person.
 
 I find it interesting that the general class of this problem feels really similar to certain parts of the alignment problem, where you have an agent whose internal motivations you cannot completely trust or control, and you try to find different schemes for eliciting robustly helpful behavior. Not sure if you find that intersection interesting or useful at all, but I just thought maybe love is a good excuse to learn more about the alignment problem.
+
+---
+
+# Have you tried violent passion?
+
+Source: https://myea.blog/violent-passion
+
+* A friend told me 80k finds it hard to hire for their advising team. I think the only reasonable explanation for that is that a bunch of you are absolute morons
+* You either don't know what you want, or want really silly things. If you were passionate about something good, you'd realize how exciting advising at 80k is and how flabbergastingly talent-dense the 80k team is.
+* Maybe you are too comformist. Quitting your job (or your three part time roles, which was my case) to work on AI Tools for Existential Security was always an option, and you haven't taken it
+* Seems many of you would be indifferent between working at cG, Anthropic, or Redwood. You don't quite care what you do as long as it ticks some abstract silly boxes that some uncaring social gestalt demarcated as important
+* Same for dating. Lilia, who works at a dating startup, tells me they enforce a rule of not talking about religion or politics on the first date, because some people are dumb enough to discard their future wife or husband based on a superficial dislike of their politics
+* What's the opposite of that? What should you aspire to be in your life? Not sure if this fits for most, but maybe I'd suggest you try violent passion
+* If Coefficient Giving rejects you from your dream role, maybe you should consider something along the lines of founding another cG, running it for 10 years, and then renouncing the CEO role to go take the role you were rejected for. The motivation behind that option should be clear if you really cared about what you're doing, even if for practicality you should do other things instead
+* I served as mentor for a friend who didn't seem too competent to me when he started. He's now impressed me several times and he's developed a hunger for greatness that I quite like. The thing that I saw in him is that he's earnest, and maybe that's a precondition to violent passion, and a decent predictor of outlier success
+
+# quests, not jobs
+
+Look for quests, not jobs
+
+* Jobs constrain the space of what you can try
+* The space for ‘succeeding’ (ie., growing a lot and maybe having some valuable output) for quests is much larger than for jobs
+
+---
+
+# Art is the thing that engages you
+
+Source: https://myea.blog/engaging-thing
+
+* It may not engage you superficially (long boring books), but it must engage you at some level
+* Force/compell you to think or feel, often doing some shaping as well
+  * Often? Is there a case where art just compels feeling but it's unopinionated about content? No
+* People and places are great forms of art. They're among the most compelling things we have
+* Most of what we call ‘art’ refers to the non-rival / scalable forms of art. Those that can be shared and appreciated by many people
+* Food can be a more or less artistic form of art. For some it may be just an immediate thrill, but it can also bond you to people around you, to a community or set of ideas
+* Drugs are a pointy kind of art. Many forms of art (those that detract from your enjoyment of other arts) can be very drug-like
+* This definition feels too broad. I wonder how we can narrow it. Maybe:
+  * Art needs to be deliberate (nature?)
+  * Art is reserved for the strongest/most compelling forms
+* The classics can be compelling for a really broad set of people, and they can be compelling in a lasting way
+  * Movies may surpass books here. They're more accessible and in some cases have stronger and more lasting effects on people
 
 ---
 
