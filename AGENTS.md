@@ -1,8 +1,3 @@
----
-human_edit_tracking:
-  enabled: true
-  history: []
----
 # myea.blog
 
 Single-page index of writing drafts, cross-posts, and bullet-point notes. Each entry links to a Google Doc. Live at `myea.blog`.
