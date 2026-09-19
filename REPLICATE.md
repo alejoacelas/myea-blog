@@ -15,3 +15,12 @@ The human wanted to remove unstarted personal projects and simplify the remainin
 - Moved `me/blog` to `me/sites/blog`, preserving repository history and site files.
 
 Agent session 01a0b90b-7ae3-7ed1-bb2f-fde3ad5d78d3 · Commits dotfiles: 5ceaed4
+
+## Agent instructions cleanup — 2026-09-19
+
+Alejo asked to refresh project instructions and remove redundant Claude instruction files where native AGENTS.md loading is available.
+
+- Updated the applicable instructions and removed redundant local Claude copies; distinct content and preserved snapshots remain.
+- Checked instruction references and shared-context freshness; native Claude loading requires 2.1.277+ with the built-in feature enabled.
+
+Agent session 01a0b915-3eb2-78b2-9add-6ba48ad9a3b1 · Commits 4cacf57d547de8b39d9ae11b396f2bd8b8b3efe7
