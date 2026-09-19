@@ -7,7 +7,7 @@ Single-page index of Alejandro Acelas's writing — drafts, cross-posts, and bul
 <!--/ai-->
 
 <!--ai-->
-Static HTML/CSS/JS in `public/`, with small Vercel functions in `api/` for click analytics. See [`CLAUDE.md`](CLAUDE.md) for how posts are classified, sorted, and deployed.
+Static HTML/CSS/JS in `public/`, with small Vercel functions in `api/` for click analytics. See [`AGENTS.md`](AGENTS.md) for how posts are classified, sorted, and deployed.
 <!--/ai-->
 
 <!--ai-->
