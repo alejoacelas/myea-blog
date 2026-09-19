@@ -1,12 +1,3 @@
----
-agent_context:
-  version: 1
-  groups: []
-  visibility: public
----
-<!-- agent-context:begin sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 -->
-<!-- agent-context:end -->
-
 # myea.blog
 
 Single-page index of writing drafts, cross-posts, and bullet-point notes. Each entry links to a Google Doc. Live at `myea.blog`.
